@@ -1,0 +1,33 @@
+input[type="text"],
+input[type="number"] {
+	padding: 1em 0em;
+	border: none;
+	border-bottom: 1px solid $color-gray-light;
+	appearance: none;
+	color: $color-blue;
+	outline: none;
+
+	&::placeholder {
+		color: $color-gray-light;
+	}
+}
+
+select {
+	padding: 1em 0em;
+	border: 0;
+	border-bottom: 1px solid $color-gray-light;
+	appearance: none;
+	background: transparent;
+	color: $color-blue;
+	outline: none;
+	border-radius: 0;
+
+	&:disabled {
+		opacity: 0.4;
+		cursor: not-allowed;
+	}
+
+	&::placeholder {
+		color: $color-gray-light;
+	}
+}

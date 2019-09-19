@@ -1,0 +1,633 @@
+/* FieldMed CSS v0.1
+ * <link href="/css/index.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*** Functions ***/
+/**
+ * Set font color according the background
+ * source: http://thesassway.com/intermediate/dynamically-change-text-color-based-on-its-background-with-sass
+ * @param {String} $background - background color - format accepted: hsla, rgb, #
+ * @return {String} #color
+ */
+/**
+ * String Replace
+ */
+/*** Button mixins ***/
+/**
+ * Generate button style
+ * @param {String} - $name - required
+ * @param {String} - $background - required - format accepted: hsla, rgb, #
+ * @param {Strong} - $type - optionnal - format accepted: hsla, rgb, #
+ * If no $color specify, the 'set-text-color' function is called
+ * go check the _function.scss
+ */
+/**
+ * Generate Font-Face
+ */
+/*** Parameters ***/
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/muli/Muli-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/muli/Muli-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/muli/Muli-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SourceSansPro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/sourcesanspro/SourceSansPro-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SourceSansPro";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/sourcesanspro/SourceSansPro-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "fieldmed-icons";
+  src: url("../fonts/icons/fieldmed.eot");
+  src: url("../fonts/icons/fieldmed.eot#iefix") format("embedded-opentype"), url("../fonts/icons/fieldmed.ttf") format("truetype"), url("fonts/icons/fieldmed.woff") format("woff"), url("../fonts/icons/fieldmed.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+/* line 12, ../sass/base/_icons.scss */
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "fieldmed-icons" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 28, ../sass/base/_icons.scss */
+.icon-arrow-up:before {
+  content: "\e900";
+  color: #fff;
+}
+
+/* line 32, ../sass/base/_icons.scss */
+.icon-arrow-down:before {
+  content: "\e900";
+  color: #fff;
+}
+
+/* line 36, ../sass/base/_icons.scss */
+.icon-arrow-left:before {
+  content: "\e900";
+  color: #fff;
+}
+
+/* line 40, ../sass/base/_icons.scss */
+.icon-arrow-right:before {
+  content: "\e900";
+  color: #fff;
+}
+
+/* line 44, ../sass/base/_icons.scss */
+.icon-arrow-up {
+  transform: rotate(-90deg);
+  display: inline-block;
+}
+
+/* line 48, ../sass/base/_icons.scss */
+.icon-arrow-down {
+  transform: rotate(90deg);
+  display: inline-block;
+}
+
+/* line 52, ../sass/base/_icons.scss */
+.icon-arrow-left {
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
+/* line 56, ../sass/base/_icons.scss */
+.icon-arrow-right {
+  transform: rotate(0deg);
+  display: inline-block;
+}
+
+/* line 60, ../sass/base/_icons.scss */
+.icon-pin:before {
+  content: "\e901";
+  color: #fff;
+}
+
+/* line 64, ../sass/base/_icons.scss */
+.icon-online:before {
+  content: "\e902";
+  color: #fff;
+}
+
+/* line 68, ../sass/base/_icons.scss */
+.icon-phone:before {
+  content: "\e903";
+  color: #fff;
+}
+
+/* line 72, ../sass/base/_icons.scss */
+.icon-linkedin:before {
+  content: "\e904";
+  color: #fff;
+}
+
+/* line 76, ../sass/base/_icons.scss */
+.icon-facebook:before {
+  content: "\e905";
+  color: #fff;
+}
+
+/* line 80, ../sass/base/_icons.scss */
+.icon-twitter:before {
+  content: "\e906";
+  color: #fff;
+}
+
+/* line 84, ../sass/base/_icons.scss */
+.icon-youtube:before {
+  content: "\e907";
+  color: #fff;
+}
+
+/* line 88, ../sass/base/_icons.scss */
+.icon-instagram:before {
+  content: "\e908";
+  color: #fff;
+}
+
+/**
+ * CSS Reset
+ * @copyright Jordan Davila 2018
+ */
+/* line 6, ../sass/base/_reset.scss */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   *user-select: none; */
+}
+
+/* line 18, ../sass/base/_reset.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  font-family: "SourceSansPro", sans-serif;
+}
+
+/* line 108, ../sass/base/_reset.scss */
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  letter-spacing: 2px;
+}
+
+/* line 119, ../sass/base/_reset.scss */
+a {
+  text-decoration: none;
+  line-height: 30px;
+}
+
+/* line 124, ../sass/base/_reset.scss */
+li {
+  list-style: none;
+}
+
+/* line 128, ../sass/base/_reset.scss */
+button {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+}
+/* line 133, ../sass/base/_reset.scss */
+button:focus {
+  outline: 0;
+}
+
+/* line 138, ../sass/base/_reset.scss */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1, ../sass/base/_base.scss */
+.logo {
+  background-image: url("../images/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 125px;
+  height: 34px;
+}
+
+/* line 1, ../sass/layouts/_grid.scss */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 7, ../sass/layouts/_grid.scss */
+.layout {
+  width: 900px;
+}
+
+/* line 1, ../sass/components/_menu.scss */
+.main-menu {
+  width: 100%;
+  height: 94px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* line 8, ../sass/components/_menu.scss */
+.main-menu .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 13, ../sass/components/_menu.scss */
+.main-menu .container .links {
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+/* line 18, ../sass/components/_menu.scss */
+.main-menu .container .links .link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+/* line 23, ../sass/components/_menu.scss */
+.main-menu .container .links .link:hover > .submenu {
+  opacity: 1;
+  z-index: 999999;
+}
+/* line 28, ../sass/components/_menu.scss */
+.main-menu .container .links .link:hover > a {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* line 30, ../sass/components/_menu.scss */
+.main-menu .container .links .link:hover > a .menu-select-carrot {
+  opacity: 1;
+}
+/* line 35, ../sass/components/_menu.scss */
+.main-menu .container .links .link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12.2px;
+  font-family: "Muli", sans-serif;
+  font-weight: 600;
+  letter-spacing: normal;
+  color: #ffffff;
+  height: 100%;
+  padding: 0px 14px;
+  position: relative;
+  transition: 200ms ease-out background-color;
+}
+/* line 45, ../sass/components/_menu.scss */
+.main-menu .container .links .link a [class^="icon-"],
+.main-menu .container .links .link a [class*=" icon-"] {
+  margin-left: 5px;
+  font-size: 8px;
+}
+/* line 51, ../sass/components/_menu.scss */
+.main-menu .container .links .link a .menu-select-carrot {
+  opacity: 0;
+  position: absolute;
+  background-image: url("../images/menu-select.svg");
+  width: 22px;
+  height: 11.2px;
+  bottom: 0;
+  transition: 200ms ease-out opacity;
+}
+/* line 62, ../sass/components/_menu.scss */
+.main-menu .container .links .link .submenu {
+  left: 0;
+  top: 100%;
+  opacity: 0;
+  z-index: -99999999;
+  display: flex;
+  position: absolute;
+  background-color: #ffffff;
+  border-top: 4px solid #ba104a;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: 200ms ease-out opacity;
+}
+/* line 75, ../sass/components/_menu.scss */
+.main-menu .container .links .link .submenu .options {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 33px 18px;
+  border-left: solid 1.4px #9797972b;
+}
+/* line 82, ../sass/components/_menu.scss */
+.main-menu .container .links .link .submenu .options:hover {
+  background-color: #d8d8d82b;
+}
+/* line 86, ../sass/components/_menu.scss */
+.main-menu .container .links .link .submenu .options .icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+/* line 91, ../sass/components/_menu.scss */
+.main-menu .container .links .link .submenu .options .icon.for-hosp {
+  background-image: url("../images/for-hospitals.svg");
+}
+/* line 95, ../sass/components/_menu.scss */
+.main-menu .container .links .link .submenu .options .icon.for-comm {
+  background-image: url("../images/for-communities.svg");
+}
+/* line 99, ../sass/components/_menu.scss */
+.main-menu .container .links .link .submenu .options .icon.for-ems {
+  background-image: url("../images/for-ems.svg");
+}
+/* line 104, ../sass/components/_menu.scss */
+.main-menu .container .links .link .submenu .options h4 {
+  font-family: "SourceSansPro", sans-serif;
+  font-size: 15.1px;
+  font-weight: bold;
+  line-height: 1.52;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #ba104a;
+}
+/* line 114, ../sass/components/_menu.scss */
+.main-menu .container .links .link .submenu .options p {
+  opacity: 0.7;
+  font-family: "SourceSansPro", sans-serif;
+  font-size: 10.8px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  color: #0a1b43;
+}
+
+/* line 12, ../sass/helpers/_mixins.scss */
+.button-bordered-sky-blue {
+  background-color: transparent;
+  border: 2px solid #2dbaf6;
+  font-size: 12.2px;
+  font-family: "Muli", sans-serif;
+  font-weight: 600;
+  letter-spacing: normal;
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  min-width: 100px;
+  color: #ffffff !important;
+  outline: none;
+  cursor: pointer;
+}
+/* line 15, ../sass/helpers/_mixins.scss */
+.button-bordered-sky-blue:hover {
+  color: #ffffff !important;
+}
+/* line 40, ../sass/helpers/_mixins.scss */
+.button-bordered-sky-blue i {
+  margin-left: 5px;
+  font-size: 8px;
+}
+
+/* line 1, ../sass/components/_modals.scss */
+.modal-new-city {
+  border-radius: 10px;
+  background-color: white;
+  padding: 3em;
+}
+/* line 6, ../sass/components/_modals.scss */
+.modal-new-city h1 {
+  font-size: 0.85rem;
+  margin-bottom: 2em;
+}
+
+/* line 1, ../sass/components/_forms.scss */
+input[type="text"],
+input[type="number"] {
+  padding: 1em 0em;
+  border: none;
+  border-bottom: 1px solid #eff6fa;
+  appearance: none;
+  color: #183a78;
+  outline: none;
+}
+/* line 10, ../sass/components/_forms.scss */
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+  color: #eff6fa;
+}
+
+/* line 15, ../sass/components/_forms.scss */
+select {
+  padding: 1em 0em;
+  border: 0;
+  border-bottom: 1px solid #eff6fa;
+  appearance: none;
+  background: transparent;
+  color: #183a78;
+  outline: none;
+  border-radius: 0;
+}
+/* line 25, ../sass/components/_forms.scss */
+select:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+/* line 30, ../sass/components/_forms.scss */
+select::placeholder {
+  color: #eff6fa;
+}
+
+/* line 1, ../sass/pages/_home.scss */
+header {
+  background-image: linear-gradient(0deg, #183a78 0%, #0a1b43 100%);
+}
+/* line 3, ../sass/pages/_home.scss */
+header .landing {
+  width: 100%;
+  height: 570px;
+}

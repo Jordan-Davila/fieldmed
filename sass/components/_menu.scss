@@ -1,0 +1,128 @@
+.main-menu {
+	width: 100%;
+	height: 94px;
+	display: flex;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.1);
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.links {
+			height: 100%;
+			display: flex;
+			position: relative;
+
+			.link {
+				height: 100%;
+				display: flex;
+				align-items: center;
+
+				&:hover > .submenu {
+					opacity: 1;
+					z-index: 999999;
+				}
+
+				&:hover > a {
+					background-color: rgba(0, 0, 0, 0.1);
+					.menu-select-carrot {
+						opacity: 1;
+					}
+				}
+
+				a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					@include links1;
+					height: 100%;
+					padding: 0px 14px;
+					position: relative;
+					transition: 200ms ease-out background-color;
+
+					[class^="icon-"],
+					[class*=" icon-"] {
+						margin-left: 5px;
+						font-size: 8px;
+					}
+
+					.menu-select-carrot {
+						opacity: 0;
+						position: absolute;
+						background-image: url("../images/menu-select.svg");
+						width: 22px;
+						height: 11.2px;
+						bottom: 0;
+						transition: 200ms ease-out opacity;
+					}
+				}
+
+				.submenu {
+					left: 0;
+					top: 100%;
+					opacity: 0;
+					z-index: -99999999;
+					display: flex;
+					position: absolute;
+					background-color: $color-white;
+					border-top: 4px solid $color-pink;
+					border-bottom-right-radius: 10px;
+					border-bottom-left-radius: 10px;
+					transition: 200ms ease-out opacity;
+
+					.options {
+						flex: 1;
+						display: flex;
+						flex-direction: column;
+						padding: 33px 18px;
+						border-left: solid 1.4px #9797972b;
+
+						&:hover {
+							background-color: #d8d8d82b;
+						}
+
+						.icon {
+							width: 50px;
+							height: 50px;
+							margin-bottom: 15px;
+
+							&.for-hosp {
+								background-image: url("../images/for-hospitals.svg");
+							}
+
+							&.for-comm {
+								background-image: url("../images/for-communities.svg");
+							}
+
+							&.for-ems {
+								background-image: url("../images/for-ems.svg");
+							}
+						}
+
+						h4 {
+							font-family: "SourceSansPro", sans-serif;
+							font-size: 15.1px;
+							font-weight: bold;
+							line-height: 1.52;
+							text-align: center;
+							margin-bottom: 5px;
+							color: $color-pink;
+						}
+
+						p {
+							opacity: 0.7;
+							font-family: "SourceSansPro", sans-serif;
+							font-size: 10.8px;
+							font-weight: 400;
+							line-height: 1.4;
+							text-align: center;
+							color: $color-blue-dark;
+						}
+					}
+				}
+			}
+		}
+	}
+}

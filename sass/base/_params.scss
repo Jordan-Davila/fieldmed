@@ -1,0 +1,44 @@
+/*** Parameters ***/
+
+// Colors
+$color-blue: #183a78;
+$color-blue-dark: #0a1b43;
+$color-blue-sky: #2dbaf6;
+$color-pink: #ba104a;
+$color-white: #ffffff;
+$color-gray-light: #eff6fa;
+
+// Gradients
+$gradient-blue: linear-gradient(0deg, $color-blue 0%, $color-blue-dark 100%);
+
+// Borders
+$border-light: 1px solid $color-gray-light;
+
+// Font Size
+$font-size-biggest: 3.25rem;
+$font-size-largest: 2.3rem;
+$font-size-large: 1.2rem;
+$font-size-base: 1rem;
+$font-size-small: 0.85rem;
+$font-size-smallest: 0.8rem;
+$font-size-tiny: 0.7rem;
+
+// Spacing
+$spacing-small: 0.75rem;
+$spacing-single: 1rem;
+$spacing-double: 2rem;
+$spacing-triple: 3rem;
+$spacing-big: 6rem;
+
+// Media queries
+$desktop: 800px;
+$tablet: 600px;
+$mobile: 480px;
+
+// Font Family
+$font-primary: "Muli", sans-serif;
+$font-secondary: "SourceSansPro", sans-serif;
+
+// Image Paths
+$logo-path: url("/img/logos/logo.svg");
+$full-logo-path: url("/img/logos/logo-full.svg");

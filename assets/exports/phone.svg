@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Contact" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-317.000000, -1320.000000)" fill="#FFFFFF" fill-rule="nonzero" id="Form-+-Contact-Info">
+            <g transform="translate(130.000000, 532.000000)">
+                <g id="Contact-Info" transform="translate(187.000000, 145.000000)">
+                    <g id="Phone" transform="translate(0.000000, 624.000000)">
+                        <path d="M3.62,26.79 C5.06,29.62 7.38,31.93 10.21,33.38 L12.41,31.18 C12.68,30.91 13.08,30.82 13.43,30.94 C14.55,31.31 15.76,31.51 17,31.51 C17.55,31.51 18,31.96 18,32.51 L18,36 C18,36.55 17.55,37 17,37 C7.61,37 0,29.39 0,20 C0,19.45 0.45,19 1,19 L4.5,19 C5.05,19 5.5,19.45 5.5,20 C5.5,21.25 5.7,22.45 6.07,23.57 C6.18,23.92 6.1,24.31 5.82,24.59 L3.62,26.79 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
