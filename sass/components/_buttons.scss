@@ -1,1 +1,3 @@
 @include generate-button("bordered-sky-blue", transparent, $color-blue-sky);
+@include generate-button("pink", $color-pink, none);
+@include generate-button("blue-sky", $color-blue-sky, none);

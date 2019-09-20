@@ -27,7 +27,7 @@
         }
 
         @include links1;
-        border-radius: 10px;
+        border-radius: 7.2px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -73,4 +73,101 @@
         font-weight: $weight;
         src: $src;
     }
+}
+
+@mixin generate-image($path, $width: 100px, $height: 100px, $size: contain) {
+    background-image: url("../images/"+$path);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: $size;
+    width: $width;
+    height: $height;
+}
+
+// Types Predefined
+@mixin title1($color: white) {
+    font-size: 50.4px;
+    font-family: "Muli", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: -1px;
+    text-align: center;
+    color: $color;
+}
+
+@mixin title2($color: $color-blue-dark) {
+    font-size: 36.7px;
+    font-family: "Muli", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: -0.85px;
+    text-align: center;
+    color: $color;
+}
+
+@mixin title3($color: $color-blue-dark) {
+    font-size: 21.6px;
+    font-family: "Muli", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    text-align: center;
+    color: $color;
+}
+
+@mixin title4($color: $color-blue-sky) {
+    font-family: "SourceSansPro", sans-serif;
+    font-size: 10.1px;
+    font-weight: 900;
+    line-height: 2.29;
+    letter-spacing: 2.16px;
+    text-align: center;
+    color: $color;
+}
+
+@mixin para1($color: $color-blue-dark) {
+    font-size: 17.3px;
+    font-family: "SourceSansPro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color;
+}
+
+@mixin para2($color: $color-blue-dark) {
+    font-size: 16.6px;
+    font-family: "SourceSansPro", sans-serif;
+    opacity: 0.7;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color;
+}
+
+@mixin para3($color: $color-blue-dark) {
+    font-size: 14.4px;
+    font-family: "SourceSansPro", sans-serif;
+    opacity: 0.7;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color;
+}
+
+@mixin links1($color: $color-white) {
+    font-size: 12.2px;
+    font-family: "Muli", sans-serif;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: $color;
 }

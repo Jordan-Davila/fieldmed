@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"border-bo",
+				"border-bottom-right-radius\tproperty"
+			],
+			[
+				"bor",
+				"border-top\tproperty"
+			],
+			[
+				"paddin",
+				"padding\tproperty"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"inline",
+				"inline-block\tdisplay"
+			],
+			[
 				"flex",
 				"flex-start\tjustify-content"
 			],
@@ -30,10 +50,6 @@
 			[
 				"be",
 				"benefitsPos\tnumber"
-			],
-			[
-				"margin",
-				"margin-right\tproperty"
 			],
 			[
 				"mar",
@@ -372,10 +388,6 @@
 				"projects"
 			],
 			[
-				"paddin",
-				"padding-bottom\tproperty"
-			],
-			[
 				"box-s",
 				"box-shadow\tproperty"
 			],
@@ -441,12 +453,28 @@
 		"selected_items":
 		[
 			[
-				"remove",
+				"ter",
+				"Terminus: Open Default Shell in View"
+			],
+			[
+				"remo",
 				"Package Control: Remove Package"
 			],
 			[
 				"ins",
 				"Package Control: Install Package"
+			],
+			[
+				"termope",
+				"Terminus: Open Default Shell in View"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"mater",
+				"Material Theme: Activate theme"
 			],
 			[
 				"terminus ope",
@@ -601,17 +629,23 @@
 	},
 	"file_history":
 	[
-		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_buttons.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_params.scss",
+		"/Users/n3ko/Library/Application Support/Sublime Text 3/Packages/User/.jsbeautifyrc",
+		"/Users/n3ko/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/index.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/library/components/_menu.php",
+		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/b416559403f13e412d3d809612f3bc8ac85e37d4/_grid.scssc",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_icons.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_forms.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_modals.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_buttons.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/332c40824acb4d631e1be199e458ca44c2532c13/_params.scssc",
 		"/Users/n3ko/Development/Sites/fieldmed/library/layouts/_footer.php",
 		"/Users/n3ko/Development/Sites/fieldmed/js/index.js",
 		"/Users/n3ko/Development/Sites/fieldmed/blog.php",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/index.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/helpers/_functions.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/componenets/_forms.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_base.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/library/components/_menu.php",
 		"/Users/n3ko/Development/Sites/fieldmed/library/layouts/header.php",
 		"/Users/n3ko/Development/Sites/fieldmed/library/layouts/footer.php",
 		"/Users/n3ko/Development/Sites/fieldmed/faqs.php",
@@ -634,7 +668,6 @@
 		"/Users/n3ko/Development/Sites/fieldmed/sass/abstracts/_functions.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_fonts.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_reset.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_icons.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/images/logo.svg",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/abstracts/_mixins.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/abstracts",
@@ -723,16 +756,11 @@
 		"/Users/n3ko/Dropbox/Sites/doxa/resources/views/components/modal-new-city.blade.php",
 		"/Users/n3ko/Dropbox/Sites/doxa/resources/views/pages/territories/show.blade.php",
 		"/Users/n3ko/Dropbox/Sites/doxa/resources/views/pages/territories/new.blade.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/sass/components/_forms.scss",
-		"/Users/n3ko/Dropbox/Sites/doxa/app/User.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/database/migrations/2019_05_02_235450_create_requests_table.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/database/migrations/2019_03_21_192232_create_territories_table.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/database/factories/RequestFactory.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/app/Request.php"
+		"/Users/n3ko/Dropbox/Sites/doxa/resources/sass/components/_forms.scss"
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 74.0
 	},
 	"find_in_files":
 	{
@@ -746,6 +774,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ext"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -776,17 +805,31 @@
 				0,
 				0,
 				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
 				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.543483347797,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
+			0.619162819602,
 			1.0
 		]
 	},
@@ -807,6 +850,26 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"para",
+				"sass/base/_params.scss"
+			],
+			[
+				"home",
+				"sass/pages/_home.scss"
+			],
+			[
+				"components_me",
+				"library/components/_menu.php"
+			],
+			[
+				"grid",
+				"sass/layouts/_grid.scss"
+			],
+			[
+				"grid.",
+				".sass-cache/b416559403f13e412d3d809612f3bc8ac85e37d4/_grid.scssc"
+			],
 			[
 				"param",
 				"sass/base/_params.scss"
@@ -858,10 +921,6 @@
 			[
 				"_pa",
 				"src/styles/helpers/_parameters.scss"
-			],
-			[
-				"home",
-				"src/styles/pages/_home.scss"
 			],
 			[
 				"_port",
@@ -922,10 +981,6 @@
 			[
 				"pages/",
 				"resources/sass/pages/home/_login.scss"
-			],
-			[
-				"grid",
-				"resources/sass/layouts/_grid.scss"
 			],
 			[
 				"CityController",
@@ -1062,10 +1117,6 @@
 			[
 				"app.sc",
 				"resources/sass/app.scss"
-			],
-			[
-				"para",
-				"resources/sass/helpers/_parameters.scss"
 			],
 			[
 				"show",
@@ -1310,14 +1361,6 @@
 			[
 				"Territory.v",
 				"resources/js/components/territory/Territory.vue"
-			],
-			[
-				"ter",
-				"app/Territory.php"
-			],
-			[
-				"City",
-				"app/City.php"
 			]
 		],
 		"width": 0.0
@@ -1346,15 +1389,36 @@
 	},
 	"settings":
 	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		]
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 237.0,
+	"side_bar_width": 289.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
-		"max_columns": 1
+		"max_columns": 2
 	}
 }

@@ -8,10 +8,10 @@
 @import "helpers/mixins";
 
 // Base
+@import "base/reset";
 @import "base/params";
 @import "base/fonts";
 @import "base/icons";
-@import "base/reset";
 @import "base/base";
 
 // Layouts

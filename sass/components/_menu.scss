@@ -4,6 +4,8 @@
 	display: flex;
 	justify-content: center;
 	background-color: rgba(0, 0, 0, 0.1);
+	position: -webkit-sticky;
+	position: sticky;
 
 	.container {
 		display: flex;
@@ -22,11 +24,12 @@
 
 				&:hover > .submenu {
 					opacity: 1;
-					z-index: 999999;
+					visibility: visible;
 				}
 
 				&:hover > a {
 					background-color: rgba(0, 0, 0, 0.1);
+					border-bottom: 4px solid $color-pink;
 					.menu-select-carrot {
 						opacity: 1;
 					}
@@ -40,7 +43,8 @@
 					height: 100%;
 					padding: 0px 14px;
 					position: relative;
-					transition: 200ms ease-out background-color;
+					transition: 200ms ease-out background-color border-bottom;
+					border-bottom: 4px solid transparent;
 
 					[class^="icon-"],
 					[class*=" icon-"] {
@@ -63,14 +67,13 @@
 					left: 0;
 					top: 100%;
 					opacity: 0;
-					z-index: -99999999;
+					visibility: hidden;
 					display: flex;
 					position: absolute;
 					background-color: $color-white;
-					border-top: 4px solid $color-pink;
 					border-bottom-right-radius: 10px;
 					border-bottom-left-radius: 10px;
-					transition: 200ms ease-out opacity;
+					transition: 200ms ease-out opacity, 0ms visibility;
 
 					.options {
 						flex: 1;
