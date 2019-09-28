@@ -75,14 +75,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  * String Replace
  */
-/*** Button mixins ***/
 /**
  * Generate button style
- * @param {String} - $name - required
- * @param {String} - $background - required - format accepted: hsla, rgb, #
- * @param {Strong} - $type - optionnal - format accepted: hsla, rgb, #
- * If no $color specify, the 'set-text-color' function is called
- * go check the _function.scss
  */
 /**
  * Generate Font-Face
@@ -279,9 +273,10 @@ h1 {
   letter-spacing: -1px;
   text-align: center;
   color: white;
+  margin-bottom: 20px;
 }
 
-/* line 14, ../sass/base/_fonts.scss */
+/* line 15, ../sass/base/_fonts.scss */
 h2 {
   font-size: 36.7px;
   font-family: "Muli", sans-serif;
@@ -292,9 +287,10 @@ h2 {
   letter-spacing: -0.85px;
   text-align: center;
   color: #0a1b43;
+  margin-bottom: 15px;
 }
 
-/* line 18, ../sass/base/_fonts.scss */
+/* line 20, ../sass/base/_fonts.scss */
 h3 {
   font-size: 21.6px;
   font-family: "Muli", sans-serif;
@@ -305,9 +301,10 @@ h3 {
   letter-spacing: -0.36px;
   text-align: center;
   color: #0a1b43;
+  margin-bottom: 20px;
 }
 
-/* line 22, ../sass/base/_fonts.scss */
+/* line 25, ../sass/base/_fonts.scss */
 h4 {
   font-family: "SourceSansPro", sans-serif;
   font-size: 10.1px;
@@ -316,9 +313,11 @@ h4 {
   letter-spacing: 2.16px;
   text-align: center;
   color: #2dbaf6;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
-/* line 27, ../sass/base/_fonts.scss */
+/* line 32, ../sass/base/_fonts.scss */
 p.p17 {
   font-size: 17.3px;
   font-family: "SourceSansPro", sans-serif;
@@ -330,7 +329,7 @@ p.p17 {
   text-align: center;
   color: #0a1b43;
 }
-/* line 31, ../sass/base/_fonts.scss */
+/* line 36, ../sass/base/_fonts.scss */
 p.p16 {
   font-size: 16.6px;
   font-family: "SourceSansPro", sans-serif;
@@ -341,7 +340,7 @@ p.p16 {
   text-align: center;
   color: #0a1b43;
 }
-/* line 35, ../sass/base/_fonts.scss */
+/* line 40, ../sass/base/_fonts.scss */
 p.p14 {
   font-size: 14.4px;
   font-family: "SourceSansPro", sans-serif;
@@ -350,6 +349,12 @@ p.p14 {
   letter-spacing: normal;
   text-align: center;
   color: #0a1b43;
+}
+
+/* line 45, ../sass/base/_fonts.scss */
+span.blue {
+  color: #2dbaf6;
+  font-weight: 400;
 }
 
 @font-face {
@@ -475,10 +480,20 @@ p.p14 {
 /* line 1, ../sass/base/_base.scss */
 .logo {
   background-image: url("../images/logo.svg");
-  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   width: 125px;
   height: 34px;
+}
+
+/* line 6, ../sass/base/_base.scss */
+main.gray {
+  background-color: #eff6fa;
+}
+/* line 10, ../sass/base/_base.scss */
+main.blue {
+  background-image: linear-gradient(179deg, #183a78, #0a1b43);
 }
 
 /* line 1, ../sass/layouts/_grid.scss */
@@ -490,8 +505,425 @@ body {
 }
 
 /* line 8, ../sass/layouts/_grid.scss */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+/* line 15, ../sass/layouts/_grid.scss */
 .layout {
-  width: 900px;
+  width: 900px !important;
+}
+
+/* line 1, ../sass/components/_header.scss */
+header {
+  background-image: linear-gradient(0deg, #183a78 0%, #0a1b43 100%);
+}
+/* line 3, ../sass/components/_header.scss */
+header .landing {
+  width: 100%;
+  height: 570px;
+  display: flex;
+  justify-content: center;
+}
+/* line 9, ../sass/components/_header.scss */
+header .landing .container {
+  padding: 100px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 15, ../sass/components/_header.scss */
+header .landing .container h1 {
+  max-width: 677px;
+  margin-bottom: 20px;
+}
+/* line 20, ../sass/components/_header.scss */
+header .landing .container p {
+  font-size: 17.3px;
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+/* line 25, ../sass/components/_header.scss */
+header .landing .container .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 29, ../sass/components/_header.scss */
+header .landing .container .buttons .button-pink {
+  margin-right: 15px;
+  padding: 10px;
+  min-width: 164px;
+}
+/* line 34, ../sass/components/_header.scss */
+header .landing .container .buttons .button-blue-sky {
+  min-width: 164px;
+  padding: 10px;
+}
+/* line 42, ../sass/components/_header.scss */
+header .breadcrums {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 48, ../sass/components/_header.scss */
+header .breadcrums .layout {
+  display: flex;
+  align-items: center;
+}
+/* line 52, ../sass/components/_header.scss */
+header .breadcrums .layout i {
+  font-size: 5px;
+  margin: 0px 10px;
+}
+/* line 57, ../sass/components/_header.scss */
+header .breadcrums .layout a {
+  font-size: 12.2px;
+  font-family: "Muli", sans-serif;
+  font-weight: 600;
+  letter-spacing: normal;
+  color: #2dbaf6;
+}
+/* line 60, ../sass/components/_header.scss */
+header .breadcrums .layout a.active {
+  color: #ffffff;
+}
+
+/* line 1, ../sass/components/_footer.scss */
+.signup-app {
+  background-image: linear-gradient(177deg, #183a78, #0a1b43);
+  width: 100%;
+}
+/* line 4, ../sass/components/_footer.scss */
+.signup-app .image-bg {
+  background-image: url("../images/phone-app-blue.svg");
+  background-repeat: no-repeat;
+  background-size: 447px 460px;
+  background-position: -100px 82px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 14, ../sass/components/_footer.scss */
+.signup-app .image-bg h4,
+.signup-app .image-bg h2 {
+  text-align: left;
+}
+/* line 19, ../sass/components/_footer.scss */
+.signup-app .image-bg h2 {
+  color: #ffffff;
+  font-size: 34.6px;
+}
+/* line 24, ../sass/components/_footer.scss */
+.signup-app .image-bg .layout {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 180px;
+}
+/* line 31, ../sass/components/_footer.scss */
+.signup-app .image-bg .signup-form .container {
+  justify-content: flex-start;
+}
+
+/* line 39, ../sass/components/_footer.scss */
+.why-fieldmed .try {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(0deg, #183a78 0%, #0a1b43 100%);
+}
+/* line 47, ../sass/components/_footer.scss */
+.why-fieldmed .try .image-bottom {
+  background-image: url("../images/forpages/discover-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100vw;
+  height: 4.9vw;
+}
+/* line 51, ../sass/components/_footer.scss */
+.why-fieldmed .try .layout {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+/* line 54, ../sass/components/_footer.scss */
+.why-fieldmed .try .layout h2 {
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: -0.72px;
+  text-align: center;
+  color: #ffffff;
+}
+/* line 64, ../sass/components/_footer.scss */
+.why-fieldmed .features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 70, ../sass/components/_footer.scss */
+.why-fieldmed .features .title {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+/* line 75, ../sass/components/_footer.scss */
+.why-fieldmed .features .features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+}
+/* line 80, ../sass/components/_footer.scss */
+.why-fieldmed .features .features-grid h3,
+.why-fieldmed .features .features-grid p {
+  text-align: left;
+}
+/* line 85, ../sass/components/_footer.scss */
+.why-fieldmed .features .features-grid .feature {
+  display: flex;
+  margin-bottom: 25px;
+}
+/* line 89, ../sass/components/_footer.scss */
+.why-fieldmed .features .features-grid .feature .icon {
+  background-image: url("../images/forpages/features/Icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 85px;
+  height: 74px;
+  flex: 0 85px;
+  margin-right: 25px;
+}
+/* line 95, ../sass/components/_footer.scss */
+.why-fieldmed .features .features-grid .feature .info {
+  flex: 1;
+}
+/* line 98, ../sass/components/_footer.scss */
+.why-fieldmed .features .features-grid .feature .info h3 {
+  font-size: 15.1px;
+  font-weight: 900;
+  line-height: 1.33;
+  letter-spacing: -0.25px;
+  margin-bottom: 5px;
+}
+
+/* line 111, ../sass/components/_footer.scss */
+.signup-bottom {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 230px;
+}
+/* line 118, ../sass/components/_footer.scss */
+.signup-bottom .image-city {
+  background-image: url("../images/home/city.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 1189px;
+  height: 364px;
+  position: absolute;
+  z-index: 0;
+  top: -200px;
+  left: 0;
+}
+/* line 126, ../sass/components/_footer.scss */
+.signup-bottom .image-ground {
+  background-image: url("../images/home/ground.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 370px;
+  position: absolute;
+  background-size: cover;
+  z-index: 0;
+}
+/* line 133, ../sass/components/_footer.scss */
+.signup-bottom .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 368px;
+  width: 1200px;
+}
+/* line 141, ../sass/components/_footer.scss */
+.signup-bottom .wrapper .image-left {
+  background-image: url("../images/home/doc-chart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 242px;
+  height: 264px;
+  transform: translate(-10px, -70px);
+}
+/* line 146, ../sass/components/_footer.scss */
+.signup-bottom .wrapper .image-right {
+  background-image: url("../images/home/dance.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 323px;
+  height: 290px;
+  transform: translate(45px, -110px);
+}
+/* line 151, ../sass/components/_footer.scss */
+.signup-bottom .wrapper .signup-form {
+  width: 700px;
+  transform: translate(35px, 0px);
+}
+
+/* line 158, ../sass/components/_footer.scss */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(179deg, #183a78, #0a1b43);
+}
+/* line 164, ../sass/components/_footer.scss */
+footer .social-media {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+}
+/* line 171, ../sass/components/_footer.scss */
+footer .social-media .layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 177, ../sass/components/_footer.scss */
+footer .social-media .layout .icons a {
+  font-size: 32px;
+  margin-left: 15px;
+}
+/* line 181, ../sass/components/_footer.scss */
+footer .social-media .layout .icons a:hover {
+  color: #ba104a !important;
+}
+/* line 189, ../sass/components/_footer.scss */
+footer .sitemap {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.27);
+  display: flex;
+  justify-content: center;
+  padding: 90px 0px;
+}
+/* line 196, ../sass/components/_footer.scss */
+footer .sitemap .layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/* line 201, ../sass/components/_footer.scss */
+footer .sitemap .layout .from-the-blog {
+  width: 300px;
+}
+/* line 205, ../sass/components/_footer.scss */
+footer .sitemap .layout .links,
+footer .sitemap .layout .from-the-blog {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/* line 210, ../sass/components/_footer.scss */
+footer .sitemap .layout .links h4,
+footer .sitemap .layout .from-the-blog h4 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+/* line 214, ../sass/components/_footer.scss */
+footer .sitemap .layout .links a,
+footer .sitemap .layout .from-the-blog a {
+  font-size: 12.2px;
+  font-family: "Muli", sans-serif;
+  font-weight: 600;
+  letter-spacing: normal;
+  color: #ffffff;
+  color: #ffffff;
+  font-size: 12.2px;
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: 400;
+  line-height: 2.12;
+  letter-spacing: normal;
+  transition: 200ms ease-out color;
+}
+/* line 224, ../sass/components/_footer.scss */
+footer .sitemap .layout .links a:hover,
+footer .sitemap .layout .from-the-blog a:hover {
+  color: #ba104a !important;
+}
+/* line 229, ../sass/components/_footer.scss */
+footer .sitemap .layout .links p,
+footer .sitemap .layout .from-the-blog p {
+  text-align: left;
+  opacity: 1;
+  font-family: "SourceSansPro", sans-serif;
+  font-size: 12.2px;
+  line-height: 2.12;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+/* line 242, ../sass/components/_footer.scss */
+footer .copyright {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px;
+}
+/* line 249, ../sass/components/_footer.scss */
+footer .copyright .layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 254, ../sass/components/_footer.scss */
+footer .copyright .layout a,
+footer .copyright .layout p,
+footer .copyright .layout i {
+  opacity: 0.4;
+  font-family: "SourceSansPro", sans-serif;
+  font-size: 12.2px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.12;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+/* line 268, ../sass/components/_footer.scss */
+footer .copyright .layout a:hover {
+  opacity: 1;
+  color: #ba104a !important;
+}
+/* line 273, ../sass/components/_footer.scss */
+footer .copyright .layout i {
+  margin: 0px 5px;
+}
+/* line 277, ../sass/components/_footer.scss */
+footer .copyright .layout .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* line 1, ../sass/components/_menu.scss */
@@ -501,42 +933,40 @@ body {
   display: flex;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.1);
-  position: -webkit-sticky;
-  position: sticky;
 }
-/* line 10, ../sass/components/_menu.scss */
+/* line 8, ../sass/components/_menu.scss */
 .main-menu .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/* line 15, ../sass/components/_menu.scss */
+/* line 13, ../sass/components/_menu.scss */
 .main-menu .container .links {
   height: 100%;
   display: flex;
   position: relative;
 }
-/* line 20, ../sass/components/_menu.scss */
+/* line 18, ../sass/components/_menu.scss */
 .main-menu .container .links .link {
   height: 100%;
   display: flex;
   align-items: center;
 }
-/* line 25, ../sass/components/_menu.scss */
+/* line 23, ../sass/components/_menu.scss */
 .main-menu .container .links .link:hover > .submenu {
   opacity: 1;
   visibility: visible;
 }
-/* line 30, ../sass/components/_menu.scss */
+/* line 28, ../sass/components/_menu.scss */
 .main-menu .container .links .link:hover > a {
   background-color: rgba(0, 0, 0, 0.1);
   border-bottom: 4px solid #ba104a;
 }
-/* line 33, ../sass/components/_menu.scss */
+/* line 31, ../sass/components/_menu.scss */
 .main-menu .container .links .link:hover > a .menu-select-carrot {
   opacity: 1;
 }
-/* line 38, ../sass/components/_menu.scss */
+/* line 36, ../sass/components/_menu.scss */
 .main-menu .container .links .link a {
   display: flex;
   justify-content: center;
@@ -552,13 +982,13 @@ body {
   transition: 200ms ease-out background-color border-bottom;
   border-bottom: 4px solid transparent;
 }
-/* line 49, ../sass/components/_menu.scss */
+/* line 47, ../sass/components/_menu.scss */
 .main-menu .container .links .link a [class^="icon-"],
 .main-menu .container .links .link a [class*=" icon-"] {
   margin-left: 5px;
   font-size: 8px;
 }
-/* line 55, ../sass/components/_menu.scss */
+/* line 53, ../sass/components/_menu.scss */
 .main-menu .container .links .link a .menu-select-carrot {
   opacity: 0;
   position: absolute;
@@ -568,11 +998,12 @@ body {
   bottom: 0;
   transition: 200ms ease-out opacity;
 }
-/* line 66, ../sass/components/_menu.scss */
+/* line 64, ../sass/components/_menu.scss */
 .main-menu .container .links .link .submenu {
   left: 0;
   top: 100%;
   opacity: 0;
+  z-index: 999999;
   visibility: hidden;
   display: flex;
   position: absolute;
@@ -581,7 +1012,7 @@ body {
   border-bottom-left-radius: 10px;
   transition: 200ms ease-out opacity, 0ms visibility;
 }
-/* line 78, ../sass/components/_menu.scss */
+/* line 77, ../sass/components/_menu.scss */
 .main-menu .container .links .link .submenu .options {
   flex: 1;
   display: flex;
@@ -589,32 +1020,33 @@ body {
   padding: 33px 18px;
   border-left: solid 1.4px #9797972b;
 }
-/* line 85, ../sass/components/_menu.scss */
+/* line 84, ../sass/components/_menu.scss */
 .main-menu .container .links .link .submenu .options:hover {
   background-color: #d8d8d82b;
 }
-/* line 89, ../sass/components/_menu.scss */
+/* line 88, ../sass/components/_menu.scss */
 .main-menu .container .links .link .submenu .options .icon {
   width: 50px;
   height: 50px;
   margin-bottom: 15px;
 }
-/* line 94, ../sass/components/_menu.scss */
+/* line 93, ../sass/components/_menu.scss */
 .main-menu .container .links .link .submenu .options .icon.for-hosp {
   background-image: url("../images/for-hospitals.svg");
 }
-/* line 98, ../sass/components/_menu.scss */
+/* line 97, ../sass/components/_menu.scss */
 .main-menu .container .links .link .submenu .options .icon.for-comm {
   background-image: url("../images/for-communities.svg");
 }
-/* line 102, ../sass/components/_menu.scss */
+/* line 101, ../sass/components/_menu.scss */
 .main-menu .container .links .link .submenu .options .icon.for-ems {
   background-image: url("../images/for-ems.svg");
 }
-/* line 107, ../sass/components/_menu.scss */
+/* line 106, ../sass/components/_menu.scss */
 .main-menu .container .links .link .submenu .options h4 {
   font-family: "SourceSansPro", sans-serif;
-  font-size: 15.1px;
+  font-size: 12px !important;
+  text-transform: unset !important;
   font-weight: bold;
   line-height: 1.52;
   text-align: center;
@@ -632,7 +1064,7 @@ body {
   color: #0a1b43;
 }
 
-/* line 12, ../sass/helpers/_mixins.scss */
+/* line 5, ../sass/helpers/_mixins.scss */
 .button-bordered-sky-blue {
   background-color: transparent;
   border: 2px solid #2dbaf6;
@@ -651,17 +1083,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-/* line 15, ../sass/helpers/_mixins.scss */
+/* line 8, ../sass/helpers/_mixins.scss */
 .button-bordered-sky-blue:hover {
   color: #ffffff !important;
 }
-/* line 40, ../sass/helpers/_mixins.scss */
+/* line 33, ../sass/helpers/_mixins.scss */
 .button-bordered-sky-blue i {
   margin-left: 5px;
   font-size: 8px;
 }
 
-/* line 12, ../sass/helpers/_mixins.scss */
+/* line 5, ../sass/helpers/_mixins.scss */
 .button-pink {
   background-color: #ba104a;
   font-size: 12.2px;
@@ -679,17 +1111,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-/* line 15, ../sass/helpers/_mixins.scss */
+/* line 8, ../sass/helpers/_mixins.scss */
 .button-pink:hover {
   color: #ffffff !important;
 }
-/* line 40, ../sass/helpers/_mixins.scss */
+/* line 33, ../sass/helpers/_mixins.scss */
 .button-pink i {
   margin-left: 5px;
   font-size: 8px;
 }
 
-/* line 12, ../sass/helpers/_mixins.scss */
+/* line 5, ../sass/helpers/_mixins.scss */
 .button-blue-sky {
   background-color: #2dbaf6;
   font-size: 12.2px;
@@ -707,11 +1139,11 @@ body {
   outline: none;
   cursor: pointer;
 }
-/* line 15, ../sass/helpers/_mixins.scss */
+/* line 8, ../sass/helpers/_mixins.scss */
 .button-blue-sky:hover {
   color: #ffffff !important;
 }
-/* line 40, ../sass/helpers/_mixins.scss */
+/* line 33, ../sass/helpers/_mixins.scss */
 .button-blue-sky i {
   margin-left: 5px;
   font-size: 8px;
@@ -730,178 +1162,19 @@ body {
 }
 
 /* line 1, ../sass/components/_forms.scss */
-input[type="text"],
-input[type="number"] {
-  padding: 1em 0em;
-  border: none;
-  border-bottom: 1px solid #eff6fa;
-  appearance: none;
-  color: #183a78;
-  outline: none;
-}
-/* line 10, ../sass/components/_forms.scss */
-input[type="text"]::placeholder,
-input[type="number"]::placeholder {
-  color: #eff6fa;
-}
-
-/* line 15, ../sass/components/_forms.scss */
-select {
-  padding: 1em 0em;
-  border: 0;
-  border-bottom: 1px solid #eff6fa;
-  appearance: none;
-  background: transparent;
-  color: #183a78;
-  outline: none;
-  border-radius: 0;
-}
-/* line 25, ../sass/components/_forms.scss */
-select:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-/* line 30, ../sass/components/_forms.scss */
-select::placeholder {
-  color: #eff6fa;
-}
-
-/* line 1, ../sass/pages/_home.scss */
-header {
-  background-image: linear-gradient(0deg, #183a78 0%, #0a1b43 100%);
-}
-/* line 3, ../sass/pages/_home.scss */
-header .landing {
-  width: 100%;
-  height: 570px;
-  display: flex;
-  justify-content: center;
-}
-/* line 9, ../sass/pages/_home.scss */
-header .landing .container {
-  padding: 100px 0px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-/* line 15, ../sass/pages/_home.scss */
-header .landing .container h1 {
-  max-width: 677px;
-  margin-bottom: 20px;
-}
-/* line 20, ../sass/pages/_home.scss */
-header .landing .container p {
-  font-size: 17.3px;
-  font-family: "SourceSansPro", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.3;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 25px;
-}
-/* line 25, ../sass/pages/_home.scss */
-header .landing .container .buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* line 29, ../sass/pages/_home.scss */
-header .landing .container .buttons .button-pink {
-  margin-right: 15px;
-  padding: 10px;
-  min-width: 164px;
-}
-/* line 34, ../sass/pages/_home.scss */
-header .landing .container .buttons .button-blue-sky {
-  min-width: 164px;
-  padding: 10px;
-}
-
-/* line 43, ../sass/pages/_home.scss */
-.home-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
-}
-/* line 49, ../sass/pages/_home.scss */
-.home-page.gray {
-  background-color: #eff6fa;
-}
-/* line 53, ../sass/pages/_home.scss */
-.home-page.blue {
-  background-image: linear-gradient(179deg, #183a78, #0a1b43);
-}
-/* line 57, ../sass/pages/_home.scss */
-.home-page .dashboard {
-  height: 250px;
-  display: flex;
-  justify-content: center;
-}
-/* line 62, ../sass/pages/_home.scss */
-.home-page .dashboard .left-image {
-  background-image: url("../images/home/hero1.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 434px;
-  height: 361px;
-  transform: translate(-32px, -220px);
-  position: relative;
-  z-index: 1;
-}
-/* line 69, ../sass/pages/_home.scss */
-.home-page .dashboard .dash-image {
-  background-image: url("../images/home/dash.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 549px;
-  height: 456px;
-  transform: translate(-74px, -170px);
-  position: relative;
-  z-index: 2;
-}
-/* line 76, ../sass/pages/_home.scss */
-.home-page .dashboard .right-image {
-  background-image: url("../images/home/hero2.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 323px;
-  height: 302px;
-  transform: translate(-5px, -155px);
-  position: relative;
-  z-index: 1;
-}
-/* line 84, ../sass/pages/_home.scss */
-.home-page .signup {
-  padding-top: 70px;
-}
-/* line 86, ../sass/pages/_home.scss */
-.home-page .signup h2 {
-  margin-bottom: 15px;
-}
-/* line 89, ../sass/pages/_home.scss */
-.home-page .signup p {
-  margin-bottom: 20px;
-}
-/* line 92, ../sass/pages/_home.scss */
-.home-page .signup .signup-form {
+.signup-form {
   width: 100%;
   margin-bottom: 65px;
 }
-/* line 95, ../sass/pages/_home.scss */
-.home-page .signup .signup-form .container {
+/* line 5, ../sass/components/_forms.scss */
+.signup-form .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
-/* line 99, ../sass/pages/_home.scss */
-.home-page .signup .signup-form .container input {
+/* line 11, ../sass/components/_forms.scss */
+.signup-form .container input {
   background-color: #ffffff;
   border: none;
   border-top-left-radius: 7.2px;
@@ -911,8 +1184,8 @@ header .landing .container .buttons .button-blue-sky {
   min-width: 440px;
   padding: 19px 30px;
 }
-/* line 110, ../sass/pages/_home.scss */
-.home-page .signup .signup-form .container button {
+/* line 22, ../sass/components/_forms.scss */
+.signup-form .container button {
   width: 168px;
   height: 50px;
   background-color: #ba104a;
@@ -931,18 +1204,62 @@ header .landing .container .buttons .button-blue-sky {
   outline: none;
   cursor: pointer;
 }
-/* line 133, ../sass/pages/_home.scss */
+
+/* line 2, ../sass/pages/_home.scss */
+.home-page .dashboard {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+/* line 8, ../sass/pages/_home.scss */
+.home-page .dashboard .left-image {
+  background-image: url("../images/home/hero1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 434px;
+  height: 361px;
+  transform: translate(-32px, -220px);
+  position: relative;
+  z-index: 1;
+}
+/* line 15, ../sass/pages/_home.scss */
+.home-page .dashboard .dash-image {
+  background-image: url("../images/software.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 549px;
+  height: 456px;
+  transform: translate(-74px, -170px);
+  position: relative;
+  z-index: 2;
+}
+/* line 22, ../sass/pages/_home.scss */
+.home-page .dashboard .right-image {
+  background-image: url("../images/home/hero2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 323px;
+  height: 302px;
+  transform: translate(-5px, -155px);
+  position: relative;
+  z-index: 1;
+}
+/* line 30, ../sass/pages/_home.scss */
 .home-page .clients {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 60px;
 }
-/* line 139, ../sass/pages/_home.scss */
+/* line 36, ../sass/pages/_home.scss */
 .home-page .clients .client {
   height: 35px;
 }
-/* line 144, ../sass/pages/_home.scss */
+/* line 41, ../sass/pages/_home.scss */
 .home-page .benefits {
   width: 80%;
   max-width: 1224px;
@@ -956,9 +1273,9 @@ header .landing .container .buttons .button-blue-sky {
   position: relative;
   margin-bottom: 120px;
 }
-/* line 157, ../sass/pages/_home.scss */
+/* line 54, ../sass/pages/_home.scss */
 .home-page .benefits .flowers-svg {
-  background-image: url("../images/home/flower1.svg");
+  background-image: url("../images/flower1.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -968,7 +1285,7 @@ header .landing .container .buttons .button-blue-sky {
   right: -80px;
   bottom: -80px;
 }
-/* line 164, ../sass/pages/_home.scss */
+/* line 61, ../sass/pages/_home.scss */
 .home-page .benefits .benefit {
   display: flex;
   justify-content: center;
@@ -977,19 +1294,19 @@ header .landing .container .buttons .button-blue-sky {
   padding: 40px;
   border-radius: 10px;
 }
-/* line 172, ../sass/pages/_home.scss */
+/* line 69, ../sass/pages/_home.scss */
 .home-page .benefits .benefit:hover {
   box-shadow: 0 52px 46px 0 rgba(0, 0, 0, 0.04);
 }
-/* line 176, ../sass/pages/_home.scss */
+/* line 73, ../sass/pages/_home.scss */
 .home-page .benefits .benefit:hover > .learn-more {
   height: 40px;
 }
-/* line 179, ../sass/pages/_home.scss */
+/* line 76, ../sass/pages/_home.scss */
 .home-page .benefits .benefit:hover > .learn-more a {
   text-indent: 0;
 }
-/* line 184, ../sass/pages/_home.scss */
+/* line 81, ../sass/pages/_home.scss */
 .home-page .benefits .benefit .learn-more {
   position: relative;
   display: flex;
@@ -1001,7 +1318,7 @@ header .landing .container .buttons .button-blue-sky {
   height: 2px;
   transition: 200ms ease-out all;
 }
-/* line 195, ../sass/pages/_home.scss */
+/* line 92, ../sass/pages/_home.scss */
 .home-page .benefits .benefit .learn-more .line {
   height: 2px;
   width: 100%;
@@ -1009,7 +1326,7 @@ header .landing .container .buttons .button-blue-sky {
   background-color: #2dbaf6;
   position: absolute;
 }
-/* line 203, ../sass/pages/_home.scss */
+/* line 100, ../sass/pages/_home.scss */
 .home-page .benefits .benefit .learn-more a {
   position: relative;
   border-radius: 5px;
@@ -1018,7 +1335,7 @@ header .landing .container .buttons .button-blue-sky {
   text-indent: -9999px;
   transition: 200ms ease-out text-indent;
 }
-/* line 213, ../sass/pages/_home.scss */
+/* line 110, ../sass/pages/_home.scss */
 .home-page .benefits .benefit .icon {
   width: 88px;
   height: 77px;
@@ -1027,45 +1344,45 @@ header .landing .container .buttons .button-blue-sky {
   background-repeat: no-repeat;
   margin-bottom: 15px;
 }
-/* line 221, ../sass/pages/_home.scss */
+/* line 118, ../sass/pages/_home.scss */
 .home-page .benefits .benefit .icon.better-care {
-  background-image: url("../images/home/benefits1.svg");
+  background-image: url("../images/icons/icon6.svg");
 }
-/* line 224, ../sass/pages/_home.scss */
+/* line 121, ../sass/pages/_home.scss */
 .home-page .benefits .benefit .icon.lower-costs {
-  background-image: url("../images/home/benefits2.svg");
+  background-image: url("../images/icons/icon18.svg");
 }
-/* line 227, ../sass/pages/_home.scss */
+/* line 124, ../sass/pages/_home.scss */
 .home-page .benefits .benefit .icon.improve-reporting {
-  background-image: url("../images/home/benefits3.svg");
+  background-image: url("../images/icons/icon19.svg");
 }
-/* line 230, ../sass/pages/_home.scss */
+/* line 127, ../sass/pages/_home.scss */
 .home-page .benefits .benefit .icon.more-business {
-  background-image: url("../images/home/benefits4.svg");
+  background-image: url("../images/icons/icon20.svg");
 }
-/* line 237, ../sass/pages/_home.scss */
+/* line 134, ../sass/pages/_home.scss */
 .home-page .organizations {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-/* line 243, ../sass/pages/_home.scss */
+/* line 140, ../sass/pages/_home.scss */
 .home-page .organizations h4 {
   margin-bottom: 12px;
 }
-/* line 247, ../sass/pages/_home.scss */
+/* line 144, ../sass/pages/_home.scss */
 .home-page .organizations h2 {
   margin-bottom: 28px;
 }
-/* line 251, ../sass/pages/_home.scss */
+/* line 148, ../sass/pages/_home.scss */
 .home-page .organizations .carousel-menu {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 70px;
 }
-/* line 256, ../sass/pages/_home.scss */
+/* line 153, ../sass/pages/_home.scss */
 .home-page .organizations .carousel-menu button {
   width: 192px;
   height: 50px;
@@ -1085,23 +1402,23 @@ header .landing .container .buttons .button-blue-sky {
   transition: 200ms ease-out background-color, 200ms ease-out color;
   box-shadow: 5px 9px 7px 0 rgba(0, 0, 0, 0.03);
 }
-/* line 275, ../sass/pages/_home.scss */
+/* line 172, ../sass/pages/_home.scss */
 .home-page .organizations .carousel-menu button:first-child {
   border-top-left-radius: 7.2px;
   border-bottom-left-radius: 7.2px;
 }
-/* line 280, ../sass/pages/_home.scss */
+/* line 177, ../sass/pages/_home.scss */
 .home-page .organizations .carousel-menu button:last-child {
   border-top-right-radius: 7.2px;
   border-bottom-right-radius: 7.2px;
   border-right: solid 0px #9797972b;
 }
-/* line 286, ../sass/pages/_home.scss */
+/* line 183, ../sass/pages/_home.scss */
 .home-page .organizations .carousel-menu button.active {
   background-color: #2dbaf6;
   color: #ffffff;
 }
-/* line 293, ../sass/pages/_home.scss */
+/* line 190, ../sass/pages/_home.scss */
 .home-page .organizations .carousel {
   display: grid;
   grid-template-rows: 1fr;
@@ -1110,24 +1427,24 @@ header .landing .container .buttons .button-blue-sky {
   align-items: center;
   margin-bottom: 70px;
 }
-/* line 301, ../sass/pages/_home.scss */
+/* line 198, ../sass/pages/_home.scss */
 .home-page .organizations .carousel .carousel-left,
 .home-page .organizations .carousel .carousel-right {
   cursor: pointer;
 }
-/* line 304, ../sass/pages/_home.scss */
+/* line 201, ../sass/pages/_home.scss */
 .home-page .organizations .carousel .carousel-left::before,
 .home-page .organizations .carousel .carousel-right::before {
   color: #2dbaf6;
   font-size: 20px;
 }
-/* line 310, ../sass/pages/_home.scss */
+/* line 207, ../sass/pages/_home.scss */
 .home-page .organizations .carousel .carousel-items {
   position: relative;
   width: 100%;
   height: 292px;
 }
-/* line 315, ../sass/pages/_home.scss */
+/* line 212, ../sass/pages/_home.scss */
 .home-page .organizations .carousel .carousel-items .item {
   display: flex;
   justify-content: center;
@@ -1139,11 +1456,11 @@ header .landing .container .buttons .button-blue-sky {
   left: 0;
   transition: 200ms ease-out opacity;
 }
-/* line 326, ../sass/pages/_home.scss */
+/* line 223, ../sass/pages/_home.scss */
 .home-page .organizations .carousel .carousel-items .item.active {
   opacity: 1;
 }
-/* line 330, ../sass/pages/_home.scss */
+/* line 227, ../sass/pages/_home.scss */
 .home-page .organizations .carousel .carousel-items .item .image {
   background-image: url("../images/home/ems.svg");
   background-repeat: no-repeat;
@@ -1153,7 +1470,7 @@ header .landing .container .buttons .button-blue-sky {
   height: 292px;
   margin-right: 30px;
 }
-/* line 335, ../sass/pages/_home.scss */
+/* line 232, ../sass/pages/_home.scss */
 .home-page .organizations .carousel .carousel-items .item .info {
   width: 400px;
   display: flex;
@@ -1161,7 +1478,7 @@ header .landing .container .buttons .button-blue-sky {
   align-items: center;
   flex-direction: column;
 }
-/* line 342, ../sass/pages/_home.scss */
+/* line 239, ../sass/pages/_home.scss */
 .home-page .organizations .carousel .carousel-items .item .info .title {
   display: flex;
   justify-content: center;
@@ -1169,13 +1486,13 @@ header .landing .container .buttons .button-blue-sky {
   width: 100%;
   margin-bottom: 14px;
 }
-/* line 349, ../sass/pages/_home.scss */
+/* line 246, ../sass/pages/_home.scss */
 .home-page .organizations .carousel .carousel-items .item .info .title .line {
   flex: 1;
   height: 2px;
   background-color: #2dbaf6;
 }
-/* line 355, ../sass/pages/_home.scss */
+/* line 252, ../sass/pages/_home.scss */
 .home-page .organizations .carousel .carousel-items .item .info .title h3 {
   flex: 7;
   font-family: "Muli", sans-serif;
@@ -1189,7 +1506,7 @@ header .landing .container .buttons .button-blue-sky {
   color: #0a1b43;
   margin: 0px 20px;
 }
-/* line 370, ../sass/pages/_home.scss */
+/* line 267, ../sass/pages/_home.scss */
 .home-page .organizations .carousel .carousel-items .item .info p {
   font-size: 16.6px;
   font-family: "SourceSansPro", sans-serif;
@@ -1202,11 +1519,11 @@ header .landing .container .buttons .button-blue-sky {
   font-size: 15.1px;
   margin-bottom: 28px;
 }
-/* line 376, ../sass/pages/_home.scss */
+/* line 273, ../sass/pages/_home.scss */
 .home-page .organizations .carousel .carousel-items .item .info a {
   width: 164.2px;
 }
-/* line 384, ../sass/pages/_home.scss */
+/* line 281, ../sass/pages/_home.scss */
 .home-page .organizations .carousel-dots {
   width: 200px;
   display: flex;
@@ -1214,7 +1531,7 @@ header .landing .container .buttons .button-blue-sky {
   align-items: center;
   margin-bottom: 70px;
 }
-/* line 391, ../sass/pages/_home.scss */
+/* line 288, ../sass/pages/_home.scss */
 .home-page .organizations .carousel-dots .dot {
   width: 14px;
   height: 14px;
@@ -1223,53 +1540,52 @@ header .landing .container .buttons .button-blue-sky {
   border: 2px solid #2dbaf6;
   margin-right: 8px;
 }
-/* line 399, ../sass/pages/_home.scss */
+/* line 296, ../sass/pages/_home.scss */
 .home-page .organizations .carousel-dots .dot.active {
   background-color: #2dbaf6;
 }
-/* line 406, ../sass/pages/_home.scss */
+/* line 303, ../sass/pages/_home.scss */
 .home-page .why-fieldmed {
   padding-top: 100px;
-  padding-bottom: 200px;
 }
-/* line 409, ../sass/pages/_home.scss */
+/* line 306, ../sass/pages/_home.scss */
 .home-page .why-fieldmed .title {
   margin-bottom: 60px;
 }
-/* line 412, ../sass/pages/_home.scss */
+/* line 309, ../sass/pages/_home.scss */
 .home-page .why-fieldmed .title h3 {
   margin-bottom: 12px;
 }
-/* line 416, ../sass/pages/_home.scss */
+/* line 313, ../sass/pages/_home.scss */
 .home-page .why-fieldmed .title h2 {
   margin-bottom: 28px;
 }
-/* line 425, ../sass/pages/_home.scss */
+/* line 322, ../sass/pages/_home.scss */
 .home-page .why-fieldmed .reasons .reason {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/* line 430, ../sass/pages/_home.scss */
+/* line 327, ../sass/pages/_home.scss */
 .home-page .why-fieldmed .reasons .reason:nth-child(even) {
   flex-direction: row-reverse;
 }
-/* line 434, ../sass/pages/_home.scss */
+/* line 331, ../sass/pages/_home.scss */
 .home-page .why-fieldmed .reasons .reason .info {
   flex: 0 394px;
 }
-/* line 436, ../sass/pages/_home.scss */
+/* line 333, ../sass/pages/_home.scss */
 .home-page .why-fieldmed .reasons .reason .info h3 {
   font-size: 28.1px;
   text-align: left;
   letter-spacing: -0.72px;
   line-height: 1.13;
 }
-/* line 443, ../sass/pages/_home.scss */
+/* line 340, ../sass/pages/_home.scss */
 .home-page .why-fieldmed .reasons .reason .info p {
   text-align: left;
 }
-/* line 447, ../sass/pages/_home.scss */
+/* line 344, ../sass/pages/_home.scss */
 .home-page .why-fieldmed .reasons .reason .info .line {
   height: 2px;
   width: 80px;
@@ -1277,7 +1593,7 @@ header .landing .container .buttons .button-blue-sky {
   background-color: #2dbaf6;
   margin: 15px 0px;
 }
-/* line 456, ../sass/pages/_home.scss */
+/* line 353, ../sass/pages/_home.scss */
 .home-page .why-fieldmed .reasons .reason .image {
   flex: 0 355px;
   background-image: url("../images/home/reason1.svg");
@@ -1287,171 +1603,1270 @@ header .landing .container .buttons .button-blue-sky {
   width: 355px;
   height: 312px;
 }
-/* line 459, ../sass/pages/_home.scss */
+/* line 356, ../sass/pages/_home.scss */
 .home-page .why-fieldmed .reasons .reason .image.x1 {
   background-image: url("../images/home/reason1.svg");
 }
-/* line 463, ../sass/pages/_home.scss */
+/* line 360, ../sass/pages/_home.scss */
 .home-page .why-fieldmed .reasons .reason .image.x2 {
   background-image: url("../images/home/reason2.svg");
 }
-/* line 467, ../sass/pages/_home.scss */
+/* line 364, ../sass/pages/_home.scss */
 .home-page .why-fieldmed .reasons .reason .image.x3 {
   background-image: url("../images/home/reason3.svg");
 }
-/* line 471, ../sass/pages/_home.scss */
+/* line 368, ../sass/pages/_home.scss */
 .home-page .why-fieldmed .reasons .reason .image.x4 {
   background-image: url("../images/home/reason4.svg");
 }
-/* line 479, ../sass/pages/_home.scss */
-.home-page .signup-bottom {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-/* line 485, ../sass/pages/_home.scss */
-.home-page .signup-bottom .image-city {
-  background-image: url("../images/home/city.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 1189px;
-  height: 364px;
-  position: absolute;
-  z-index: 0;
-  top: -200px;
-  left: 0;
-}
-/* line 493, ../sass/pages/_home.scss */
-.home-page .signup-bottom .image-ground {
-  background-image: url("../images/home/ground.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 100%;
-  height: 370px;
-  position: absolute;
-  background-size: cover;
-  z-index: 0;
-}
-/* line 500, ../sass/pages/_home.scss */
-.home-page .signup-bottom .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 368px;
-  width: 1200px;
-}
-/* line 508, ../sass/pages/_home.scss */
-.home-page .signup-bottom .container .image-left {
-  background-image: url("../images/home/doc-chart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 242px;
-  height: 264px;
-  transform: translate(-10px, -70px);
-}
-/* line 513, ../sass/pages/_home.scss */
-.home-page .signup-bottom .container .image-right {
-  background-image: url("../images/home/dance.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 323px;
-  height: 290px;
-  transform: translate(45px, -110px);
-}
-/* line 518, ../sass/pages/_home.scss */
-.home-page .signup-bottom .container .signup-form {
-  width: 700px;
-  transform: translate(35px, 0px);
-}
-/* line 522, ../sass/pages/_home.scss */
-.home-page .signup-bottom .container .signup-form h2 {
-  margin-bottom: 30px;
-}
-/* line 526, ../sass/pages/_home.scss */
-.home-page .signup-bottom .container .signup-form .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* line 530, ../sass/pages/_home.scss */
-.home-page .signup-bottom .container .signup-form .wrapper input {
-  background-color: #ffffff;
-  border: none;
-  border-top-left-radius: 7.2px;
-  border-bottom-left-radius: 7.2px;
-  box-shadow: 0 14px 36px 0 rgba(0, 0, 0, 0.1);
-  outline: none;
-  min-width: 440px;
-  padding: 19px 30px;
-}
-/* line 541, ../sass/pages/_home.scss */
-.home-page .signup-bottom .container .signup-form .wrapper button {
-  width: 168px;
-  height: 50px;
-  background-color: #ba104a;
-  font-size: 12.2px;
-  font-family: "Muli", sans-serif;
-  font-weight: 600;
-  letter-spacing: normal;
-  color: white;
-  border-top-right-radius: 7.2px;
-  border-bottom-right-radius: 7.2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 10px;
-  min-width: 100px;
-  outline: none;
-  cursor: pointer;
-}
-/* line 565, ../sass/pages/_home.scss */
-.home-page .testimonials {
+
+/* line 378, ../sass/pages/_home.scss */
+footer .testimonials-container {
   padding-top: 112px;
 }
-/* line 567, ../sass/pages/_home.scss */
-.home-page .testimonials .title {
-  margin-bottom: 55px;
-}
-/* line 569, ../sass/pages/_home.scss */
-.home-page .testimonials .title h3 {
+/* line 381, ../sass/pages/_home.scss */
+footer .testimonials-container .title h3 {
   margin-bottom: 12px;
 }
-/* line 572, ../sass/pages/_home.scss */
-.home-page .testimonials .title h2 {
+/* line 384, ../sass/pages/_home.scss */
+footer .testimonials-container .title h2 {
   color: #ffffff;
   margin-bottom: 10px;
 }
-/* line 577, ../sass/pages/_home.scss */
-.home-page .testimonials .title p {
+/* line 389, ../sass/pages/_home.scss */
+footer .testimonials-container .title p {
   color: #ffffff;
   opacity: 0.4;
 }
-/* line 583, ../sass/pages/_home.scss */
-.home-page .testimonials .carousel-testimonials {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 900px 1fr;
-  grid-gap: 70px;
+/* line 395, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0px, 165px);
+  flex-direction: column;
+  height: 400px;
 }
-/* line 589, ../sass/pages/_home.scss */
-.home-page .testimonials .carousel-testimonials .testimonials {
+/* line 403, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .wrapper {
   display: grid;
   grid-template-rows: 455px;
+  grid-template-columns: 1fr 900px 1fr;
+  align-items: center;
+  grid-gap: 70px;
+  margin-bottom: 50px;
+}
+/* line 411, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .wrapper .image-flower {
+  position: absolute;
+  background-image: url("../images/flower2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 114px;
+  height: 240px;
+  bottom: 0;
+  right: 37px;
+  z-index: 2;
+}
+/* line 419, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .wrapper .testimonial-left,
+footer .testimonials-container .testimonials .wrapper .testimonial-right {
+  cursor: pointer;
+}
+/* line 422, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .wrapper .testimonial-left::before,
+footer .testimonials-container .testimonials .wrapper .testimonial-right::before {
+  color: #2dbaf6;
+  font-size: 20px;
+}
+/* line 428, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .wrapper .container {
+  display: grid;
+  grid-template-rows: 453.6px;
   grid-template-columns: 1fr 1fr;
+  align-self: baseline;
   grid-gap: 30px;
   position: relative;
 }
-/* line 596, ../sass/pages/_home.scss */
-.home-page .testimonials .carousel-testimonials .testimonials .testimonial {
-  padding: 40px;
+/* line 436, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .wrapper .container .testimonial {
+  padding: 50px;
   background-color: #142f63;
   border-radius: 7.2px;
   box-shadow: 0 35px 27px 0 rgba(0, 0, 0, 0.04);
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 446, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .wrapper .container .testimonial.active {
+  opacity: 1;
+  visibility: visible;
+}
+/* line 451, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .wrapper .container .testimonial .quote {
+  background-image: url("../images/../images/quote.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 31px;
+  height: 26px;
+  margin-bottom: 30px;
+}
+/* line 456, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .wrapper .container .testimonial .line {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  height: 1.4px;
+  background-color: rgba(255, 255, 255, 0.13);
+}
+/* line 463, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .wrapper .container .testimonial p {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.52;
+  letter-spacing: -0.21px;
+  color: #ffffff;
+}
+/* line 472, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .wrapper .container .testimonial .customer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 477, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .wrapper .container .testimonial .customer .avatar {
+  width: 57.6px;
+  height: 57.6px;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 18px;
+}
+/* line 487, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .wrapper .container .testimonial .customer .info h3 {
+  font-size: 20.9px;
+  font-weight: 600;
+  letter-spacing: -0.35px;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 5px;
+}
+/* line 496, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .wrapper .container .testimonial .customer .info p {
+  opacity: 0.3;
+  color: #ffffff;
+}
+/* line 506, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .testimonials-dots {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+/* line 513, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .testimonials-dots .dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #2dbaf6;
+  margin-right: 8px;
+}
+/* line 521, ../sass/pages/_home.scss */
+footer .testimonials-container .testimonials .testimonials-dots .dot.active {
+  background-color: #2dbaf6;
+}
+/* line 529, ../sass/pages/_home.scss */
+footer .signup-footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding-top: 300px;
+  padding-bottom: 130px;
+  display: flex;
+  justify-content: center;
+}
+/* line 537, ../sass/pages/_home.scss */
+footer .signup-footer h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* line 2, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: unset;
+  position: relative;
+}
+/* line 10, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing h4 {
+  text-align: left;
+}
+/* line 14, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing h1,
+.pages_w_breadcrum .landing h3,
+.pages_w_breadcrum .landing p {
+  text-align: left;
+  color: #ffffff;
+}
+/* line 21, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing p {
+  opacity: 0.7;
+}
+/* line 26, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing h3.community-health {
+  font-size: 28.8px;
+  font-weight: normal;
+  line-height: 1.85;
+  letter-spacing: -0.42px;
+}
+/* line 33, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing h3.our-story {
+  width: 506px;
+  font-size: 21.6px;
+  font-weight: 400;
+  line-height: 1.17 !important;
+  letter-spacing: -0.72px;
+}
+/* line 42, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing .image-landing {
   position: absolute;
+  z-index: 2;
+}
+/* line 46, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing .image-landing.hospitals {
+  background-image: url("../images/forpages/hospitals/landing.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 545px;
+  height: 428px;
+  right: -130px;
+  top: 140px;
+}
+/* line 52, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing .image-landing.communities {
+  background-image: url("../images/forpages/communities/landing.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 670px;
+  height: 580px;
+  right: -240px;
+  top: 130px;
+}
+/* line 58, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing .image-landing.ems {
+  background-image: url("../images/forpages/ems/landing.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 735px;
+  height: 845px;
+  right: -246px;
+  top: 72px;
+}
+/* line 64, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing .image-landing.community-health {
+  background-image: url("../images/communityhealth/landing.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 543px;
+  height: 340px;
+  right: 36px;
+  top: 130px;
+}
+/* line 70, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing .image-landing.our-story {
+  background-image: url("../images/ourstory/landing.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 485px;
+  height: 357px;
+  right: -55px;
+  top: 130px;
+}
+/* line 77, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 100px 0px;
+}
+/* line 84, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing .top.community-health {
+  background-image: url("../images/communityhealth/bg.png");
+  background-repeat: no-repeat;
+  background-size: 1272px;
+  background-position: bottom center;
+}
+/* line 92, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 100px 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 99, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing .bottom p {
+  margin-bottom: 20px;
+}
+/* line 102, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .landing .bottom a {
+  width: 218px;
+}
+/* line 108, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit {
+  width: 100%;
+  padding: 150px 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 116, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit.white {
+  background-color: #ffffff;
+}
+/* line 119, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit.gray {
+  background-color: #eff6fa;
+}
+/* line 123, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit .image {
+  background-image: url("../images/forpages/hospitals/feature1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 760px;
+  height: 694px;
+  position: absolute;
+  top: -80px;
+}
+/* line 128, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit .image.left {
+  left: -370px;
+}
+/* line 132, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit .image.right {
+  right: -370px;
+}
+/* line 137, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit .layout {
+  display: flex;
+  position: relative;
+}
+/* line 141, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit .layout.left {
+  justify-content: flex-start;
+}
+/* line 145, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit .layout.right {
+  justify-content: flex-end;
+}
+/* line 149, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit .layout .container {
+  width: 456.5px;
+}
+/* line 152, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit .layout .container h2,
+.pages_w_breadcrum .benefit .layout .container h3,
+.pages_w_breadcrum .benefit .layout .container h4,
+.pages_w_breadcrum .benefit .layout .container p {
+  text-align: left;
+}
+/* line 159, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit .layout .container .line {
+  height: 2px;
+  width: 100%;
+  background-color: #2dbaf6;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+/* line 167, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit .layout .container a {
+  width: 205px;
+}
+/* line 171, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit .layout .container .benefit-items {
+  margin-bottom: 50px;
+}
+/* line 173, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit .layout .container .benefit-items .item {
+  display: flex;
+  margin-bottom: 25px;
+}
+/* line 177, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit .layout .container .benefit-items .item .icon {
+  background-image: url("../images/forpages/features/Icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 85px;
+  height: 74px;
+  flex: 0 85px;
+  margin-right: 25px;
+}
+/* line 183, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit .layout .container .benefit-items .item .info {
+  flex: 1;
+}
+/* line 186, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit .layout .container .benefit-items .item .info h3 {
+  font-size: 15.1px;
+  font-weight: 900;
+  line-height: 1.33;
+  letter-spacing: -0.25px;
+  margin-bottom: 5px;
+}
+/* line 201, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit.community-health .layout .container {
+  width: 612px;
+}
+/* line 203, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit.community-health .layout .container .p16 {
+  font-family: Muli;
+  font-size: 20.2px;
+  font-weight: 600;
+  line-height: 1.39;
+  letter-spacing: -0.49px;
+}
+/* line 210, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit.community-health .layout .container p {
+  margin-bottom: 20px;
+}
+/* line 213, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit.community-health .layout .container h2 {
+  font-size: 32.4px;
+}
+/* line 216, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit.community-health .layout .container h3 {
+  font-size: 16.6px;
+}
+/* line 221, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit.community-health .layout .image {
+  width: 445px;
+  height: 445px;
+  right: -210px;
+  top: 200px;
+}
+/* line 230, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit.our-story {
+  padding-bottom: 0;
+}
+/* line 233, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit.our-story .layout .container {
+  width: 830px;
+}
+/* line 236, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit.our-story .layout .container .p16 {
+  columns: 2;
+  column-gap: 30px;
+  line-height: 1.78;
+}
+/* line 242, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit.our-story .layout .container .p14 {
+  width: 540px;
+}
+/* line 246, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit.our-story .layout .container p {
+  margin-bottom: 20px;
+}
+/* line 250, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit.our-story .layout .container h2 {
+  font-size: 23.8px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: -0.59px;
+  width: 730px;
+}
+/* line 259, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .benefit.our-story .layout .image {
+  width: 291px;
+  height: 139px;
+  right: -170px;
+  top: 74px;
+}
+/* line 269, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .the-alternative {
+  width: 100%;
+  padding: 0px 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eff6fa;
+}
+/* line 279, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .the-alternative .information {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 90px;
+}
+/* line 288, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .the-alternative .information h2 {
+  font-size: 29.5px;
+}
+/* line 292, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .the-alternative .information .line {
+  height: 2px;
+  width: 60%;
+  background-color: #2dbaf6;
+  margin-bottom: 20px;
+}
+/* line 300, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .the-alternative .box {
+  width: 1200px;
+  padding: 80px 150px;
+  border-radius: 14.4px;
+  box-shadow: 0 52px 46px 0 rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  transform: translate(0px, -50px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 311, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .the-alternative .box .image {
+  background-image: url("../images/communityhealth/image1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 339px;
+  height: 427px;
+  margin-left: 60px;
+}
+/* line 316, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .the-alternative .box .container {
+  width: 544px;
+}
+/* line 318, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .the-alternative .box .container h4,
+.pages_w_breadcrum .the-alternative .box .container h2,
+.pages_w_breadcrum .the-alternative .box .container p {
+  text-align: left;
+}
+/* line 324, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .the-alternative .box .container p {
+  margin-bottom: 20px;
+}
+/* line 328, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .the-alternative .box .container .line {
+  height: 2px;
+  width: 100%;
+  background-color: #2dbaf6;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+/* line 338, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .the-alternative.our-story {
+  padding-bottom: 0;
+}
+/* line 340, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .the-alternative.our-story .box {
+  justify-content: flex-end;
+  transform: translate(0px, 158px);
+  background-image: url("../images/phone-app.svg");
+  background-repeat: no-repeat;
+  background-size: 538px 540px;
+  background-position: -145px 120px;
+}
+/* line 348, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .the-alternative.our-story .box .image-doc {
+  background-image: url("../images/ourstory/image2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 269px;
+  height: 234px;
+  position: absolute;
+  right: 50px;
+  top: -200px;
+}
+/* line 355, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .the-alternative.our-story .box .container {
+  width: 546px;
+}
+/* line 358, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .the-alternative.our-story .box .container h2 {
+  font-size: 31px;
+  font-weight: 800;
+  line-height: 1.24;
+  letter-spacing: -0.81px;
+}
+/* line 369, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .solution {
+  width: 100%;
+  background: #ffffff;
+  padding-top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 378, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .solution .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 805px;
+}
+/* line 385, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .solution .container h3 {
+  font-size: 28.8px;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: -0.72px;
+}
+/* line 392, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .solution .container .line {
+  height: 2px;
+  width: 80%;
+  background-color: #2dbaf6;
+  margin-bottom: 20px;
+}
+/* line 399, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .solution .container .icon {
+  background-image: url("../images/icons/icon21.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 85px;
+  height: 75px;
+  margin-bottom: 20px;
+}
+/* line 404, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .solution .container a {
+  width: 205.9px;
+}
+/* line 408, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .solution .container p {
+  margin-bottom: 20px;
+}
+/* line 414, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies {
+  padding-top: 100px;
+}
+/* line 416, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 423, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container .title {
+  margin-bottom: 30px;
+}
+/* line 425, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container .title h4 {
+  margin-bottom: 10px;
+}
+/* line 430, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container .carousel {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 900px 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 60px;
+  margin-bottom: 30px;
+}
+/* line 439, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container .carousel .icon-left,
+.pages_w_breadcrum .case-studies .container .carousel .icon-right {
+  font-size: 20px;
+}
+/* line 442, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container .carousel .icon-left i,
+.pages_w_breadcrum .case-studies .container .carousel .icon-right i {
+  cursor: pointer;
+}
+/* line 444, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container .carousel .icon-left i:before,
+.pages_w_breadcrum .case-studies .container .carousel .icon-right i:before {
+  color: #2dbaf6;
+}
+/* line 450, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container .carousel .case-list {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+}
+/* line 458, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container .carousel .case-list .case {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 7.2px;
+  box-shadow: 0 52px 46px 0 rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  overflow: hidden;
+  height: 100%;
+}
+/* line 469, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container .carousel .case-list .case .top-image {
+  flex: 0 180px;
+  width: 100%;
+  background-color: #eff6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+}
+/* line 479, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container .carousel .case-list .case .info {
+  flex: 1;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 487, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container .carousel .case-list .case .info h3 {
+  font-size: 22.3px;
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: -0.56px;
+  text-align: center;
+}
+/* line 495, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container .carousel .case-list .case .info .line {
+  height: 2px;
+  width: 100%;
+  background-color: #2dbaf6;
+  margin-bottom: 20px;
+}
+/* line 503, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container .carousel .case-list .case .button-container {
+  padding: 30px;
+  width: 100%;
+}
+/* line 520, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container .dots {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 8px;
+  width: min-content;
+}
+/* line 528, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container .dots .dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #2dbaf6;
+  margin-right: 8px;
+}
+/* line 536, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .case-studies .container .dots .dot.active {
+  background-color: #2dbaf6;
+}
+/* line 544, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .faqs {
+  padding: 100px 0px;
+  background-color: #eff6fa;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 554, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .faqs .layout .question {
+  background-color: #ffffff;
+  border-radius: 14.4px;
+  box-shadow: 0 52px 46px 0 rgba(0, 0, 0, 0.04);
+  padding: 50px 72px;
+  margin-bottom: 24px;
+}
+/* line 561, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .faqs .layout .question .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 567, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .faqs .layout .question .title i:before {
+  color: #2dbaf6;
+  font-size: 14px;
+}
+/* line 574, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .faqs .layout .question .line {
+  height: 2px;
+  width: 100%;
+  background-color: #2dbaf6;
+}
+/* line 580, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .faqs .layout .question .content {
+  margin-top: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+/* line 585, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .faqs .layout .question .content p {
+  text-align: left;
+  margin-bottom: 20px;
+}
+/* line 589, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .faqs .layout .question .content p:last-child {
+  margin-bottom: 0px;
+}
+/* line 594, ../sass/pages/_pages_w_breadcrum.scss */
+.pages_w_breadcrum .faqs .layout .question .content.active {
+  height: unset;
+  margin-top: 30px;
+}
+
+/* line 2, ../sass/pages/_full_blue.scss */
+.full-blue .landing {
+  padding: 100px 0px;
+  height: unset;
+}
+/* line 5, ../sass/pages/_full_blue.scss */
+.full-blue .landing p {
+  font-size: 16.6px;
+  line-height: 1.78;
+  text-align: center;
+  color: #ffffff;
+}
+/* line 13, ../sass/pages/_full_blue.scss */
+.full-blue .white-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* line 18, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .team-members {
+  width: 1220px;
+  border-radius: 14.4px;
+  box-shadow: 0 52px 46px 0 rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+  overflow: hidden;
+}
+/* line 25, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .team-members .row {
+  padding: 90px 0;
+  display: grid;
+  grid-template-columns: 180px 180px 180px;
+  grid-column-gap: 120px;
+  justify-content: center;
+  align-items: flex-start;
+}
+/* line 33, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .team-members .row.white {
+  background-color: #fff;
+}
+/* line 37, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .team-members .row.gray {
+  background-color: #eff6fa;
+}
+/* line 41, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .team-members .row .member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 47, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .team-members .row .member .avatar {
+  background-image: url("../images/../images/ourteam/bg-icon-members.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 160px;
+  height: 141px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 53, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .team-members .row .member .avatar img {
+  width: 123.8px;
+  height: 123.8px;
+}
+/* line 59, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .team-members .row .member .info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+/* line 66, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .team-members .row .member .info h3 {
+  margin-bottom: 5px;
+}
+/* line 70, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .team-members .row .member .info h4 {
+  margin-bottom: 10px;
+}
+/* line 74, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .team-members .row .member .info .social {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+/* line 81, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .team-members .row .member .info .social a {
+  cursor: pointer;
+}
+/* line 85, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .team-members .row .member .info .social a:before {
+  font-size: 32px;
+  color: #0a1b43;
+}
+/* line 95, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .pricing-box {
+  width: 1220px;
+  border-radius: 14.4px;
+  box-shadow: 0 52px 46px 0 rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: 15px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+/* line 105, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .pricing-box .pricing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+/* line 112, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .pricing-box .pricing-container .prices {
+  border-radius: 14.4px;
+  overflow: hidden;
+}
+/* line 116, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .pricing-box .pricing-container .prices .title {
+  width: 100%;
+  background-color: #eff6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 0px;
+}
+/* line 124, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .pricing-box .pricing-container .prices .title h2 {
+  font-size: 61.2px;
+  line-height: 0.58;
+  letter-spacing: -1.53px;
+}
+/* line 131, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .pricing-box .pricing-container .prices .info {
+  width: 100%;
+  background-color: #e1ecf3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 0px;
+  flex-direction: column;
+}
+/* line 140, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .pricing-box .pricing-container .prices .info h6 {
+  width: 240px;
+  font-size: 15.1px;
+  line-height: 1.67;
+  text-align: left;
+  letter-spacing: -0.25px;
+}
+/* line 149, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .pricing-box .pricing-container .prices .value {
+  width: 100%;
+  background-color: #eff6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 0px;
+  flex-direction: column;
+}
+/* line 158, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .pricing-box .pricing-container .prices .value h2 {
+  font-size: 79.9px;
+  text-align: center;
+  font-weight: 400;
+  color: #2dbaf6;
+  margin-bottom: 10px;
+}
+/* line 166, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .pricing-box .pricing-container .prices .value h5 {
+  font-family: SourceSansPro;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.39;
+  color: #0a1b43;
+  margin-bottom: 20px;
+}
+/* line 175, ../sass/pages/_full_blue.scss */
+.full-blue .white-box .pricing-box .pricing-container .prices .value a {
+  width: 205.9px;
+}
+
+/* line 1, ../sass/pages/_solutions.scss */
+.solutions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 7, ../sass/pages/_solutions.scss */
+.solutions .landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: unset;
+}
+/* line 14, ../sass/pages/_solutions.scss */
+.solutions .landing .title {
+  margin-top: 100px;
+  width: 750px;
+}
+/* line 17, ../sass/pages/_solutions.scss */
+.solutions .landing .title h1 {
+  font-size: 43.2px;
+}
+/* line 20, ../sass/pages/_solutions.scss */
+.solutions .landing .title p {
+  color: #ffffff;
+  font-size: 15.8px;
+}
+/* line 26, ../sass/pages/_solutions.scss */
+.solutions .landing .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 7.2px;
+  box-shadow: 0 35px 27px 0 rgba(0, 0, 0, 0.14);
+  background-color: #122959;
+  width: 80%;
+  min-width: 1168px;
+  transform: translate(0px, 88px);
+  position: relative;
+}
+/* line 39, ../sass/pages/_solutions.scss */
+.solutions .landing .box h3,
+.solutions .landing .box p {
+  color: #ffffff;
+}
+/* line 44, ../sass/pages/_solutions.scss */
+.solutions .landing .box .wrap {
+  width: 655px;
+}
+/* line 48, ../sass/pages/_solutions.scss */
+.solutions .landing .box .top {
+  padding: 88px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 55, ../sass/pages/_solutions.scss */
+.solutions .landing .box .top h3 {
+  font-size: 28.1px;
+  font-weight: bold;
+  line-height: 1.08;
+}
+/* line 61, ../sass/pages/_solutions.scss */
+.solutions .landing .box .top p {
+  font-size: 15.8px;
+}
+/* line 66, ../sass/pages/_solutions.scss */
+.solutions .landing .box .bottom {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 30px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 74, ../sass/pages/_solutions.scss */
+.solutions .landing .box .bottom h3 {
+  font-size: 20.2px;
+  font-weight: bold;
+  line-height: 1.43;
+  margin-bottom: 0;
+}
+/* line 82, ../sass/pages/_solutions.scss */
+.solutions .landing .box .image {
+  background-image: url("../images/solutions/sitting.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 141px;
+  height: 247px;
+  position: absolute;
+  right: 20px;
+  top: -120px;
+}
+/* line 91, ../sass/pages/_solutions.scss */
+.solutions .solutions-for {
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  padding: 20px;
+}
+/* line 98, ../sass/pages/_solutions.scss */
+.solutions .solutions-for .for-container {
+  background-color: #ffffff;
+  border-radius: 14.4px;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.05);
+  padding: 90px 65px;
+  padding-top: 180px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 108, ../sass/pages/_solutions.scss */
+.solutions .solutions-for .for-container .image {
+  background-image: url("../images/solutions/forhospitals.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 202px;
+  height: 195px;
+  margin-bottom: 38px;
+}
+/* line 113, ../sass/pages/_solutions.scss */
+.solutions .solutions-for .for-container .line {
+  background-color: #2dbaf6;
+  height: 2px;
+  width: 80%;
+  margin: 10px 0;
+}
+/* line 120, ../sass/pages/_solutions.scss */
+.solutions .solutions-for .for-container h4 {
+  margin-bottom: 5px;
+}
+/* line 124, ../sass/pages/_solutions.scss */
+.solutions .solutions-for .for-container h2 {
+  font-size: 34.6px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.72px;
+}
+/* line 131, ../sass/pages/_solutions.scss */
+.solutions .solutions-for .for-container p {
+  margin-bottom: 20px;
+  font-size: 15.1px;
+}
+/* line 136, ../sass/pages/_solutions.scss */
+.solutions .solutions-for .for-container a {
+  width: 164px;
+}
+/* line 142, ../sass/pages/_solutions.scss */
+.solutions .software-tour {
+  padding: 110px 0px;
+}
+/* line 144, ../sass/pages/_solutions.scss */
+.solutions .software-tour .title {
+  margin-bottom: 20px;
+}
+/* line 146, ../sass/pages/_solutions.scss */
+.solutions .software-tour .title h4 {
+  margin-bottom: 10px;
+}
+/* line 151, ../sass/pages/_solutions.scss */
+.solutions .software-tour .software-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 156, ../sass/pages/_solutions.scss */
+.solutions .software-tour .software-list .list-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-row-gap: 7px;
+  flex-direction: column;
+  transform: translate(40px, 0px);
+}
+/* line 165, ../sass/pages/_solutions.scss */
+.solutions .software-tour .software-list .list-container .list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border-radius: 7.2px;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.05);
+  border: solid 0.7px #c5d8e3;
+  cursor: pointer;
+}
+/* line 175, ../sass/pages/_solutions.scss */
+.solutions .software-tour .software-list .list-container .list:hover {
+  background-color: #ffffff;
+}
+/* line 179, ../sass/pages/_solutions.scss */
+.solutions .software-tour .software-list .list-container .list .icon {
+  background-image: url("../images/solutions/icon1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 28px;
+  height: 28px;
+  margin-right: 24px;
+}
+/* line 184, ../sass/pages/_solutions.scss */
+.solutions .software-tour .software-list .list-container .list .info {
+  margin-right: 70px;
+}
+/* line 186, ../sass/pages/_solutions.scss */
+.solutions .software-tour .software-list .list-container .list .info h3 {
+  font-size: 15.1px;
+  font-weight: 700;
+  line-height: 1.67;
+  letter-spacing: -0.25px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+/* line 195, ../sass/pages/_solutions.scss */
+.solutions .software-tour .software-list .list-container .list .info p {
+  opacity: 0.7;
+  font-size: 11.5px;
+  line-height: 1.56;
+  text-align: left;
+}
+/* line 205, ../sass/pages/_solutions.scss */
+.solutions .software-tour .software-list .software-image {
+  background-image: url("../images/software.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 531.3px;
+  height: 441.4px;
+  transform: translate(-40px, 20px);
 }

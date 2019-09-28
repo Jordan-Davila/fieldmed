@@ -4,6 +4,138 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"pad",
+				"padding\tproperty"
+			],
+			[
+				"column",
+				"column-gap\tproperty"
+			],
+			[
+				"community",
+				"community-health"
+			],
+			[
+				"grid-column",
+				"grid-column-gap\tproperty"
+			],
+			[
+				"grdi-tem",
+				"grid-template-columns\tproperty"
+			],
+			[
+				"margin-",
+				"margin-top\tproperty"
+			],
+			[
+				"grid-gap",
+				"grid-column-gap\tproperty"
+			],
+			[
+				"grd-te",
+				"grid-template-columns\tproperty"
+			],
+			[
+				"grid-te",
+				"grid-template-columns\tproperty"
+			],
+			[
+				"url",
+				"url()\tbackground-image"
+			],
+			[
+				"grid-col",
+				"grid-column-gap\tproperty"
+			],
+			[
+				"flex",
+				"flex-start\talign-items"
+			],
+			[
+				"grid-templa",
+				"grid-template-columns\tproperty"
+			],
+			[
+				"grid-template",
+				"grid-template-columns\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"padding",
+				"padding-top\tproperty"
+			],
+			[
+				"la",
+				"layout"
+			],
+			[
+				"trans",
+				"transform\tproperty"
+			],
+			[
+				"u",
+				"url()\tbackground-image"
+			],
+			[
+				"flex-",
+				"flex-start\tjustify-content"
+			],
+			[
+				"Ho",
+				"Hospital"
+			],
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"spca",
+				"space-between\tjustify-content"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"tr",
+				"transform\tproperty"
+			],
+			[
+				"home",
+				"home-page"
+			],
+			[
+				"carousel",
+				"carousel_items\tHTMLElement | null"
+			],
+			[
+				"car",
+				"carousel"
+			],
+			[
+				"icon",
+				"icon-arrow-right"
+			],
+			[
+				"pos",
+				"pos\tposition: ${1:relative};"
+			],
+			[
+				"grid-tem",
+				"grid-template-rows\tproperty"
+			],
+			[
+				"spa",
+				"space-around\tjustify-content"
+			],
+			[
 				"border-bo",
 				"border-bottom-right-radius\tproperty"
 			],
@@ -16,28 +148,12 @@
 				"padding\tproperty"
 			],
 			[
-				"margin",
-				"margin-left\tproperty"
-			],
-			[
 				"inline",
 				"inline-block\tdisplay"
 			],
 			[
-				"flex",
-				"flex-start\tjustify-content"
-			],
-			[
-				"flex-",
-				"flex-start\talign-items"
-			],
-			[
 				"content",
 				"content-container"
-			],
-			[
-				"margin-",
-				"margin-left\tproperty"
 			],
 			[
 				"conten",
@@ -54,10 +170,6 @@
 			[
 				"mar",
 				"margin-right\tproperty"
-			],
-			[
-				"tr",
-				"transition\tproperty"
 			],
 			[
 				"z",
@@ -122,10 +234,6 @@
 			[
 				"marg",
 				"margin-top\tproperty"
-			],
-			[
-				"font",
-				"font-family\tproperty"
 			],
 			[
 				"border-s",
@@ -284,16 +392,8 @@
 				"print_r〔function〕"
 			],
 			[
-				"trans",
-				"transform\tproperty"
-			],
-			[
 				"space",
 				"space-between\tjustify-content"
-			],
-			[
-				"padd",
-				"padding\tproperty"
 			],
 			[
 				"field",
@@ -310,10 +410,6 @@
 			[
 				"wid",
 				"width\tproperty"
-			],
-			[
-				"padding",
-				"padding\tproperty"
 			],
 			[
 				"sort",
@@ -380,10 +476,6 @@
 				"matrix3d()\ttransform"
 			],
 			[
-				"pos",
-				"position\tproperty"
-			],
-			[
 				"pro",
 				"projects"
 			],
@@ -404,10 +496,6 @@
 				"inline-block\tdisplay"
 			],
 			[
-				"spa",
-				"space-between\tjustify-content"
-			],
-			[
 				"clas",
 				"className"
 			],
@@ -426,18 +514,6 @@
 			[
 				"Container",
 				"Container"
-			],
-			[
-				"C",
-				"Component"
-			],
-			[
-				"ex",
-				"extends"
-			],
-			[
-				"a",
-				"abs"
 			]
 		]
 	},
@@ -453,6 +529,38 @@
 		"selected_items":
 		[
 			[
+				"terminus open",
+				"Terminus: Open Default Shell in View"
+			],
+			[
+				"html",
+				"html2scss: Parse rules"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"term",
+				"Terminus: Open Default Shell in View"
+			],
+			[
+				"docblo",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"doc",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"key ",
+				"Preferences: Key Bindings"
+			],
+			[
 				"ter",
 				"Terminus: Open Default Shell in View"
 			],
@@ -461,16 +569,8 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"ins",
-				"Package Control: Install Package"
-			],
-			[
 				"termope",
 				"Terminus: Open Default Shell in View"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
 			],
 			[
 				"mater",
@@ -483,10 +583,6 @@
 			[
 				"terminus them",
 				"Terminus Utilities: Select Theme"
-			],
-			[
-				"terminus open",
-				"Terminus: Open Default Shell in View"
 			],
 			[
 				"terminus",
@@ -507,14 +603,6 @@
 			[
 				"in",
 				"Package Control: Install Package"
-			],
-			[
-				"term",
-				"Terminal View: Open Bash Terminal"
-			],
-			[
-				"doc",
-				"DocBlockr: Reparse comment block"
 			],
 			[
 				"ke",
@@ -543,10 +631,6 @@
 			[
 				"pre",
 				"Preferences: Settings – Syntax Specific"
-			],
-			[
-				"html",
-				"HTMLPrettify: Set `node` Path"
 			],
 			[
 				"blade",
@@ -629,23 +713,44 @@
 	},
 	"file_history":
 	[
+		"/Users/n3ko/Desktop/dbbackup.sql",
+		"/Users/n3ko/Development/Repos/seclists/Passwords/UserPassCombo-Jay.txt",
+		"/Users/n3ko/Desktop/phpinfo.php",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_home.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/index.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/forhospitals.php",
+		"/Users/n3ko/Development/Sites/fieldmed/forems.php",
+		"/Users/n3ko/Development/Sites/fieldmed/forcommunities.php",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_pages_w_breadcrum.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_base.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_forpages.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_footer.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/helpers/_mixins.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/library/components/_whyfieldmed.php",
+		"/Users/n3ko/Development/Sites/fieldmed/index.php",
+		"/Users/n3ko/Development/Sites/fieldmed/library/layouts/_footer.php",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_menu.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_fonts.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/solutions.php",
+		"/Users/n3ko/Development/Sites/fieldmed/library/components/_menu.php",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_forms.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_params.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/ea10dd1e2ab9ad0f7efaf1b4a72b5bcab4b594e8/_mixins.scssc",
+		"/Users/n3ko/Development/Sites/fieldmed/library/components/external-links.php",
+		"/Users/n3ko/Development/Sites/fieldmed/js/index.js",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_header.scss",
+		"/Volumes/Nyanku/Dropbox/Sites/eccv/js/index.js",
+		"/Users/n3ko/Development/Sites/fieldmed/images/home/hero1.svg",
 		"/Users/n3ko/Library/Application Support/Sublime Text 3/Packages/User/.jsbeautifyrc",
 		"/Users/n3ko/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/index.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/library/components/_menu.php",
 		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/b416559403f13e412d3d809612f3bc8ac85e37d4/_grid.scssc",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_icons.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_forms.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_modals.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_buttons.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/332c40824acb4d631e1be199e458ca44c2532c13/_params.scssc",
-		"/Users/n3ko/Development/Sites/fieldmed/library/layouts/_footer.php",
-		"/Users/n3ko/Development/Sites/fieldmed/js/index.js",
 		"/Users/n3ko/Development/Sites/fieldmed/blog.php",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/helpers/_functions.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/componenets/_forms.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_base.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/library/layouts/header.php",
 		"/Users/n3ko/Development/Sites/fieldmed/library/layouts/footer.php",
 		"/Users/n3ko/Development/Sites/fieldmed/faqs.php",
@@ -654,19 +759,12 @@
 		"/Users/n3ko/Development/Sites/fieldmed/pricing.php",
 		"/Users/n3ko/Development/Sites/fieldmed/ourteam.php",
 		"/Users/n3ko/Development/Sites/fieldmed/ourstory.php",
-		"/Users/n3ko/Development/Sites/fieldmed/forcommunities.php",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/componenets/_buttons.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/index.php",
-		"/Users/n3ko/Development/Sites/fieldmed/forhospitals.php",
-		"/Users/n3ko/Development/Sites/fieldmed/forems.php",
 		"/Users/n3ko/Development/Sites/fieldmed/communityhealth.php",
 		"/Users/n3ko/Development/Sites/fieldmed/symbols.php",
 		"/Users/n3ko/Development/Sites/fieldmed/solutions.html",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_home.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/layouts/_grid.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/helpers/_mixins.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/abstracts/_functions.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_fonts.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_reset.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/images/logo.svg",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/abstracts/_mixins.scss",
@@ -742,25 +840,11 @@
 		"/Users/n3ko/Dropbox/Sites/doxa/app/Http/Controllers/TerritoryController.php",
 		"/Users/n3ko/Dropbox/Sites/doxa/routes/web.php",
 		"/Users/n3ko/Dropbox/Sites/doxa/resources/sass/pages/territories/_show.scss",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/sass/pages/dashboard/_index.scss",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/sass/pages/contacts/_index.scss",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/sass/app.scss",
-		"/Users/n3ko/Dropbox/Sites/doxa/database/seeds/CongregationSeeder.php",
-		"/Users/n3ko/Library/Application Support/Sublime Text 3/Packages/User/JsPrettier.sublime-settings",
-		"/Users/n3ko/Dropbox/Sites/doxa/database/seeds/DatabaseSeeder.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/views/components/modal-new-territory.blade.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/js/routes/Street.vue",
-		"/Users/n3ko/Dropbox/Sites/doxa/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/views/components/territory-index-admin.blade.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/js/components/TerritoryRow.vue",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/views/components/modal-new-city.blade.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/views/pages/territories/show.blade.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/views/pages/territories/new.blade.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/sass/components/_forms.scss"
+		"/Users/n3ko/Dropbox/Sites/doxa/resources/sass/pages/dashboard/_index.scss"
 	],
 	"find":
 	{
-		"height": 74.0
+		"height": 73.0
 	},
 	"find_in_files":
 	{
@@ -774,6 +858,27 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"line",
+			"for-pages",
+			"image(\"../images",
+			"generate-image",
+			"<i class=\"blue\">",
+			".blue",
+			"for-pages",
+			"FIELDMED FOR HOSPITALS",
+			"icon",
+			">\n",
+			"flower",
+			"signup",
+			"testimonial-",
+			"display: grid",
+			"line ",
+			"h4",
+			"h5",
+			"title ",
+			"h5",
+			"line",
+			"menu-select-carrot",
 			"ext"
 		],
 		"highlight": true,
@@ -791,7 +896,7 @@
 	},
 	"incremental_find":
 	{
-		"height": 36.0
+		"height": 73.0
 	},
 	"input":
 	{
@@ -829,7 +934,7 @@
 		"rows":
 		[
 			0.0,
-			0.619162819602,
+			0.733636918336,
 			1.0
 		]
 	},
@@ -841,7 +946,7 @@
 	"pinned_build_system": "",
 	"replace":
 	{
-		"height": 68.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -851,20 +956,156 @@
 		"selected_items":
 		[
 			[
-				"para",
-				"sass/base/_params.scss"
-			],
-			[
 				"home",
 				"sass/pages/_home.scss"
 			],
 			[
-				"components_me",
+				"icons",
+				"sass/base/_icons.scss"
+			],
+			[
+				"font",
+				"sass/base/_fonts.scss"
+			],
+			[
+				"mixi",
+				"sass/helpers/_mixins.scss"
+			],
+			[
+				"pagew",
+				"sass/pages/_pages_w_breadcrum.scss"
+			],
+			[
+				"commun",
+				"communityhealth.php"
+			],
+			[
+				"base",
+				"sass/base/_base.scss"
+			],
+			[
+				"footer",
+				"sass/components/_footer.scss"
+			],
+			[
+				"fo",
+				"sass/base/_fonts.scss"
+			],
+			[
+				"mix",
+				"sass/helpers/_mixins.scss"
+			],
+			[
+				"why",
+				"library/components/_whyfieldmed.php"
+			],
+			[
+				"forpa",
+				"sass/pages/_forpages.scss"
+			],
+			[
+				"forpages",
+				"sass/pages/_forpages.scss"
+			],
+			[
+				"forpage",
+				"sass/pages/_forpages.scss"
+			],
+			[
+				"fonts",
+				"sass/base/_fonts.scss"
+			],
+			[
+				"mixin",
+				"sass/helpers/_mixins.scss"
+			],
+			[
+				"index.s",
+				"sass/index.scss"
+			],
+			[
+				"forhos",
+				"forhospitals.php"
+			],
+			[
+				"forem",
+				"forems.php"
+			],
+			[
+				"menuphp",
 				"library/components/_menu.php"
+			],
+			[
+				"onts",
+				"sass/base/_fonts.scss"
+			],
+			[
+				"for",
+				"sass/components/_forms.scss"
+			],
+			[
+				"forms",
+				"sass/components/_forms.scss"
+			],
+			[
+				"params",
+				"sass/base/_params.scss"
+			],
+			[
+				"header",
+				"sass/components/_header.scss"
+			],
+			[
+				"_foot",
+				"library/layouts/_footer.php"
+			],
+			[
+				"_params",
+				"sass/base/_params.scss"
+			],
+			[
+				"index.js",
+				"js/index.js"
 			],
 			[
 				"grid",
 				"sass/layouts/_grid.scss"
+			],
+			[
+				"_mixi",
+				"sass/helpers/_mixins.scss"
+			],
+			[
+				"_but",
+				"sass/components/_buttons.scss"
+			],
+			[
+				"_fonts",
+				"sass/base/_fonts.scss"
+			],
+			[
+				"_home.s",
+				"sass/pages/_home.scss"
+			],
+			[
+				"menu.p",
+				"library/components/_menu.php"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"_menu.",
+				"sass/components/_menu.scss"
+			],
+			[
+				"para",
+				"sass/base/_params.scss"
+			],
+			[
+				"components_me",
+				"library/components/_menu.php"
 			],
 			[
 				"grid.",
@@ -875,20 +1116,8 @@
 				"sass/base/_params.scss"
 			],
 			[
-				"params",
-				"sass/base/_params.scss"
-			],
-			[
 				"mission",
 				"sass/_mission.scss"
-			],
-			[
-				"inde",
-				"js/index.js"
-			],
-			[
-				"header",
-				"sass/_header.scss"
 			],
 			[
 				"scre",
@@ -1111,10 +1340,6 @@
 				"app/Http/Controllers/StreetController.php"
 			],
 			[
-				"forms",
-				"resources/sass/components/_forms.scss"
-			],
-			[
 				"app.sc",
 				"resources/sass/app.scss"
 			],
@@ -1241,126 +1466,6 @@
 			[
 				"_base.",
 				"resources/sass/base/_base.scss"
-			],
-			[
-				"Dashboa",
-				"app/Http/Controllers/DashboardController.php"
-			],
-			[
-				"LoginCon",
-				"app/Http/Controllers/Auth/LoginController.php"
-			],
-			[
-				"navigation",
-				"resources/sass/layouts/_navigation.scss"
-			],
-			[
-				"parameters",
-				"resources/sass/helpers/_parameters.scss"
-			],
-			[
-				"mixins",
-				"resources/sass/helpers/_mixins.scss"
-			],
-			[
-				"territor",
-				"app/Http/Controllers/TerritoryController.php"
-			],
-			[
-				"grid.sc",
-				"resources/sass/layouts/_grid.scss"
-			],
-			[
-				"fonts.scss",
-				"resources/sass/helpers/_fonts.scss"
-			],
-			[
-				"fonts",
-				"resources/sass/base/fonts.scss"
-			],
-			[
-				"layouts.blad",
-				"resources/views/layouts/app.blade.php"
-			],
-			[
-				"views/t",
-				"resources/views/territories/index.blade.php"
-			],
-			[
-				"reset",
-				"resources/sass/reset.scss"
-			],
-			[
-				"sche",
-				"templates/node--schedule.tpl.php"
-			],
-			[
-				"schedule",
-				"scss/layouts/schedule_page.scss"
-			],
-			[
-				"page",
-				"templates/page.tpl.php"
-			],
-			[
-				"schedu",
-				"css/layouts/schedule_page.css"
-			],
-			[
-				"auth/",
-				"resources/views/auth/login.blade.php"
-			],
-			[
-				".info",
-				"elevenwarriors.info"
-			],
-			[
-				"base",
-				"scss/_base.scss"
-			],
-			[
-				"page--s",
-				"templates/page--schedule.tpl.php"
-			],
-			[
-				"system.ap",
-				"modules/system/system.api.php"
-			],
-			[
-				"Redis/Cl",
-				"sites/all/modules/redis/lib/Redis/Client.php"
-			],
-			[
-				"Client/Ph",
-				"sites/all/modules/redis/lib/Redis/Client/PhpRedis.php"
-			],
-			[
-				"territ.vue",
-				"resources/js/routes/TerritoryNormal.vue"
-			],
-			[
-				"territory.",
-				"resources/js/components/territory/Territory.vue"
-			],
-			[
-				"territory_",
-				"database/migrations/2019_05_02_235450_create_territory_assignments_table.php"
-			],
-			[
-				"data",
-				"database/seeds/DatabaseSeeder.php"
-			],
-			[
-				"congr",
-				"app/Congregation.php"
-			],
-			[
-				"territo",
-				"app/Http/Controllers/TerritoryController.php"
-			],
-			[
-				"Territory.v",
-				"resources/js/components/territory/Territory.vue"
 			]
 		],
 		"width": 0.0

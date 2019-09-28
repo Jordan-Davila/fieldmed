@@ -1,5 +1,5 @@
 <?php require 'library/layouts/_header.php'; ?>
-<!--<header>
+<header>
 	<?php require 'library/components/_menu.php'; ?>
 	<section class="landing">
 		<div class="container layout">
@@ -12,22 +12,22 @@
 		</div>
 	</section>
 </header>
- <main class="home-page gray">
+<main class="home-page gray">
 	<section class="dashboard">
 		<div class="left-image"></div>
 		<div class="dash-image"></div>
 		<div class="right-image"></div>
 	</section>
-	<section class="signup layout">
+	
+	<form action="/signup.php" class="signup-form layout">
 		<h2>The first complete solution for<br/>in-home community health programs</h2>
 		<p class="p16">Serve patients better, track data more effectively, and reduce costs for<br/>communities and healthcare providers.</p>
-		<form action="/signup.php" class="signup-form">
-			<div class="container">
-				<input type="email" name="signup-email" placeholder="Enter your email to sign up for FieldMed">
-				<button type="submit">Sign up today<i class="icon-arrow-right"></i></button>
-			</div>
-		</form>
-	</section>
+		<div class="container">
+			<input type="email" name="signup-email" placeholder="Enter your email to sign up for FieldMed">
+			<button type="submit">Sign up today<i class="icon-arrow-right"></i></button>
+		</div>
+	</form>
+	
 	<section class="clients layout">
 		<img src="../images/home/clients/at&t.png" class="client">
 		<img src="../images/home/clients/microsoft.png" class="client">
@@ -177,12 +177,12 @@
 	<section class="signup-bottom">
 		<div class="image-city"></div>
 		<div class="image-ground"></div>
-		<section class="container">
+		<section class="wrapper">
 			<div class="image-left"></div>
-			<form action="/signup.php" class="signup-form">
+			<form action="/signup.php" class="signup-form layout">
 				<h4>TRY IT FOR FREE!</h4>
 				<h2>Ready to try FieldMed?<br/>Sign up today.</h2>
-				<div class="wrapper">
+				<div class="container">
 					<input type="email" name="signup-email" placeholder="Enter your email to sign up for FieldMed">
 					<button type="submit">Sign up today<i class="icon-arrow-right"></i></button>
 				</div>
@@ -190,71 +190,63 @@
 			<div class="image-right"></div>
 		</section>
 	</section>
-</main> -->
-<main class="home-page blue">
-	<section class="testimonials">
+</main> 
+<footer>
+	<section class="testimonials-container">
 		<div class="title">
 			<h4>CUSTOMERS TESTIMONIALS</h4>
 			<h2>Communites Love FieldMed</h2>
 			<p class="p14">FieldMed-powered community health programs can reduce fire engine and truck calls by more than 80%.</p>
 		</div>
-		<div class="carousel-testimonials">
-			<div class="testimonial-left"></div>
-			<div class="testimonials">
-				<div class="testimonial">
-					<div class="quote"></div>
-					<p>FieldMed communities that implemented community health programs saw an 8X reduction in emergency calls —track in-depth information like specific injuries, medication dosages, mobility, living situation, food and shelter needs</p>
-					<div class="line"></div>
-					<div class="customer">
-						<img src="images/home/customers/tony.jpg" alt="Customer">
-						<div class="info">
-							<h3>Tony Stark</h3>
-							<p>CEO - Stark Industries, Inc</p>
+		<section class="testimonials">
+			<div class="wrapper">
+				<div class="image-flower"></div>
+				<div class="testimonial-left icon-arrow-left"></div>
+				<div class="container">
+					<div class="testimonial active">
+						<div class="quote"></div>
+						<p class="p17">FieldMed communities that implemented community health programs saw an 8X reduction in emergency calls —track in-depth information like specific injuries, medication dosages, mobility, living situation, food and shelter needs</p>
+						<div class="line"></div>
+						<div class="customer">
+							<div class="avatar" style="background-image: url('images/home/customers/tony.jpg');"></div>
+							<div class="info">
+								<h3>Tony Stark</h3>
+								<p class="p14">CEO - Stark Industries, Inc</p>
+							</div>
+						</div>
+					</div>
+					<div class="testimonial active">
+						<div class="quote"></div>
+						<p class="p17">FieldMed communities that implemented community health programs saw an 8X reduction in emergency calls —track in-depth information like specific injuries, medication dosages, mobility, living situation, food and shelter needs</p>
+						<div class="line"></div>
+						<div class="customer">
+							<div class="avatar" style="background-image: url('images/home/customers/wayne.jpg');"></div>
+							<div class="info">
+								<h3>Tony Stark</h3>
+								<p class="p14">CEO - Stark Industries, Inc</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="testimonial">
-					<div class="quote"></div>
-					<p>FieldMed communities that implemented community health programs saw an 8X reduction in emergency calls —track in-depth information like specific injuries, medication dosages, mobility, living situation, food and shelter needs</p>
-					<div class="line"></div>
-					<div class="customer">
-						<img src="images/home/customers/wayne.jpg" alt="Customer">
-						<div class="info">
-							<h3>Tony Stark</h3>
-							<p>CEO - Stark Industries, Inc</p>
-						</div>
-					</div>
-				</div>
-				<div class="testimonial">
-					<div class="quote"></div>
-					<p>FieldMed communities that implemented community health programs saw an 8X reduction in emergency calls —track in-depth information like specific injuries, medication dosages, mobility, living situation, food and shelter needs</p>
-					<div class="line"></div>
-					<div class="customer">
-						<img src="images/home/customers/tony.jpg" alt="Customer">
-						<div class="info">
-							<h3>Tony Stark</h3>
-							<p>CEO - Stark Industries, Inc</p>
-						</div>
-					</div>
-				</div>
-				<div class="testimonial">
-					<div class="quote"></div>
-					<p>FieldMed communities that implemented community health programs saw an 8X reduction in emergency calls —track in-depth information like specific injuries, medication dosages, mobility, living situation, food and shelter needs</p>
-					<div class="line"></div>
-					<div class="customer">
-						<img src="images/home/customers/wayne.jpg" alt="Customer">
-						<div class="info">
-							<h3>Tony Stark</h3>
-							<p>CEO - Stark Industries, Inc</p>
-						</div>
-					</div>
-				</div>
+				<div class="testimonial-right icon-arrow-right"></div>
 			</div>
-			<div class="testimonial-right"></div>
-		</div>
+			<div class="testimonials-dots">
+				<div class="dot"></div>
+				<div class="dot active"></div>
+				<div class="dot"></div>
+			</div>
+		</section>
 	</section>
-</main>
-<footer>
-
+	<section class="signup-footer">
+		<form action="/signup.php" class="signup-form layout">
+			<h4>TRY IT FOR FREE!</h4>
+			<h2>Find out what FieldMed can do<br/>for you and your patients. <u>Sign Up Now</u></h2>
+			<div class="container">
+				<input type="email" name="signup-email" placeholder="Enter your email to sign up for FieldMed">
+				<button type="submit">Sign up today<i class="icon-arrow-right"></i></button>
+			</div>
+		</form>
+	</section>
+	<?php require 'library/components/_external-links.php'; ?>	
 </footer>
 <?php require 'library/layouts/_footer.php'; ?>

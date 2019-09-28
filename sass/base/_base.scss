@@ -1,7 +1,13 @@
 .logo {
-	background-image: url("../images/logo.svg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 125px;
-	height: 34px;
+	@include image("logo.svg", 125px, 34px, contain);
+}
+
+main {
+	&.gray {
+		background-color: $color-gray-light;
+	}
+
+	&.blue {
+		background-image: linear-gradient(179deg, #183a78, #0a1b43);
+	}
 }

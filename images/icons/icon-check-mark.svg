@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="9px" viewBox="0 0 10 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pricing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-290.000000, -619.000000)" fill="#2DBAF6" fill-rule="nonzero" id="Pricing-Tables">
+            <g transform="translate(108.000000, 408.240000)">
+                <g id="Basic-Pricing" transform="translate(13.680000, 14.400000)">
+                    <g id="Features" transform="translate(0.000000, 150.480000)">
+                        <g id="Group-6" transform="translate(169.200000, 38.880000)">
+                            <path d="M8.91181037,8.0541051 C8.73066296,7.88329802 8.45223977,7.87525554 8.26151798,8.03227549 L3.75083256,11.760159 L0.744857878,9.95672737 C0.545327644,9.83723901 0.289882987,9.87285574 0.130948155,10.0444288 C-0.0268377501,10.2144699 -0.0440716475,10.4722124 0.0903527522,10.6621682 L3.34794234,15.2720443 C3.43909051,15.401107 3.58730202,15.4784681 3.74508793,15.48 C3.74661983,15.48 3.74815173,15.48 3.74968363,15.48 C3.90593764,15.48 4.0533832,15.4060857 4.14606327,15.2789379 L8.97155455,8.70209964 C9.11708524,8.5025694 9.09219183,8.22491217 8.91181037,8.0541051 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

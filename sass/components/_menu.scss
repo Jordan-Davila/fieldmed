@@ -4,8 +4,6 @@
 	display: flex;
 	justify-content: center;
 	background-color: rgba(0, 0, 0, 0.1);
-	position: -webkit-sticky;
-	position: sticky;
 
 	.container {
 		display: flex;
@@ -67,6 +65,7 @@
 					left: 0;
 					top: 100%;
 					opacity: 0;
+					z-index: 999999;
 					visibility: hidden;
 					display: flex;
 					position: absolute;
@@ -106,7 +105,8 @@
 
 						h4 {
 							font-family: "SourceSansPro", sans-serif;
-							font-size: 15.1px;
+							font-size: 12px !important;
+							text-transform: unset !important;
 							font-weight: bold;
 							line-height: 1.52;
 							text-align: center;

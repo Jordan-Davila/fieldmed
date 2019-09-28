@@ -1,33 +1,42 @@
-input[type="text"],
-input[type="number"] {
-	padding: 1em 0em;
-	border: none;
-	border-bottom: 1px solid $color-gray-light;
-	appearance: none;
-	color: $color-blue;
-	outline: none;
+.signup-form {
+	width: 100%;
+	margin-bottom: 65px;
 
-	&::placeholder {
-		color: $color-gray-light;
-	}
-}
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px;
 
-select {
-	padding: 1em 0em;
-	border: 0;
-	border-bottom: 1px solid $color-gray-light;
-	appearance: none;
-	background: transparent;
-	color: $color-blue;
-	outline: none;
-	border-radius: 0;
+		input {
+			background-color: $color-white;
+			border: none;
+			border-top-left-radius: 7.2px;
+			border-bottom-left-radius: 7.2px;
+			box-shadow: 0 14px 36px 0 rgba(0, 0, 0, 0.1);
+			outline: none;
+			min-width: 440px;
+			padding: 19px 30px;
+		}
 
-	&:disabled {
-		opacity: 0.4;
-		cursor: not-allowed;
-	}
-
-	&::placeholder {
-		color: $color-gray-light;
+		button {
+			width: 168px;
+			height: 50px;
+			background-color: $color-pink;
+			font-size: 12.2px;
+			font-family: "Muli", sans-serif;
+			font-weight: 600;
+			letter-spacing: normal;
+			color: white;
+			border-top-right-radius: 7.2px;
+			border-bottom-right-radius: 7.2px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 5px 10px;
+			min-width: 100px;
+			outline: none;
+			cursor: pointer;
+		}
 	}
 }

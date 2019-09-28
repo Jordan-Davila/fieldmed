@@ -1,12 +1,5 @@
-/*** Button mixins ***/
-
 /**
  * Generate button style
- * @param {String} - $name - required
- * @param {String} - $background - required - format accepted: hsla, rgb, #
- * @param {Strong} - $type - optionnal - format accepted: hsla, rgb, #
- * If no $color specify, the 'set-text-color' function is called
- * go check the _function.scss
  */
 @mixin generate-button($name, $background, $border) {
     .button-#{$name} {
@@ -75,7 +68,7 @@
     }
 }
 
-@mixin generate-image($path, $width: 100px, $height: 100px, $size: contain) {
+@mixin image($path, $width: 100px, $height: 100px, $size: contain) {
     background-image: url("../images/"+$path);
     background-repeat: no-repeat;
     background-position: center;
@@ -164,9 +157,9 @@
     color: $color;
 }
 
-@mixin links1($color: $color-white) {
+@mixin links1($color: $color-white, $font-face: "Muli") {
     font-size: 12.2px;
-    font-family: "Muli", sans-serif;
+    font-family: $font-face, sans-serif;
     font-weight: 600;
     letter-spacing: normal;
     color: $color;
