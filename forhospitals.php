@@ -1,21 +1,18 @@
 <?php require 'library/layouts/_header.php'; ?>
-<header class="pages_w_breadcrum">
-	<?php require 'library/components/_menu.php'; ?>
-	<section class="landing">
-		<div class="top">
-			<div class="layout">
-				<h4>FOR HOSPITALS</h4>
-				<h1>Cut MICU calls in half with<br><span class="blue">personalized in-home care.</span></h1>
-				<p class="p16">The first complete solution for in-home community health programs.</p>
-				<div class="image-landing hospitals"></div>
-			</div>
+<header class="solutions-pages">
+	<section class="top-section align-left">
+		<div class="container layout">
+			<h4>FOR HOSPITALS</h4>
+			<h1>Cut MICU calls in half with<br><span class="blue">personalized in-home care.</span></h1>
+			<p class="p16">The first complete solution for in-home community health programs.</p>
+			<div class="image-landing hospitals"></div>
 		</div>
-		<div class="bottom">
-			<div class="layout">
-				<h3>Hospital and emergency room visits are costly for<br/><span class="blue">your facility, especially when they’re not necessary.</span></h3>
-				<p class="p16">FieldMed-powered community health programs reduce MICU calls by 55%—<br/>all while giving more personalized, ongoing care to patients.</p>
-				<a href="#" class="button-pink">Enroll your Facility <i class="icon-arrow-right"></i></a>
-			</div>
+	</section>
+	<section class="bottom-section align-left">
+		<div class="container layout">
+			<h3>Hospital and emergency room visits are costly for <span class="blue">your facility, especially when they’re not necessary.</span></h3>
+			<p class="p16">FieldMed-powered community health programs reduce MICU calls by 55%— all while giving more personalized, ongoing care to patients.</p>
+			<a href="#" class="button-pink">Enroll your Facility <i class="icon-arrow-right"></i></a>
 		</div>
 	</section>
 	<section class="breadcrums">
@@ -28,10 +25,10 @@
 		</div>
 	</section>
 </header>
-<main class="pages_w_breadcrum">
-	<section class="benefit white">
+<main class="solutions-pages">
+	<section class="benefit white-bg">
 		<div class="layout left">
-			<div class="image right" style="background-image: url('images/forpages/hospitals/feature1.png')"></div>
+			<div class="image right" style="background-image: url('images/solutions-pages/hospitals/feature1.png')"></div>
 			<div class="container">
 				<h4>FIELDMED FOR HOSPITALS</h4>
 				<h2>Seamlessly Track and Share Patient Data</h2>
@@ -66,9 +63,9 @@
 		</div>
 	</section>
 
-	<section class="benefit gray">
+	<section class="benefit gray-bg">
 		<div class="layout right">
-			<div class="image left" style="background-image: url('images/forpages/hospitals/feature2.png')"></div>
+			<div class="image left" style="background-image: url('images/solutions-pages/hospitals/feature2.png')"></div>
 			<div class="container">
 				<h4>FIELDMED FOR HOSPITALS</h4>
 				<h2>Get Continued<br>Insights After Discharge</h2>
@@ -103,10 +100,10 @@
 		</div>
 	</section>
 
-	<section class="benefit white">
+	<section class="benefit white-bg">
 		
 		<div class="layout left">
-			<div class="image right" style="background-image: url('images/forpages/hospitals/feature3.png')"></div>
+			<div class="image right" style="background-image: url('images/solutions-pages/hospitals/feature3.png')"></div>
 			<div class="container">
 				<h4>FIELDMED FOR HOSPITALS</h4>
 				<h2>Reduce Non-<br>Emergency ER Visits</h2>
@@ -140,10 +137,8 @@
 			</div>
 		</div>
 	</section>
-</main>
-<main class="pages_w_breadcrum">
 	<?php require 'library/components/_whyfieldmed.php'; ?>
-	<section class="signup-bottom">
+	<section class="signup-city">
 		<div class="image-city"></div>
 		<div class="image-ground"></div>
 		<section class="wrapper">

@@ -1,0 +1,350 @@
+header.our-story-page {
+	.top-section {
+		.container {
+			padding: 80px 0px;
+
+			h3,
+			p {
+				width: 500px;
+
+				@media #{$mq-small} {
+					width: unset;
+				}
+			}
+
+			h3 {
+				font-size: 21.6px;
+				font-weight: bold;
+				line-height: 1.33;
+				color: $color-white;
+
+				@media #{$mq-small} {
+					width: unset;
+				}
+			}
+
+			.image-landing {
+				@include image("ourstory/landing.svg", 485px, 357px);
+				right: -55px;
+				top: 180px;
+				position: absolute;
+				z-index: 2;
+
+				@media #{$mq-small} {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+main.our-story-page {
+	.information {
+		width: 100%;
+		padding: 150px 0px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 0;
+
+		@media #{$mq-small} {
+			padding-bottom: 50px;
+		}
+
+		.image {
+			@include image("solutions-pages/hospitals/feature1.png", 291px, 139px);
+			position: absolute;
+			right: -120px;
+			top: 74px;
+
+			@media #{$mq-small} {
+				display: none;
+			}
+		}
+
+		.layout {
+			display: flex;
+			position: relative;
+
+			&.left {
+				justify-content: flex-start;
+			}
+
+			&.right {
+				justify-content: flex-end;
+			}
+
+			.container {
+				width: 830px;
+
+				@media #{$mq-small} {
+					width: 100%;
+				}
+
+				.p16 {
+					columns: 2;
+					column-gap: 30px;
+					line-height: 1.78;
+				}
+
+				.p14 {
+					width: 540px;
+					@media #{$mq-small} {
+						width: 100%;
+					}
+				}
+
+				p {
+					margin-bottom: 20px;
+				}
+
+				h2 {
+					font-size: 23.8px;
+					font-weight: 800;
+					line-height: 1.33;
+					letter-spacing: -0.59px;
+					width: 730px;
+
+					@media #{$mq-small} {
+						width: 100%;
+					}
+				}
+
+				h2,
+				h3,
+				h4,
+				p {
+					text-align: left;
+				}
+
+				.line {
+					height: 2px;
+					width: 100%;
+					background-color: $color-blue-sky;
+					margin-top: 20px;
+					margin-bottom: 30px;
+				}
+
+				a {
+					width: 205px;
+				}
+			}
+		}
+	}
+
+	.center-box {
+		width: 100%;
+		padding: 0px 0px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: $color-gray-light;
+		padding-bottom: 0;
+
+		.information {
+			width: 600px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin-top: 40px;
+			margin-bottom: 90px;
+
+			@media #{$mq-small} {
+				width: 100%;
+				padding: 0px 30px;
+				border-radius: 0px;
+			}
+
+			h2 {
+				font-size: 29.5px;
+			}
+
+			.line {
+				height: 2px;
+				width: 60%;
+				background-color: $color-blue-sky;
+				margin-bottom: 20px;
+			}
+		}
+
+		.box {
+			width: 1200px;
+			padding: 80px 150px;
+			border-radius: 14.4px;
+			box-shadow: 0 52px 46px 0 rgba(0, 0, 0, 0.04);
+			background-color: $color-white;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			transform: translate(0px, 158px);
+			background-image: url("../images/phone-app.svg");
+			background-repeat: no-repeat;
+			background-size: 538px 540px;
+			background-position: -145px 120px;
+
+			@media #{$mq-small} {
+				width: 100%;
+				padding: 80px 30px;
+				border-radius: 0px;
+				background-image: none;
+			}
+
+			.image {
+				@include image("communityhealth/image1.png", 339px, 427px);
+				margin-left: 60px;
+
+				@media #{$mq-small} {
+					display: none;
+				}
+			}
+
+			.image-doc {
+				@include image("ourstory/image2.png", 269px, 234px);
+				position: absolute;
+				right: 50px;
+				top: -200px;
+			}
+
+			.container {
+				width: 546px;
+				h4,
+				h2,
+				p {
+					text-align: left;
+				}
+
+				p {
+					margin-bottom: 20px;
+				}
+
+				h2 {
+					font-size: 31px;
+					font-weight: 800;
+					line-height: 1.24;
+					letter-spacing: -0.81px;
+				}
+
+				.line {
+					height: 2px;
+					width: 100%;
+					background-color: $color-blue-sky;
+					margin-top: 20px;
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+
+	.solution {
+		width: 100%;
+		background: $color-white;
+		padding-top: 250px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			width: 805px;
+
+			@media #{$mq-small} {
+				width: 100%;
+				padding: 0px 30px;
+			}
+
+			h3 {
+				font-size: 28.8px;
+				font-weight: 800;
+				line-height: 1.4;
+				letter-spacing: -0.72px;
+			}
+
+			.line {
+				height: 2px;
+				width: 80%;
+				background-color: $color-blue-sky;
+				margin-bottom: 20px;
+			}
+
+			.icon {
+				@include image("icons/icon21.svg", 85px, 75px);
+				margin-bottom: 20px;
+			}
+
+			a {
+				width: 205.9px;
+			}
+
+			p {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.faqs {
+		padding: 100px 0px;
+		background-color: $color-gray-light;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		.layout {
+			.question {
+				background-color: $color-white;
+				border-radius: 14.4px;
+				box-shadow: 0 52px 46px 0 rgba(0, 0, 0, 0.04);
+				padding: 50px 72px;
+				margin-bottom: 24px;
+
+				.title {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					i {
+						&:before {
+							color: $color-blue-sky;
+							font-size: 14px;
+						}
+					}
+				}
+
+				.line {
+					height: 2px;
+					width: 100%;
+					background-color: $color-blue-sky;
+				}
+
+				.content {
+					margin-top: 0px;
+					height: 0px;
+					overflow: hidden;
+
+					p {
+						text-align: left;
+						margin-bottom: 20px;
+
+						&:last-child {
+							margin-bottom: 0px;
+						}
+					}
+
+					&.active {
+						height: unset;
+						margin-top: 30px;
+					}
+				}
+			}
+		}
+	}
+}

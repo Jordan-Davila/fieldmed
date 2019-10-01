@@ -4,16 +4,44 @@
 		"selected_items":
 		[
 			[
+				"hae",
+				"header\tTag"
+			],
+			[
+				"flex-",
+				"flex-start\tjustify-content"
+			],
+			[
+				"column",
+				"column-reverse\tflex-direction"
+			],
+			[
+				"border",
+				"border\tproperty"
+			],
+			[
+				"grid-templ",
+				"grid-template-rows\tproperty"
+			],
+			[
+				"grid-tem",
+				"grid-template-columns\tproperty"
+			],
+			[
+				"padding",
+				"padding-top\tproperty"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
 				"margin",
 				"margin-top\tproperty"
 			],
 			[
 				"pad",
 				"padding\tproperty"
-			],
-			[
-				"column",
-				"column-gap\tproperty"
 			],
 			[
 				"community",
@@ -68,10 +96,6 @@
 				"font-size\tproperty"
 			],
 			[
-				"padding",
-				"padding-top\tproperty"
-			],
-			[
 				"la",
 				"layout"
 			],
@@ -84,10 +108,6 @@
 				"url()\tbackground-image"
 			],
 			[
-				"flex-",
-				"flex-start\tjustify-content"
-			],
-			[
 				"Ho",
 				"Hospital"
 			],
@@ -98,10 +118,6 @@
 			[
 				"spca",
 				"space-between\tjustify-content"
-			],
-			[
-				"padd",
-				"padding\tproperty"
 			],
 			[
 				"tr",
@@ -126,10 +142,6 @@
 			[
 				"pos",
 				"pos\tposition: ${1:relative};"
-			],
-			[
-				"grid-tem",
-				"grid-template-rows\tproperty"
 			],
 			[
 				"spa",
@@ -238,10 +250,6 @@
 			[
 				"border-s",
 				"border-style\tproperty"
-			],
-			[
-				"border",
-				"border-width\tproperty"
 			],
 			[
 				"font-s",
@@ -506,14 +514,6 @@
 			[
 				"res",
 				"responseJson\tany"
-			],
-			[
-				"cl",
-				"column"
-			],
-			[
-				"Container",
-				"Container"
 			]
 		]
 	},
@@ -529,6 +529,26 @@
 		"selected_items":
 		[
 			[
+				"unfo",
+				"Code Folding: Unfold All"
+			],
+			[
+				"fold ",
+				"Code Folding: Unfold All"
+			],
+			[
+				"prefe",
+				"Preferences: Settings"
+			],
+			[
+				"terminope",
+				"Terminus: Open Default Shell in View"
+			],
+			[
+				"term",
+				"Terminus: Open Default Shell in View"
+			],
+			[
 				"terminus open",
 				"Terminus: Open Default Shell in View"
 			],
@@ -543,10 +563,6 @@
 			[
 				"ins",
 				"Package Control: Install Package"
-			],
-			[
-				"term",
-				"Terminus: Open Default Shell in View"
 			],
 			[
 				"docblo",
@@ -713,32 +729,73 @@
 	},
 	"file_history":
 	[
+		"/Users/n3ko/Development/Sites/fieldmed/sass/index.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/index.php",
+		"/Users/n3ko/Development/Sites/fieldmed/pricing.php",
+		"/Users/n3ko/Development/Sites/fieldmed/contact.php",
+		"/Users/n3ko/Development/Sites/fieldmed/ourteam.php",
+		"/Users/n3ko/Development/Sites/fieldmed/solutions.php",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_header.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_pricing.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_login.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_white-center-box.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_signup-app.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_our-team.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_footer.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/042c7ec97efa55129cd4c75a3f30ee69d1cc0cb1/_signup-app.scssc",
+		"/Users/n3ko/Development/Sites/fieldmed/login.php",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_contact.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_params.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_center-box.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_solutions-pages.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/communityhealth.php",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_community-health.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_our-story.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/f297a6bacb1754f3d25dfbfb331078f407f979d7/_our-team.scssc",
+		"/Users/n3ko/Development/Sites/fieldmed/ourstory.php",
+		"/Users/n3ko/Development/Sites/fieldmed/forhospitals.php",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_why-fieldmed.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/css/index.css",
+		"/Users/n3ko/Development/Sites/fieldmed/forcommunities.php",
+		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/f297a6bacb1754f3d25dfbfb331078f407f979d7/_solutions-pages.scssc",
+		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/f297a6bacb1754f3d25dfbfb331078f407f979d7/_pages_w_breadcrum.scssc",
+		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/f297a6bacb1754f3d25dfbfb331078f407f979d7/_forpages.scssc",
+		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/Users/n3ko/Development/Sites/fieldmed/sass/pages/_forpages.scssc",
+		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/f297a6bacb1754f3d25dfbfb331078f407f979d7/_community-health.scssc",
+		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/042c7ec97efa55129cd4c75a3f30ee69d1cc0cb1/_why-fieldmed.scssc",
+		"/Users/n3ko/Development/Sites/fieldmed/forems.php",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_signup-city.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_home.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/library/components/_whyfieldmed.php",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_solutions.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_fonts.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_buttons.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/helpers/_mixins.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/f297a6bacb1754f3d25dfbfb331078f407f979d7/_home.scssc",
+		"/Users/n3ko/Development/Sites/fieldmed/library/layouts/_header.php",
+		"/Users/n3ko/Development/Sites/fieldmed/library/components/_menu.php",
+		"/Users/n3ko/Development/Sites/fieldmed/js/index.js",
+		"/Users/n3ko/Development/Sites/fieldmed/blog.php",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/helpers/_functions.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/layouts/_grid.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_base.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_full_blue.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_blog.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_forms.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_menu.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_why_fieldmed.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_breadcrum.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_pages_w_breadcrum.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/f297a6bacb1754f3d25dfbfb331078f407f979d7/_solutions.scssc",
+		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_reset.scss",
+		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/042c7ec97efa55129cd4c75a3f30ee69d1cc0cb1/_header.scssc",
 		"/Users/n3ko/Desktop/dbbackup.sql",
 		"/Users/n3ko/Development/Repos/seclists/Passwords/UserPassCombo-Jay.txt",
 		"/Users/n3ko/Desktop/phpinfo.php",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_home.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/index.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/forhospitals.php",
-		"/Users/n3ko/Development/Sites/fieldmed/forems.php",
-		"/Users/n3ko/Development/Sites/fieldmed/forcommunities.php",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_pages_w_breadcrum.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_base.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/pages/_forpages.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_footer.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/helpers/_mixins.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/library/components/_whyfieldmed.php",
-		"/Users/n3ko/Development/Sites/fieldmed/index.php",
 		"/Users/n3ko/Development/Sites/fieldmed/library/layouts/_footer.php",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_menu.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_fonts.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/solutions.php",
-		"/Users/n3ko/Development/Sites/fieldmed/library/components/_menu.php",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_forms.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_params.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/ea10dd1e2ab9ad0f7efaf1b4a72b5bcab4b594e8/_mixins.scssc",
 		"/Users/n3ko/Development/Sites/fieldmed/library/components/external-links.php",
-		"/Users/n3ko/Development/Sites/fieldmed/js/index.js",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_header.scss",
 		"/Volumes/Nyanku/Dropbox/Sites/eccv/js/index.js",
 		"/Users/n3ko/Development/Sites/fieldmed/images/home/hero1.svg",
 		"/Users/n3ko/Library/Application Support/Sublime Text 3/Packages/User/.jsbeautifyrc",
@@ -746,26 +803,15 @@
 		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/b416559403f13e412d3d809612f3bc8ac85e37d4/_grid.scssc",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_icons.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_modals.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/components/_buttons.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/.sass-cache/332c40824acb4d631e1be199e458ca44c2532c13/_params.scssc",
-		"/Users/n3ko/Development/Sites/fieldmed/blog.php",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/helpers/_functions.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/componenets/_forms.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/library/layouts/header.php",
 		"/Users/n3ko/Development/Sites/fieldmed/library/layouts/footer.php",
 		"/Users/n3ko/Development/Sites/fieldmed/faqs.php",
-		"/Users/n3ko/Development/Sites/fieldmed/login.php",
-		"/Users/n3ko/Development/Sites/fieldmed/contact.php",
-		"/Users/n3ko/Development/Sites/fieldmed/pricing.php",
-		"/Users/n3ko/Development/Sites/fieldmed/ourteam.php",
-		"/Users/n3ko/Development/Sites/fieldmed/ourstory.php",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/componenets/_buttons.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/communityhealth.php",
 		"/Users/n3ko/Development/Sites/fieldmed/symbols.php",
 		"/Users/n3ko/Development/Sites/fieldmed/solutions.html",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/layouts/_grid.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/abstracts/_functions.scss",
-		"/Users/n3ko/Development/Sites/fieldmed/sass/base/_reset.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/images/logo.svg",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/abstracts/_mixins.scss",
 		"/Users/n3ko/Development/Sites/fieldmed/sass/abstracts",
@@ -810,37 +856,7 @@
 		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/app.js",
 		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/pages/Error404.js",
 		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/components/Test.js",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/model.js",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/styles/base/_fonts.scss",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/styles/pages/_projects.scss",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/styles/pages/_contact.scss",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/styles/pages/_portfolio.scss",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/styles/pages/_about.scss",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/styles/app.scss",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/styles/layouts/_navigation.scss",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/components/HomeHeader.js",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/node_modules/lodash/_baseAggregator.js",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/styles/base/_base.scss",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/components/MainHeader.js",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/package.json",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/styles/base/_reset.scss",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/pages/About.js",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/pages/Portfolio.js",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/pages/Contact.js",
-		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/pages",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/js/components/Flash.vue",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/sass/pages/home/_login.scss",
-		"/Users/n3ko/Dropbox/Sites/doxa/.gitignore",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/views/pages/territories/index-admin.blade.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/views/pages/dashboard/index.blade.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/app/Http/Controllers/ApartmentController.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/app/Http/Controllers/HouseController.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/app/Http/Controllers/StreetController.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/app/Territory.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/app/Http/Controllers/TerritoryController.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/routes/web.php",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/sass/pages/territories/_show.scss",
-		"/Users/n3ko/Dropbox/Sites/doxa/resources/sass/pages/dashboard/_index.scss"
+		"/Users/n3ko/Dropbox/Sites/jordandavila/v3/src/model.js"
 	],
 	"find":
 	{
@@ -851,6 +867,9 @@
 		"height": 173.0,
 		"where_history":
 		[
+			"/Users/n3ko/Development/Sites/fieldmed",
+			"/Users/n3ko/Development/Sites/fieldmed/sass",
+			"/Users/n3ko/Development/Sites/fieldmed"
 		]
 	},
 	"find_state":
@@ -858,6 +877,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"forpages",
+			"signup-bottom",
+			"para3",
+			"para2",
+			"para1",
+			"our",
+			"bene",
+			"communi",
+			"a {",
+			"line",
+			"images/ourteam",
+			"icon-facebook",
+			"<i class=\"icon",
+			"iamges/ourteam",
+			"class=\"information",
 			"line",
 			"for-pages",
 			"image(\"../images",
@@ -887,6 +921,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"solutions-pages",
+			"paragraph3",
+			"paragraph2",
+			"paragraph1"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -896,7 +934,7 @@
 	},
 	"incremental_find":
 	{
-		"height": 73.0
+		"height": 35.0
 	},
 	"input":
 	{
@@ -910,31 +948,24 @@
 				0,
 				0,
 				1,
-				2
+				1
 			],
 			[
 				1,
 				0,
 				2,
 				1
-			],
-			[
-				1,
-				1,
-				2,
-				2
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.543483347797,
+			0.5,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.733636918336,
 			1.0
 		]
 	},
@@ -956,36 +987,256 @@
 		"selected_items":
 		[
 			[
-				"home",
-				"sass/pages/_home.scss"
+				"header.php",
+				"library/layouts/_header.php"
 			],
 			[
-				"icons",
-				"sass/base/_icons.scss"
+				"index",
+				"sass/index.scss"
 			],
 			[
-				"font",
-				"sass/base/_fonts.scss"
+				"blog",
+				"sass/pages/_blog.scss"
 			],
 			[
-				"mixi",
-				"sass/helpers/_mixins.scss"
+				"solut",
+				"solutions.php"
 			],
 			[
-				"pagew",
-				"sass/pages/_pages_w_breadcrum.scss"
+				"solution",
+				"sass/pages/_solutions.scss"
 			],
 			[
-				"commun",
-				"communityhealth.php"
+				"solutions",
+				"solutions.php"
+			],
+			[
+				"header",
+				"sass/components/_header.scss"
+			],
+			[
+				"foot",
+				"sass/components/_footer.scss"
+			],
+			[
+				"signup-app",
+				"sass/components/_signup-app.scss"
+			],
+			[
+				"signup",
+				".sass-cache/042c7ec97efa55129cd4c75a3f30ee69d1cc0cb1/_signup-app.scssc"
+			],
+			[
+				"heade",
+				"sass/components/_header.scss"
+			],
+			[
+				"ourte",
+				"ourteam.php"
+			],
+			[
+				"login.scs",
+				"sass/pages/_login.scss"
+			],
+			[
+				"login",
+				"login.php"
+			],
+			[
+				"ourteam",
+				"sass/pages/_our-team.scss"
+			],
+			[
+				"contact",
+				"sass/pages/_contact.scss"
+			],
+			[
+				"contac",
+				"contact.php"
+			],
+			[
+				"param",
+				"sass/base/_params.scss"
+			],
+			[
+				"para",
+				"sass/base/_params.scss"
 			],
 			[
 				"base",
 				"sass/base/_base.scss"
 			],
 			[
+				"center",
+				"sass/components/_center-box.scss"
+			],
+			[
+				"commun",
+				"sass/pages/_community-health.scss"
+			],
+			[
+				"comm",
+				"communityhealth.php"
+			],
+			[
+				"our-tea",
+				"sass/pages/_our-team.scss"
+			],
+			[
+				"our-stor",
+				"sass/pages/_our-story.scss"
+			],
+			[
+				"our",
+				".sass-cache/f297a6bacb1754f3d25dfbfb331078f407f979d7/_our-team.scssc"
+			],
+			[
+				"o",
+				"ourstory.php"
+			],
+			[
+				"ourstor",
+				"ourstory.php"
+			],
+			[
+				"forhos",
+				"forhospitals.php"
+			],
+			[
+				"commu",
+				"communityhealth.php"
+			],
+			[
+				"signup-ci",
+				"sass/components/_signup-city.scss"
+			],
+			[
+				"home",
+				"sass/pages/_home.scss"
+			],
+			[
 				"footer",
 				"sass/components/_footer.scss"
+			],
+			[
+				"whyfiel",
+				"sass/components/_why-fieldmed.scss"
+			],
+			[
+				"whyf",
+				"library/components/_whyfieldmed.php"
+			],
+			[
+				"forco",
+				"forcommunities.php"
+			],
+			[
+				"forem",
+				"forems.php"
+			],
+			[
+				"fonts",
+				"sass/base/_fonts.scss"
+			],
+			[
+				"mixin",
+				"sass/helpers/_mixins.scss"
+			],
+			[
+				"hom",
+				".sass-cache/f297a6bacb1754f3d25dfbfb331078f407f979d7/_home.scssc"
+			],
+			[
+				"layo",
+				"library/layouts/_header.php"
+			],
+			[
+				"ours",
+				"ourstory.php"
+			],
+			[
+				"blue",
+				"sass/pages/_full_blue.scss"
+			],
+			[
+				"pages",
+				"sass/pages/_pages_w_breadcrum.scss"
+			],
+			[
+				"why",
+				"library/components/_whyfieldmed.php"
+			],
+			[
+				"form",
+				"sass/components/_forms.scss"
+			],
+			[
+				"index.js",
+				"js/index.js"
+			],
+			[
+				"menu.php",
+				"library/components/_menu.php"
+			],
+			[
+				"menu",
+				"sass/components/_menu.scss"
+			],
+			[
+				"mixi",
+				"sass/helpers/_mixins.scss"
+			],
+			[
+				"grid",
+				"sass/layouts/_grid.scss"
+			],
+			[
+				"font",
+				"sass/base/_fonts.scss"
+			],
+			[
+				"sol",
+				"sass/pages/_solutions.scss"
+			],
+			[
+				"foo",
+				"sass/components/_footer.scss"
+			],
+			[
+				"reset",
+				"sass/base/_reset.scss"
+			],
+			[
+				"head",
+				".sass-cache/042c7ec97efa55129cd4c75a3f30ee69d1cc0cb1/_header.scssc"
+			],
+			[
+				"pricing",
+				"pricing.php"
+			],
+			[
+				"icon",
+				"sass/base/_icons.scss"
+			],
+			[
+				"bre",
+				"sass/pages/_pages_w_breadcrum.scss"
+			],
+			[
+				"bas",
+				"sass/base/_base.scss"
+			],
+			[
+				"fa",
+				"faqs.php"
+			],
+			[
+				"icons",
+				"sass/base/_icons.scss"
+			],
+			[
+				"pagew",
+				"sass/pages/_pages_w_breadcrum.scss"
 			],
 			[
 				"fo",
@@ -994,10 +1245,6 @@
 			[
 				"mix",
 				"sass/helpers/_mixins.scss"
-			],
-			[
-				"why",
-				"library/components/_whyfieldmed.php"
 			],
 			[
 				"forpa",
@@ -1012,24 +1259,8 @@
 				"sass/pages/_forpages.scss"
 			],
 			[
-				"fonts",
-				"sass/base/_fonts.scss"
-			],
-			[
-				"mixin",
-				"sass/helpers/_mixins.scss"
-			],
-			[
 				"index.s",
 				"sass/index.scss"
-			],
-			[
-				"forhos",
-				"forhospitals.php"
-			],
-			[
-				"forem",
-				"forems.php"
 			],
 			[
 				"menuphp",
@@ -1052,24 +1283,12 @@
 				"sass/base/_params.scss"
 			],
 			[
-				"header",
-				"sass/components/_header.scss"
-			],
-			[
 				"_foot",
 				"library/layouts/_footer.php"
 			],
 			[
 				"_params",
 				"sass/base/_params.scss"
-			],
-			[
-				"index.js",
-				"js/index.js"
-			],
-			[
-				"grid",
-				"sass/layouts/_grid.scss"
 			],
 			[
 				"_mixi",
@@ -1100,20 +1319,12 @@
 				"sass/components/_menu.scss"
 			],
 			[
-				"para",
-				"sass/base/_params.scss"
-			],
-			[
 				"components_me",
 				"library/components/_menu.php"
 			],
 			[
 				"grid.",
 				".sass-cache/b416559403f13e412d3d809612f3bc8ac85e37d4/_grid.scssc"
-			],
-			[
-				"param",
-				"sass/base/_params.scss"
 			],
 			[
 				"mission",
@@ -1286,186 +1497,6 @@
 			[
 				"terrcont",
 				"app/Http/Controllers/TerritoryController.php"
-			],
-			[
-				"show.",
-				"resources/views/pages/territories/show.blade.php"
-			],
-			[
-				"terri",
-				"app/Territory.php"
-			],
-			[
-				"territvue",
-				"resources/js/components/TerritoryRow.vue"
-			],
-			[
-				"modal-new",
-				"resources/views/components/modal-new-territory.blade.php"
-			],
-			[
-				"pages/te",
-				"resources/views/pages/territories/index.blade.php"
-			],
-			[
-				"territory",
-				"resources/views/components/territory-index-admin.blade.php"
-			],
-			[
-				"user",
-				"app/User.php"
-			],
-			[
-				"territ",
-				"app/Http/Controllers/TerritoryController.php"
-			],
-			[
-				"Territo",
-				"app/Territory.php"
-			],
-			[
-				"user.p",
-				"app/User.php"
-			],
-			[
-				"help",
-				"app/Http/Helpers.php"
-			],
-			[
-				"assignments",
-				"database/migrations/2019_05_02_235450_create_assignments_table.php"
-			],
-			[
-				"streetc",
-				"app/Http/Controllers/StreetController.php"
-			],
-			[
-				"app.sc",
-				"resources/sass/app.scss"
-			],
-			[
-				"show",
-				"resources/views/pages/territories/show.blade.php"
-			],
-			[
-				"territory-",
-				"resources/views/components/territory-index-admin.blade.php"
-			],
-			[
-				"flash.",
-				"resources/js/components/Flash.vue"
-			],
-			[
-				"index.blad",
-				"resources/views/base/index.blade.php"
-			],
-			[
-				"CityControl",
-				"app/Http/Controllers/CityController.php"
-			],
-			[
-				"main",
-				"resources/views/components/main-menu.blade.php"
-			],
-			[
-				"main-menu",
-				"resources/views/components/main-menu.blade.php"
-			],
-			[
-				"terricont",
-				"app/Http/Controllers/TerritoryController.php"
-			],
-			[
-				"territories",
-				"resources/sass/pages/_territories.index.scss"
-			],
-			[
-				"street",
-				"resources/js/routes/Street.vue"
-			],
-			[
-				"street.vue",
-				"resources/js/routes/Street.vue"
-			],
-			[
-				"index.blade",
-				"resources/views/pages/territories/index.blade.php"
-			],
-			[
-				"app.js",
-				"resources/js/app.js"
-			],
-			[
-				"Dash",
-				"app/Http/Controllers/DashboardController.php"
-			],
-			[
-				"web.",
-				"routes/web.php"
-			],
-			[
-				"Dashbo",
-				"app/Http/Controllers/DashboardController.php"
-			],
-			[
-				"article",
-				"scss/partials/_article.scss"
-			],
-			[
-				"_article",
-				".sass-cache/ea31c099405582c360f6f649e0ea4b0daf5abda6/_article.scssc"
-			],
-			[
-				"page.",
-				"templates/page.tpl.php"
-			],
-			[
-				"_pr",
-				"resources/sass/helpers/_parameters.scss"
-			],
-			[
-				"_naviga",
-				"resources/sass/layouts/_navigation.scss"
-			],
-			[
-				"territories.inde",
-				"resources/sass/pages/_territories.index.scss"
-			],
-			[
-				"Type",
-				"app/Type.php"
-			],
-			[
-				"congre",
-				"app/Congregation.php"
-			],
-			[
-				"territoryas",
-				"app/TerritoryAssignment.php"
-			],
-			[
-				"Terr",
-				"app/TerritoryAssignment.php"
-			],
-			[
-				"user.php",
-				"app/User.php"
-			],
-			[
-				"Territory.p",
-				"app/Territory.php"
-			],
-			[
-				"User.",
-				"app/User.php"
-			],
-			[
-				"_base.sc",
-				"resources/sass/base/_base.scss"
-			],
-			[
-				"_base.",
-				"resources/sass/base/_base.scss"
 			]
 		],
 		"width": 0.0
@@ -1500,19 +1531,13 @@
 				0,
 				0,
 				1,
-				2
+				1
 			],
 			[
 				1,
 				0,
 				2,
 				1
-			],
-			[
-				1,
-				1,
-				2,
-				2
 			]
 		]
 	},

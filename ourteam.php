@@ -1,12 +1,10 @@
 <?php require 'library/layouts/_header.php'; ?>
-<header class="full-blue">
-	<?php require 'library/components/_menu.php'; ?>
-	<section class="landing">
-		<div class="top">
-			<div class="layout">
-				<h4>OUR TEAM</h4>
-				<h1>Meet the Team Behind FieldMed</h1>
-				<p class="p14">The program was wildly successful in reducing costs, keeping patients out of ambulances and hospitals, and helping community members effectively manage their health and wellness. </p>
+<main class="our-team-page gradient-blue-bg">
+	<section class="main-header-title">
+		<div class="layout">
+			<h4>OUR TEAM</h4>
+			<h1>Meet the Team Behind FieldMed</h1>
+			<p class="p14">The program was wildly successful in reducing costs, keeping patients out of ambulances and hospitals, and helping community members effectively manage their health and wellness. </p>
 		</div>
 	</section>
 	<section class="white-box">
@@ -145,8 +143,7 @@
 			</div>
 		</div>
 	</section>
-</header>
-</main> 
+</main>
 <footer>
 	<section class="signup-app">
 		<div class="image-bg">

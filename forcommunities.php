@@ -1,21 +1,18 @@
 <?php require 'library/layouts/_header.php'; ?>
-<header class="pages_w_breadcrum">
-	<?php require 'library/components/_menu.php'; ?>
-	<section class="landing">
-		<div class="top">
-			<div class="layout">
-				<h4>For Communities & Fire Departments</h4>
-				<h1>Improve community health.<br>Reduce spending.<span class="blue"> Eliminate unnecessary 911 calls.</span></h1>
-				<p class="p16">FieldMed gives community health programs everything they need to excel in one unified platform.</p>
-				<div class="image-landing communities"></div>
-			</div>
+<header class="solutions-pages">
+	<section class="top-section align-left">
+		<div class="container layout">
+			<h4>For Communities & Fire Departments</h4>
+			<h1>Improve community health. Reduce spending.<span class="blue"> Eliminate unnecessary 911 calls.</span></h1>
+			<p class="p16">FieldMed gives community health programs everything they need to excel in one unified platform.</p>
+			<div class="image-landing communities"></div>
 		</div>
-		<div class="bottom">
-			<div class="layout">
-				<h3>Community health programs using FieldMed deliver<br>medical care directly to patients’ homes, and can<br><span class="blue">reduce emergency vehicle use by over 80%.</span></h3>
-				<p class="p16">FieldMed gives community health programs everything they need to<br>excel in one unified platform.</p>
-				<a href="#" class="button-pink">Enroll your Facility <i class="icon-arrow-right"></i></a>
-			</div>
+	</section>
+	<section class="bottom-section align-left">
+		<div class="container layout">
+			<h3>Community health programs using FieldMed deliver medical care directly to patients’ homes, and can <span class="blue">reduce emergency vehicle use by over 80%.</span></h3>
+			<p class="p16">FieldMed gives community health programs everything they need to excel in one unified platform.</p>
+			<a href="#" class="button-pink">Enroll your Facility <i class="icon-arrow-right"></i></a>
 		</div>
 	</section>
 	<section class="breadcrums">
@@ -28,10 +25,10 @@
 		</div>
 	</section>
 </header>
-<main class="pages_w_breadcrum">
-	<section class="benefit white">
+<main class="solutions-pages">
+	<section class="benefit white-bg">
 		<div class="layout left">
-			<div class="image right" style="background-image: url('images/forpages/communities/feature1.png')"></div>
+			<div class="image right" style="background-image: url('images/solutions-pages/communities/feature1.png')"></div>
 			<div class="container">
 				<h4>For Communities & Fire Departments</h4>
 				<h2>Everything Your Team Needs in the Field</h2>
@@ -66,9 +63,9 @@
 		</div>
 	</section>
 
-	<section class="benefit gray">
+	<section class="benefit gray-bg">
 		<div class="layout right">
-			<div class="image left" style="background-image: url('images/forpages/communities/feature2.png')"></div>
+			<div class="image left" style="background-image: url('images/solutions-pages/communities/feature2.png')"></div>
 			<div class="container">
 				<h4>For Communities & Fire Departments</h4>
 				<h2>Detailed Insights on Patient Conditions and Needs</h2>
@@ -103,10 +100,10 @@
 		</div>
 	</section>
 
-	<section class="benefit white">
+	<section class="benefit white-bg">
 		
 		<div class="layout left">
-			<div class="image right" style="background-image: url('images/forpages/communities/feature3.png')"></div>
+			<div class="image right" style="background-image: url('images/solutions-pages/communities/feature3.png')"></div>
 			<div class="container">
 				<h4>For Communities & Fire Departments</h4>
 				<h2>Reduced Drain on Community Resources</h2>
@@ -140,10 +137,8 @@
 			</div>
 		</div>
 	</section>
-</main>
-<main class="pages_w_breadcrum">
 	<?php require 'library/components/_whyfieldmed.php'; ?>
-	<section class="signup-bottom">
+	<section class="signup-city">
 		<div class="image-city"></div>
 		<div class="image-ground"></div>
 		<section class="wrapper">
@@ -159,7 +154,7 @@
 			<div class="image-right"></div>
 		</section>
 	</section>
-</main> 
+</main>
 <footer>
 	<?php require 'library/components/_external-links.php'; ?>	
 </footer>

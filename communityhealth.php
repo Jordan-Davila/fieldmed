@@ -1,13 +1,10 @@
 <?php require 'library/layouts/_header.php'; ?>
-<header class="pages_w_breadcrum">
-	<?php require 'library/components/_menu.php'; ?>
-	<section class="landing">
-		<div class="top community-health">
-			<div class="layout">
-				<h1>Community Health</h1>
-				<h3 class="community-health"><span class="blue">Better, More Efficient Local Care</span></h3>
-				<div class="image-landing community-health"></div>
-			</div>
+<header class="community-health-page">
+	<section class="top-section align-left">
+		<div class="container layout">
+			<h1>Community Health</h1>
+			<h3 class="community-health"><span class="blue">Better, More Efficient Local Care</span></h3>
+			<div class="image-landing community-health"></div>
 		</div>
 	</section>
 	<section class="breadcrums">
@@ -18,10 +15,10 @@
 		</div>
 	</section>
 </header>
-<main class="pages_w_breadcrum">
-	<section class="benefit gray community-health">
-		<div class="layout left">
-			<div class="image right" style="background-image: url('images/communityhealth/fieldmed-logo-bg.png')"></div>
+<main class="community-health-page">
+	<section class="information gray-bg">
+		<div class="layout">
+			<div class="image" style="background-image: url('images/communityhealth/fieldmed-logo-bg.png')"></div>
 			<div class="container">
 				<h2>Community health programs (CHP/MIH) offer a framework for communities to give patients basic care in-home.</h2>
 				<p class="p16">This reduces drain on resources like ambulances, fire trucks, hospital rooms, equipment, and person-hours while providing more personalized care to members of the community.</p>
@@ -44,15 +41,13 @@
 			<div class="image"></div>
 		</div>
 
-		<div class="information">
+		<div class="info">
 			<h4>FIELDMED reduces drain on resources</h4>
 			<h3>FieldMed is the first platform designed specifically to serve community health programs, which have already been deployed in over 500 cities nationwide. </h3>
 			<div class="line"></div>
 			<p class="p14">Conceived and designed in collaboration with CHP/MIH pioneers, first responders, and community health experts, FieldMed features powerfully streamlined workflows, advanced data tracking, and full compliance with HIPAA and other patient privacy regulations.</p>
 		</div>
 	</section>
-</main>
-<main class="pages_w_breadcrum">
 	<section class="case-studies">
 		<div class="container">
 			<div class="title">
@@ -111,7 +106,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="signup-bottom">
+	<section class="signup-city">
 		<div class="image-city"></div>
 		<div class="image-ground"></div>
 		<section class="wrapper">

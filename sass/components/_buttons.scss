@@ -1,3 +1,42 @@
+/**
+ * Generate button style
+ */
+@mixin generate-button($name, $background, $border) {
+	.button-#{$name} {
+		@if (length($background) <= 1) {
+			background-color: $background;
+			&:hover {
+				color: $color-white !important;
+			}
+		} @else {
+			background: linear-gradient(90deg, nth($background, 1) 0%, nth($background, 2) 100%);
+			&:hover {
+				color: $color-white !important;
+			}
+		}
+
+		@if ($border != none) {
+			border: 2px solid $border;
+		}
+
+		@include links1;
+		border-radius: 7.2px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 5px 10px;
+		min-width: 100px;
+		color: $color-white !important;
+		outline: none;
+		cursor: pointer;
+
+		i {
+			margin-left: 5px;
+			font-size: 8px;
+		}
+	}
+}
+
 @include generate-button("bordered-sky-blue", transparent, $color-blue-sky);
 @include generate-button("pink", $color-pink, none);
 @include generate-button("blue-sky", $color-blue-sky, none);

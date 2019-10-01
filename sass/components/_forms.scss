@@ -17,6 +17,10 @@
 			outline: none;
 			min-width: 440px;
 			padding: 19px 30px;
+
+			@media #{$mq-small} {
+				min-width: 240px;
+			}
 		}
 
 		button {

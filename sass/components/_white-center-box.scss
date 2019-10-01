@@ -1,0 +1,172 @@
+.white-box {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	.base-box {
+		width: 1220px;
+		border-radius: 14.4px;
+		box-shadow: 0 52px 46px 0 rgba(0, 0, 0, 0.12);
+		background-color: #ffffff;
+
+		@media #{$mq-small} {
+			width: 100%;
+			border-radius: 0px;
+		}
+	}
+
+	.contact-box,
+	.login-box {
+		overflow: hidden;
+		margin-bottom: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		position: relative;
+
+		@media #{$mq-small} {
+			width: 100%;
+			border-radius: 0px;
+			flex-direction: column;
+		}
+
+		.line {
+			height: 2px;
+			background-color: $color-blue-sky;
+			margin-bottom: 20px;
+		}
+
+		.info {
+			flex: 1;
+			background-color: $color-white;
+			padding: 100px 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+
+			@media #{$mq-small} {
+				width: 100%;
+			}
+
+			.image-man-talking {
+				@include image("contact/man-talking.svg", 125px, 429px);
+				position: absolute;
+				bottom: -20px;
+				right: 50px;
+			}
+
+			h3,
+			p {
+				text-align: left;
+			}
+
+			.container {
+				width: 420px;
+
+				p {
+					margin-bottom: 20px;
+				}
+
+				.logo-full {
+					@include image("../images/logo-full.svg", 217px, 80px);
+					margin-bottom: 20px;
+				}
+
+				.contact-options {
+					margin-bottom: 10px;
+					h3 {
+						font-size: 19.4px;
+						font-weight: 700;
+						line-height: 2.07;
+						letter-spacing: -0.49px;
+						margin-bottom: 5px;
+
+						i:before {
+							color: $color-pink;
+							font-size: 14px;
+						}
+
+						i {
+							margin-right: 10px;
+						}
+					}
+
+					.line {
+						width: 50%;
+					}
+				}
+			}
+		}
+
+		.form,
+		.register-form,
+		.login-form {
+			flex: 1;
+			background-color: $color-gray-light;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			padding: 100px 50px;
+
+			@media #{$mq-small} {
+				width: 100%;
+			}
+
+			h2 {
+				text-align: left;
+				font-size: 26.6px;
+			}
+
+			form {
+				width: 400px;
+				display: flex;
+				flex-direction: column;
+
+				label {
+					width: 57px;
+					height: 22px;
+					font-family: SourceSansPro;
+					font-size: 13px;
+					font-weight: 600;
+					line-height: 1.67;
+					letter-spacing: normal;
+					color: #0a1b43;
+					margin-bottom: 10px;
+					width: 100%;
+				}
+
+				input {
+					padding: 10px 15px;
+					margin-bottom: 10px;
+					border-radius: 4.3px;
+					border: solid 0.7px #c1d4e0;
+					background-color: #ffffff;
+					font-family: SourceSansPro;
+					font-size: 13px;
+					line-height: 1.67;
+					letter-spacing: normal;
+					color: #0a1b43;
+
+					&::placeholder {
+						opacity: 0.2;
+					}
+
+					&:-ms-input-placeholder {
+						opacity: 0.2;
+					}
+
+					&::-ms-input-placeholder {
+						opacity: 0.2;
+					}
+				}
+
+				button {
+					padding: 15px;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}

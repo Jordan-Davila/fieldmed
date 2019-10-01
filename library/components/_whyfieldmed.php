@@ -1,20 +1,22 @@
 <section class="why-fieldmed">
-	<div class="try">
-		<form action="/signup.php" class="signup-form layout">
-			<h4>TRY IT FOR FREE!</h4>
-			<h2>Discover how the FieldMed patient reporting system can transform patient care and your bottom line today.</h2>
-			<div class="container">
-				<input type="email" name="signup-email" placeholder="Enter your email to sign up for FieldMed">
-				<button type="submit">Sign up today<i class="icon-arrow-right"></i></button>
-			</div>
-		</form>
-		<div class="image-bottom"></div>
+	<div class="signup">
+		<div class="layout">
+			<form action="/signup.php" class="signup-form">
+				<h4>TRY IT FOR FREE!</h4>
+				<h2>Discover how the FieldMed patient reporting system can transform patient care and your bottom line today.</h2>
+				<div class="container">
+					<input type="email" name="signup-email" placeholder="Enter your email to sign up for FieldMed">
+					<button type="submit">Sign up today<i class="icon-arrow-right"></i></button>
+				</div>
+			</form>
+			<div class="image-bottom"></div>
+		</div>
 	</div>
 	<div class="features">
 		<div class="title">
 			<h4>WHO WE PROVIDE SERVICES FOR</h4>
 			<h2>Why FieldMed</h2>
-			<p class="p14">Community health programs have been instituted in over 500 cities nationwide. FieldMed is<br/>the first platform designed specifically to serve these programs.</p>
+			<p class="p14">Community health programs have been instituted in over 500 cities nationwide. FieldMed is the first platform designed specifically to serve these programs.</p>
 		</div>
 		<di class="features-grid layout">
 			<div class="feature">

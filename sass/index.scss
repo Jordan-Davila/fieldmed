@@ -1,11 +1,4 @@
-/* FieldMed CSS v0.1
- * <link href="/css/index.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
-@import "compass/reset";
-
-// Helpers
-@import "helpers/functions";
-@import "helpers/mixins";
+/* FieldMed CSS v0.1 */
 
 // Base
 @import "base/reset";
@@ -14,20 +7,25 @@
 @import "base/icons";
 @import "base/base";
 
-// Layouts
-@import "layouts/grid";
-
 // Components
+@import "components/buttons";
+@import "components/forms";
+@import "components/main-menu";
 @import "components/header";
 @import "components/footer";
-@import "components/menu";
-@import "components/buttons";
-@import "components/cards";
-@import "components/modals";
-@import "components/forms";
+@import "components/why-fieldmed";
+@import "components/white-center-box";
+@import "components/signup-city";
+@import "components/signup-app";
 
 // Pages
 @import "pages/home";
-@import "pages/pages_w_breadcrum";
-@import "pages/full_blue";
+@import "pages/community-health";
+@import "pages/solutions-pages"; /*For Hospital, Communities & EMS Pages*/
 @import "pages/solutions";
+@import "pages/our-team";
+@import "pages/our-story";
+@import "pages/pricing";
+@import "pages/contact";
+@import "pages/login";
+@import "pages/blog";

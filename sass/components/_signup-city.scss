@@ -1,0 +1,59 @@
+.signup-city {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 230px;
+
+	.image-city {
+		@include image("home/city.svg", 1189px, 364px);
+		position: absolute;
+		z-index: 0;
+		top: -200px;
+		left: 0;
+	}
+
+	.image-ground {
+		@include image("home/ground.svg", 100%, 370px);
+		position: absolute;
+		background-size: cover;
+		z-index: 0;
+	}
+
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		height: 368px;
+		width: 1200px;
+
+		.image-left {
+			@include image("home/doc-chart.svg", 242px, 264px);
+			transform: translate(-10px, -70px);
+
+			@media #{$mq-medium} {
+				display: none;
+			}
+		}
+
+		.image-right {
+			@include image("home/dance.svg", 323px, 290px);
+			transform: translate(45px, -110px);
+
+			@media #{$mq-medium} {
+				display: none;
+			}
+		}
+
+		.signup-form {
+			width: 700px;
+			transform: translate(35px, 0px);
+
+			@media #{$mq-small} {
+				width: 100%;
+				transform: unset;
+			}
+		}
+	}
+}

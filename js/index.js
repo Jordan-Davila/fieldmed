@@ -1,4 +1,21 @@
 /*
+ * Main Menu
+ */
+let link_main_menu = document.querySelector(".icon-menu");
+let link_with_submenu = document.querySelectorAll(".with-submenu a");
+let link_list = document.querySelector(".links");
+
+[].slice.call(link_with_submenu).map((link, i) => {
+	link.addEventListener("click", e => {
+		e.target.nextElementSibling.classList.toggle("open");
+	});
+});
+
+link_main_menu.addEventListener("click", e => {
+	link_list.classList.toggle("open");
+});
+
+/*
  * Carousel with Buttons (Used in Home Page)
  */
 

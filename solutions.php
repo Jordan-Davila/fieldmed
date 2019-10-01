@@ -1,13 +1,14 @@
 <?php require 'library/layouts/_header.php'; ?>
-<header class="solutions">
-	<?php require 'library/components/_menu.php'; ?>
-	<section class="landing">
-		<div class="title">
+<header class="solutions-page with-center-box">
+	<section class="top-section text-center">
+		<div class="container layout">
 			<h4>OUR SOLUTIONS</h4>
 			<h1>The​ community health platform to help you serve better and save better.</h1>
 			<p class="p16">FieldMed helps your organization access the tools you need in the field (and beyond).</p>
 		</div>
-		<div class="box">
+	</section>
+	<section class="center-box">
+		<div class="layout">
 			<div class="image" style="background-image: url('images/solutions/sitting.svg')"></div>
 			<div class="top">
 				<div class="wrap">
@@ -23,81 +24,81 @@
 		</div>
 	</section>
 </header>
-<main class="solutions gray">
-	<section class="solutions-for">
-		<div class="for-container">
-			<div class="image" style="background-image: url('images/solutions/forhospitals.svg')"></div>
-			<h4>FIELDMED</h4>
-			<h2>For Hospitals</h2>
-			<div class="line"></div>
-			<p class="p16">EMS providers using FieldMed can offer efficient community health programs to clients, reducing their costs and boosting your value offering.</p>
-			<a href="./forhospitals.php" class="button-pink">Learn More <i class="icon-arrow-right"></i></a>
-		</div>
-		<div class="for-container">
-			<div class="image" style="background-image: url('images/solutions/forcommunities.svg')"></div>
-			<h4>FIELDMED</h4>
-			<h2>For Communities</h2>
-			<div class="line"></div>
-			<p class="p16">EMS providers using FieldMed can offer efficient community health programs to clients, reducing their costs and boosting your value offering. </p>
-			<a href="./forhospitals.php" class="button-pink">Learn More <i class="icon-arrow-right"></i></a>
-		</div>
-		<div class="for-container">
-			<div class="image" style="background-image: url('images/solutions/forems.svg')"></div>
-			<h4>FIELDMED</h4>
-			<h2>For EMS</h2>
-			<div class="line"></div>
-			<p class="p16">EMS providers using FieldMed can offer efficient community health programs to clients, reducing their costs and boosting your value offering. </p>
-			<a href="./forhospitals.php" class="button-pink">Learn More <i class="icon-arrow-right"></i></a>
-		</div>
-	</section>
-	<section class="software-tour">
-		<div class="title">
-			<h4>EXPLORE OUR SOFTWARE</h4>
-			<h2>Software Tour</h2>
-			<p class="p14">Community health programs have been instituted in over 500 cities nationwide.</p>
-		</div>
-		<div class="software-list">
-			<div class="list-container">
-				<div class="list">
-					<div class="icon" style="background-image: url('images/solutions/icon1.svg');"></div>
-					<div class="info">
-						<h3>Share and receive important notes</h3>
-						<p class="p14">Manage your schedule in a monthly, weekly</p>
-					</div>
-				</div>
-				<div class="list">
-					<div class="icon" style="background-image: url('images/solutions/icon2.svg');"></div>
-					<div class="info">
-						<h3>Input and track patient data</h3>
-						<p class="p14">Manage your schedule in a monthly, weekly</p>
-					</div>
-				</div>
-				<div class="list">
-					<div class="icon" style="background-image: url('images/solutions/icon3.svg');"></div>
-					<div class="info">
-						<h3>Community health teams</h3>
-						<p class="p14">Manage your schedule in a monthly, weekly</p>
-					</div>
-				</div>
-				<div class="list">
-					<div class="icon" style="background-image: url('images/solutions/icon4.svg');"></div>
-					<div class="info">
-						<h3>In-hospital visits</h3>
-						<p class="p14">Manage your schedule in a monthly, weekly</p>
-					</div>
-				</div>
+<main class="solutions-page gray">
+	<section class="features gray-bg">
+		<div class="solutions">
+			<div class="for-container">
+				<div class="image" style="background-image: url('images/solutions/forhospitals.svg')"></div>
+				<h4>FIELDMED</h4>
+				<h2>For Hospitals</h2>
+				<div class="line"></div>
+				<p class="p16">EMS providers using FieldMed can offer efficient community health programs to clients, reducing their costs and boosting your value offering.</p>
+				<a href="./forhospitals.php" class="button-pink">Learn More <i class="icon-arrow-right"></i></a>
 			</div>
-			<div class="software-image"></div>
+			<div class="for-container">
+				<div class="image" style="background-image: url('images/solutions/forcommunities.svg')"></div>
+				<h4>FIELDMED</h4>
+				<h2>For Communities</h2>
+				<div class="line"></div>
+				<p class="p16">EMS providers using FieldMed can offer efficient community health programs to clients, reducing their costs and boosting your value offering. </p>
+				<a href="./forhospitals.php" class="button-pink">Learn More <i class="icon-arrow-right"></i></a>
+			</div>
+			<div class="for-container">
+				<div class="image" style="background-image: url('images/solutions/forems.svg')"></div>
+				<h4>FIELDMED</h4>
+				<h2>For EMS</h2>
+				<div class="line"></div>
+				<p class="p16">EMS providers using FieldMed can offer efficient community health programs to clients, reducing their costs and boosting your value offering. </p>
+				<a href="./forhospitals.php" class="button-pink">Learn More <i class="icon-arrow-right"></i></a>
+			</div>
+		</div>
+		<div class="software-tour">
+			<div class="title">
+				<h4>EXPLORE OUR SOFTWARE</h4>
+				<h2>Software Tour</h2>
+				<p class="p14">Community health programs have been instituted in over 500 cities nationwide.</p>
+			</div>
+			<div class="software-list">
+				<div class="list-container">
+					<div class="list">
+						<div class="icon" style="background-image: url('images/solutions/icon1.svg');"></div>
+						<div class="info">
+							<h3>Share and receive important notes</h3>
+							<p class="p14">Manage your schedule in a monthly, weekly</p>
+						</div>
+					</div>
+					<div class="list">
+						<div class="icon" style="background-image: url('images/solutions/icon2.svg');"></div>
+						<div class="info">
+							<h3>Input and track patient data</h3>
+							<p class="p14">Manage your schedule in a monthly, weekly</p>
+						</div>
+					</div>
+					<div class="list">
+						<div class="icon" style="background-image: url('images/solutions/icon3.svg');"></div>
+						<div class="info">
+							<h3>Community health teams</h3>
+							<p class="p14">Manage your schedule in a monthly, weekly</p>
+						</div>
+					</div>
+					<div class="list">
+						<div class="icon" style="background-image: url('images/solutions/icon4.svg');"></div>
+						<div class="info">
+							<h3>In-hospital visits</h3>
+							<p class="p14">Manage your schedule in a monthly, weekly</p>
+						</div>
+					</div>
+				</div>
+				<div class="software-image"></div>
+			</div>
 		</div>
 	</section>
-</main>
-<main class="solutions">
-	<section class="why-fieldmed">
+	<section class="why-fieldmed white-bg">
 		<div class="features">
 			<div class="title">
 				<h4>WHO WE PROVIDE SERVICES FOR</h4>
 				<h2>Why FieldMed</h2>
-				<p class="p14">Community health programs have been instituted in over 500 cities nationwide. FieldMed is<br/>the first platform designed specifically to serve these programs.</p>
+				<p class="p14">Community health programs have been instituted in over 500 cities nationwide. FieldMed is the first platform designed specifically to serve these programs.</p>
 			</div>
 			<di class="features-grid layout">
 				<div class="feature">
@@ -176,7 +177,7 @@
 			<div class="image-right"></div>
 		</section>
 	</section>
-</main> 
+</main>
 <footer>
 	<?php require 'library/components/_external-links.php'; ?>	
 </footer>

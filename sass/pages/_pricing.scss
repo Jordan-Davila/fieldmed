@@ -1,0 +1,102 @@
+.pricing-page {
+	.pricing-box {
+		overflow: hidden;
+		padding: 15px;
+		padding-bottom: 100px;
+		margin-bottom: 100px;
+
+		.pricing-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-column-gap: 15px;
+			justify-content: center;
+			align-items: center;
+
+			@media #{$mq-small} {
+				grid-template-columns: 1fr;
+				grid-row-gap: 15px;
+			}
+
+			.prices {
+				border-radius: 14.4px;
+				overflow: hidden;
+
+				.title {
+					width: 100%;
+					background-color: #eff6fa;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding: 55px 0px;
+
+					h2 {
+						font-size: 61.2px;
+						line-height: 0.58;
+						letter-spacing: -1.53px;
+						margin-bottom: 0;
+					}
+
+					.icon {
+						@include image("logo-icon.svg", 46px, 46px);
+						margin-right: 12px;
+					}
+				}
+
+				.info {
+					width: 100%;
+					background-color: #e1ecf3;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding: 55px 0px;
+					flex-direction: column;
+
+					h6 {
+						width: 260px;
+						font-size: 15.1px;
+						line-height: 1.67;
+						text-align: left;
+						letter-spacing: -0.25px;
+
+						.icon {
+							@include image("icons/check.svg", 9px, 7px);
+							margin-right: 5px;
+							display: inline-block;
+						}
+					}
+				}
+
+				.value {
+					width: 100%;
+					background-color: #eff6fa;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding: 55px 0px;
+					flex-direction: column;
+
+					h2 {
+						font-size: 79.9px;
+						text-align: center;
+						font-weight: 400;
+						color: $color-blue-sky;
+						margin-bottom: 10px;
+					}
+
+					h5 {
+						font-family: SourceSansPro;
+						font-size: 16px;
+						font-weight: 600;
+						line-height: 1.39;
+						color: #0a1b43;
+						margin-bottom: 20px;
+					}
+
+					a {
+						width: 205.9px;
+					}
+				}
+			}
+		}
+	}
+}

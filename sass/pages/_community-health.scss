@@ -1,0 +1,358 @@
+header.community-health-page {
+	.top-section {
+		background-image: url("../images/communityhealth/bg.png");
+		background-size: 1272.2px 196.6px;
+		background-position: bottom right;
+		background-repeat: no-repeat;
+	}
+
+	.image-landing {
+		position: absolute;
+		z-index: 2;
+
+		@media #{$mq-small} {
+			display: none;
+		}
+
+		&.community-health {
+			@include image("communityhealth/landing.svg", 543px, 340px);
+			right: 36px;
+			top: 220px;
+
+			@media #{$mq-medium} {
+				right: -80px;
+			}
+		}
+	}
+}
+
+main.community-health-page {
+	.information {
+		width: 100%;
+		padding: 150px 0px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.image {
+			@include image("solutions-pages/hospitals/feature1.png", 445px, 445px);
+			position: absolute;
+			right: -210px;
+			top: 200px;
+
+			@media #{$mq-small} {
+				display: none;
+			}
+		}
+
+		.layout {
+			display: flex;
+			position: relative;
+			justify-content: flex-start;
+
+			.container {
+				width: 612px;
+
+				.p16 {
+					font-family: Muli;
+					font-size: 20.2px;
+					font-weight: 600;
+					line-height: 1.39;
+					letter-spacing: -0.49px;
+				}
+				p {
+					margin-bottom: 20px;
+				}
+				h2 {
+					font-size: 32.4px;
+				}
+				h3 {
+					font-size: 16.6px;
+				}
+
+				h2,
+				h3,
+				h4,
+				p {
+					text-align: left;
+				}
+
+				.line {
+					height: 2px;
+					width: 100%;
+					background-color: $color-blue-sky;
+					margin-top: 20px;
+					margin-bottom: 30px;
+				}
+
+				a {
+					width: 205px;
+				}
+			}
+		}
+	}
+
+	.the-alternative {
+		width: 100%;
+		padding: 0px 0px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: $color-gray-light;
+
+		.info {
+			width: 600px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin-top: 40px;
+			margin-bottom: 90px;
+
+			@media #{$mq-small} {
+				width: 100%;
+				padding: 0px 30px;
+				border-radius: 0px;
+			}
+
+			h2 {
+				font-size: 29.5px;
+			}
+
+			.line {
+				height: 2px;
+				width: 60%;
+				background-color: $color-blue-sky;
+				margin-bottom: 20px;
+			}
+		}
+
+		.box {
+			width: 1200px;
+			padding: 80px 150px;
+			border-radius: 14.4px;
+			box-shadow: 0 52px 46px 0 rgba(0, 0, 0, 0.04);
+			background-color: $color-white;
+			transform: translate(0px, -50px);
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+
+			@media #{$mq-small} {
+				width: 100%;
+				padding: 80px 30px;
+				border-radius: 0px;
+			}
+
+			.image {
+				@include image("communityhealth/image1.png", 339px, 427px);
+				margin-left: 60px;
+
+				@media #{$mq-small} {
+					display: none;
+				}
+			}
+
+			.container {
+				width: 544px;
+				h4,
+				h2,
+				p {
+					text-align: left;
+				}
+
+				p {
+					margin-bottom: 20px;
+				}
+
+				.line {
+					height: 2px;
+					width: 100%;
+					background-color: $color-blue-sky;
+					margin-top: 20px;
+					margin-bottom: 30px;
+				}
+			}
+		}
+
+		&.our-story {
+			padding-bottom: 0;
+			.box {
+				justify-content: flex-end;
+				transform: translate(0px, 158px);
+				background-image: url("../images/phone-app.svg");
+				background-repeat: no-repeat;
+				background-size: 538px 540px;
+				background-position: -145px 120px;
+
+				@media #{$mq-small} {
+					background-image: none;
+				}
+
+				.image-doc {
+					@include image("ourstory/image2.png", 269px, 234px);
+					position: absolute;
+					right: 50px;
+					top: -200px;
+				}
+
+				.container {
+					width: 546px;
+
+					h2 {
+						font-size: 31px;
+						font-weight: 800;
+						line-height: 1.24;
+						letter-spacing: -0.81px;
+					}
+				}
+			}
+		}
+	}
+
+	.case-studies {
+		padding-top: 100px;
+		.container {
+			margin-bottom: 25px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+
+			.title {
+				margin-bottom: 30px;
+				h4 {
+					margin-bottom: 10px;
+				}
+			}
+
+			.carousel {
+				display: grid;
+				justify-content: center;
+				align-items: center;
+				grid-template-columns: 1fr 900px 1fr;
+				grid-template-rows: 1fr;
+				grid-column-gap: 60px;
+				margin-bottom: 30px;
+
+				@media #{$mq-small} {
+					grid-template-columns: 1fr;
+				}
+
+				.icon-left,
+				.icon-right {
+					font-size: 20px;
+					@media #{$mq-small} {
+						display: none;
+					}
+					i {
+						cursor: pointer;
+						&:before {
+							color: $color-blue-sky;
+						}
+					}
+				}
+
+				.case-list {
+					display: grid;
+					justify-content: center;
+					align-items: center;
+					grid-template-columns: 1fr 1fr 1fr;
+					grid-template-rows: 1fr;
+					grid-column-gap: 30px;
+
+					@media #{$mq-small} {
+						grid-template-columns: 1fr;
+						grid-row-gap: 30px;
+						padding: 0px 30px;
+					}
+
+					.case {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						flex-direction: column;
+						border-radius: 7.2px;
+						box-shadow: 0 52px 46px 0 rgba(0, 0, 0, 0.04);
+						background-color: $color-white;
+						overflow: hidden;
+						height: 100%;
+
+						.top-image {
+							flex: 0 180px;
+							width: 100%;
+							background-color: $color-gray-light;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							padding: 35px;
+						}
+
+						.info {
+							flex: 1;
+							padding: 25px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							flex-direction: column;
+
+							h3 {
+								font-size: 22.3px;
+								font-weight: 600;
+								line-height: 1.06;
+								letter-spacing: -0.56px;
+								text-align: center;
+							}
+
+							.line {
+								height: 2px;
+								width: 100%;
+								background-color: $color-blue-sky;
+								margin-bottom: 20px;
+							}
+						}
+
+						.button-container {
+							padding: 30px;
+							width: 100%;
+							a {
+								.icon-download {
+								}
+							}
+						}
+					}
+				}
+
+				.icon-right {
+					.icon-arrow-right {
+					}
+				}
+			}
+
+			.dots {
+				display: grid;
+				justify-content: center;
+				align-items: center;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-column-gap: 8px;
+				width: min-content;
+
+				.dot {
+					width: 14px;
+					height: 14px;
+					border-radius: 50%;
+					background-color: transparent;
+					border: 2px solid $color-blue-sky;
+					margin-right: 8px;
+
+					&.active {
+						background-color: $color-blue-sky;
+					}
+				}
+			}
+		}
+	}
+}

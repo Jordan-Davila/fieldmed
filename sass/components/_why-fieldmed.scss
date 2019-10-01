@@ -1,0 +1,90 @@
+.why-fieldmed {
+	.signup {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-image: $gradient-blue;
+
+		.image-bottom {
+			@include image("solutions-pages/discover-bottom.svg", 100vw, 4.9vw);
+		}
+
+		.layout {
+			padding-top: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			h2 {
+				font-size: 31px;
+				font-weight: 700;
+				line-height: 1.16;
+				letter-spacing: -0.72px;
+				text-align: center;
+				color: $color-white;
+
+				@media #{$mq-small} {
+					padding: 0px 30px;
+					width: 100%;
+				}
+			}
+		}
+	}
+	.features {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		@media #{$mq-small} {
+			padding: 0px 30px;
+			width: 100%;
+		}
+
+		.title {
+			margin-top: 100px;
+			margin-bottom: 60px;
+		}
+
+		.features-grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-column-gap: 40px;
+
+			@media #{$mq-small} {
+				grid-template-columns: 1fr;
+				grid-row-gap: 40px;
+			}
+
+			h3,
+			p {
+				text-align: left;
+			}
+
+			.feature {
+				display: flex;
+				margin-bottom: 25px;
+
+				.icon {
+					@include image("solutions-pages/features/Icon.svg", 85px, 74px);
+					flex: 0 85px;
+					margin-right: 25px;
+				}
+
+				.info {
+					flex: 1;
+
+					h3 {
+						font-size: 15.1px;
+						font-weight: 900;
+						line-height: 1.33;
+						letter-spacing: -0.25px;
+						margin-bottom: 5px;
+					}
+				}
+			}
+		}
+	}
+}

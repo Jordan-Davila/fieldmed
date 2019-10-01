@@ -1,0 +1,336 @@
+header.solutions-pages {
+	.top-section,
+	.bottom-section {
+		.container {
+			padding: 80px 0px;
+
+			h3,
+			p {
+				width: 500px;
+
+				@media #{$mq-small} {
+					width: unset;
+				}
+			}
+
+			h3 {
+				font-size: 21.6px;
+				font-weight: bold;
+				line-height: 1.33;
+				color: $color-white;
+
+				@media #{$mq-small} {
+					width: unset;
+				}
+			}
+
+			.image-landing {
+				position: absolute;
+				z-index: 2;
+
+				@media #{$mq-small} {
+					display: none;
+				}
+
+				&.hospitals {
+					@include image("solutions-pages/hospitals/landing.svg", 545px, 428px);
+					right: -130px;
+					top: 230px;
+
+					@media #{$mq-medium} {
+						right: -280px;
+					}
+				}
+
+				&.communities {
+					@include image("solutions-pages/communities/landing.svg", 670px, 580px);
+					right: -240px;
+					top: 230px;
+
+					@media #{$mq-medium} {
+						right: -360px;
+					}
+				}
+
+				&.ems {
+					@include image("solutions-pages/ems/landing.svg", 735px, 845px);
+					right: -246px;
+					top: 132px;
+
+					@media #{$mq-medium} {
+						right: -340px;
+					}
+				}
+
+				&.community-health {
+					@include image("communityhealth/landing.svg", 543px, 340px);
+					right: 36px;
+					top: 130px;
+
+					@media #{$mq-medium} {
+						right: -80px;
+					}
+				}
+
+				&.our-story {
+					@include image("ourstory/landing.svg", 485px, 357px);
+					right: -55px;
+					top: 130px;
+				}
+			}
+		}
+	}
+}
+
+main.solutions-pages {
+	.benefit {
+		width: 100%;
+		padding: 150px 0px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.image {
+			@include image("solutions-pages/hospitals/feature1.png", 760px, 694px);
+			position: absolute;
+			top: -80px;
+
+			@media #{$mq-small} {
+				display: none;
+			}
+
+			&.left {
+				left: -370px;
+			}
+
+			&.right {
+				right: -370px;
+			}
+		}
+
+		.layout {
+			display: flex;
+			position: relative;
+
+			&.left {
+				justify-content: flex-start;
+			}
+
+			&.right {
+				justify-content: flex-end;
+			}
+
+			.container {
+				width: 456.5px;
+
+				h2,
+				h3,
+				h4,
+				p {
+					text-align: left;
+				}
+
+				.line {
+					height: 2px;
+					width: 100%;
+					background-color: $color-blue-sky;
+					margin-top: 20px;
+					margin-bottom: 30px;
+				}
+
+				a {
+					width: 205px;
+				}
+
+				.benefit-items {
+					margin-bottom: 50px;
+					.item {
+						display: flex;
+						margin-bottom: 25px;
+
+						.icon {
+							@include image("solutions-pages/features/Icon.svg", 85px, 74px);
+							flex: 0 85px;
+							margin-right: 25px;
+						}
+
+						.info {
+							flex: 1;
+
+							h3 {
+								font-size: 15.1px;
+								font-weight: 900;
+								line-height: 1.33;
+								letter-spacing: -0.25px;
+								margin-bottom: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.our-story {
+			padding-bottom: 0;
+
+			@media #{$mq-small} {
+				padding-bottom: 50px;
+			}
+			.layout {
+				.container {
+					width: 830px;
+
+					@media #{$mq-small} {
+						width: 100%;
+					}
+
+					.p16 {
+						columns: 2;
+						column-gap: 30px;
+						line-height: 1.78;
+					}
+
+					.p14 {
+						width: 540px;
+						@media #{$mq-small} {
+							width: 100%;
+						}
+					}
+
+					p {
+						margin-bottom: 20px;
+					}
+
+					h2 {
+						font-size: 23.8px;
+						font-weight: 800;
+						line-height: 1.33;
+						letter-spacing: -0.59px;
+						width: 730px;
+
+						@media #{$mq-small} {
+							width: 100%;
+						}
+					}
+				}
+
+				.image {
+					width: 291px;
+					height: 139px;
+					right: -170px;
+					top: 74px;
+				}
+			}
+		}
+	}
+
+	.solution {
+		width: 100%;
+		background: $color-white;
+		padding-top: 250px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			width: 805px;
+
+			@media #{$mq-small} {
+				width: 100%;
+				padding: 0px 30px;
+			}
+
+			h3 {
+				font-size: 28.8px;
+				font-weight: 800;
+				line-height: 1.4;
+				letter-spacing: -0.72px;
+			}
+
+			.line {
+				height: 2px;
+				width: 80%;
+				background-color: $color-blue-sky;
+				margin-bottom: 20px;
+			}
+
+			.icon {
+				@include image("icons/icon21.svg", 85px, 75px);
+				margin-bottom: 20px;
+			}
+
+			a {
+				width: 205.9px;
+			}
+
+			p {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.faqs {
+		padding: 100px 0px;
+		background-color: $color-gray-light;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		.layout {
+			.question {
+				background-color: $color-white;
+				border-radius: 14.4px;
+				box-shadow: 0 52px 46px 0 rgba(0, 0, 0, 0.04);
+				padding: 50px 72px;
+				margin-bottom: 24px;
+
+				.title {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					i {
+						&:before {
+							color: $color-blue-sky;
+							font-size: 14px;
+						}
+					}
+				}
+
+				.line {
+					height: 2px;
+					width: 100%;
+					background-color: $color-blue-sky;
+				}
+
+				.content {
+					margin-top: 0px;
+					height: 0px;
+					overflow: hidden;
+
+					p {
+						text-align: left;
+						margin-bottom: 20px;
+
+						&:last-child {
+							margin-bottom: 0px;
+						}
+					}
+
+					&.active {
+						height: unset;
+						margin-top: 30px;
+					}
+				}
+			}
+		}
+	}
+}

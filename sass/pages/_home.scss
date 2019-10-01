@@ -1,372 +1,500 @@
-.home-page {
+header.home-page {
 	.dashboard {
-		height: 250px;
 		display: flex;
 		justify-content: center;
-		margin-bottom: 50px;
-
-		.left-image {
-			@include image("home/hero1.svg", 434px, 361px);
-			transform: translate(-32px, -220px);
-			position: relative;
-			z-index: 1;
-		}
-
-		.dash-image {
-			@include image("software.png", 549px, 456px);
-			transform: translate(-74px, -170px);
-			position: relative;
-			z-index: 2;
-		}
-
-		.right-image {
-			@include image("home/hero2.svg", 323px, 302px);
-			transform: translate(-5px, -155px);
-			position: relative;
-			z-index: 1;
-		}
-	}
-
-	.clients {
-		display: flex;
-		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 60px;
 
-		.client {
-			height: 35px;
-		}
-	}
-
-	.benefits {
-		width: 80%;
-		max-width: 1224px;
-		border-radius: 14px;
-		background-color: $color-white;
-		display: grid;
-		justify-content: center;
-		padding: 75px 0px;
-		grid-template-rows: 320px 320px;
-		grid-template-columns: 403px 403px;
-		position: relative;
-		margin-bottom: 120px;
-
-		.flowers-svg {
-			@include image("flower1.svg", 143px, 359px);
-			position: absolute;
-			right: -80px;
-			bottom: -80px;
-		}
-
-		.benefit {
+		.container {
+			width: 1200px;
+			height: 250px;
 			display: flex;
 			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			padding: 40px;
-			border-radius: 10px;
 
-			&:hover {
-				box-shadow: 0 52px 46px 0 rgba(0, 0, 0, 0.04);
+			@media #{$mq-small} {
+				margin-bottom: 0px;
 			}
 
-			&:hover > .learn-more {
-				height: 40px;
-
-				a {
-					text-indent: 0;
-				}
-			}
-
-			.learn-more {
+			.left-image {
+				@include image("home/hero1.svg", 434px, 361px);
+				transform: translate(-32px, 0px);
 				position: relative;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				width: 100%;
-				margin: 10px 0px;
-				overflow: hidden;
-				height: 2px;
-				transition: 200ms ease-out all;
+				z-index: 1;
 
-				.line {
-					height: 2px;
-					width: 100%;
-					display: block;
-					background-color: $color-blue-sky;
-					position: absolute;
-				}
-
-				a {
-					position: relative;
-					border-radius: 5px;
-					width: 130px;
-					z-index: 2;
-					text-indent: -9999px;
-					transition: 200ms ease-out text-indent;
+				@media #{$mq-small} {
+					opacity: 0;
 				}
 			}
 
-			.icon {
-				width: 88px;
-				height: 77px;
-				background-position: center;
-				background-size: contain;
-				background-repeat: no-repeat;
-				margin-bottom: 15px;
+			.dash-image {
+				@include image("software.png", 549px, 456px);
+				transform: translate(-74px, 0px);
+				position: relative;
+				z-index: 2;
 
-				&.better-care {
-					background-image: url("../images/icons/icon6.svg");
+				@media #{$mq-small} {
+					width: 400px;
+					height: 332px;
 				}
-				&.lower-costs {
-					background-image: url("../images/icons/icon18.svg");
-				}
-				&.improve-reporting {
-					background-image: url("../images/icons/icon19.svg");
-				}
-				&.more-business {
-					background-image: url("../images/icons/icon20.svg");
+			}
+
+			.right-image {
+				@include image("home/hero2.svg", 323px, 302px);
+				transform: translate(-5px, 0px);
+				position: relative;
+				z-index: 1;
+
+				@media #{$mq-small} {
+					opacity: 0;
 				}
 			}
 		}
 	}
+}
 
-	.organizations {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-
-		h4 {
-			margin-bottom: 12px;
-		}
-
-		h2 {
-			margin-bottom: 28px;
-		}
-
-		.carousel-menu {
+main.home-page {
+	.services {
+		padding-top: 220px;
+		.signup-and-clients {
 			display: flex;
 			justify-content: center;
-			align-items: center;
-			margin-bottom: 70px;
-			button {
-				width: 192px;
-				height: 50px;
+
+			.clients {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 60px;
+
+				@media #{$mq-small} {
+					justify-content: center;
+					flex-wrap: wrap;
+				}
+
+				.client {
+					height: 35px;
+					@media #{$mq-small} {
+						margin: 10px;
+					}
+				}
+			}
+		}
+
+		.benefits {
+			display: flex;
+			justify-content: center;
+
+			.container {
+				width: 80%;
+				max-width: 1224px;
+				border-radius: 14px;
 				background-color: $color-white;
-				font-size: 13.7px;
-				font-family: "Muli", sans-serif;
-				font-weight: 600;
-				letter-spacing: normal;
-				color: $color-blue-dark;
-				display: flex;
+				display: grid;
 				justify-content: center;
-				align-items: center;
-				padding: 5px 0px;
-				outline: none;
-				cursor: pointer;
-				border-right: solid 1px #9797972b;
-				transition: 200ms ease-out background-color, 200ms ease-out color;
-				box-shadow: 5px 9px 7px 0 rgba(0, 0, 0, 0.03);
-
-				&:first-child {
-					border-top-left-radius: 7.2px;
-					border-bottom-left-radius: 7.2px;
-				}
-
-				&:last-child {
-					border-top-right-radius: 7.2px;
-					border-bottom-right-radius: 7.2px;
-					border-right: solid 0px #9797972b;
-				}
-
-				&.active {
-					background-color: $color-blue-sky;
-					color: $color-white;
-				}
-			}
-		}
-
-		.carousel {
-			display: grid;
-			grid-template-rows: 1fr;
-			grid-template-columns: 1fr 900px 1fr;
-			grid-gap: 70px;
-			align-items: center;
-			margin-bottom: 70px;
-
-			.carousel-left,
-			.carousel-right {
-				cursor: pointer;
-				&::before {
-					color: $color-blue-sky;
-					font-size: 20px;
-				}
-			}
-
-			.carousel-items {
+				padding: 75px 0px;
+				grid-template-rows: 320px 320px;
+				grid-template-columns: 403px 403px;
 				position: relative;
-				width: 100%;
-				height: 292px;
+				margin-bottom: 120px;
 
-				.item {
+				@media #{$mq-small} {
+					padding: 25px 0px;
+					grid-template-columns: 403px;
+				}
+
+				.flowers-svg {
+					@include image("flower1.svg", 143px, 359px);
+					position: absolute;
+					right: -80px;
+					bottom: -80px;
+
+					@media #{$mq-small} {
+						right: -100px;
+					}
+				}
+
+				.benefit {
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					position: absolute;
-					width: 100%;
-					opacity: 0;
-					top: 0;
-					left: 0;
-					transition: 200ms ease-out opacity;
+					flex-direction: column;
+					padding: 40px;
+					border-radius: 10px;
 
-					&.active {
-						opacity: 1;
+					&:hover {
+						box-shadow: 0 52px 46px 0 rgba(0, 0, 0, 0.04);
+
+						@media #{$mq-small} {
+							box-shadow: unset;
+						}
 					}
 
-					.image {
-						@include image("home/ems.svg", 516px, 292px);
-						margin-right: 30px;
+					&:hover > .learn-more {
+						height: 40px;
+
+						a {
+							text-indent: 0;
+						}
 					}
 
-					.info {
-						width: 400px;
+					.learn-more {
+						position: relative;
 						display: flex;
 						justify-content: center;
 						align-items: center;
-						flex-direction: column;
+						width: 100%;
+						margin: 10px 0px;
+						overflow: hidden;
+						height: 2px;
+						transition: 200ms ease-out all;
 
-						.title {
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							width: 100%;
-							margin-bottom: 14px;
-
-							.line {
-								flex: 1;
-								height: 2px;
-								background-color: $color-blue-sky;
-							}
-
-							h3 {
-								flex: 7;
-								font-family: "Muli", sans-serif;
-								font-size: 29.5px;
-								font-weight: 800;
-								font-style: normal;
-								font-stretch: normal;
-								line-height: 1.29;
-								letter-spacing: -0.49px;
-								text-align: center;
-								color: $color-blue-dark;
-								margin: 0px 20px;
+						@media #{$mq-small} {
+							height: 40px;
+							a {
+								text-indent: unset !important;
 							}
 						}
 
-						p {
-							@include para2($color-blue-dark);
-							font-size: 15.1px;
-							margin-bottom: 28px;
+						.line {
+							height: 2px;
+							width: 100%;
+							display: block;
+							background-color: $color-blue-sky;
+							position: absolute;
 						}
 
 						a {
-							width: 164.2px;
+							position: relative;
+							border-radius: 5px;
+							width: 130px;
+							z-index: 2;
+							text-indent: -9999px;
+							transition: 200ms ease-out text-indent;
+						}
+					}
+
+					.icon {
+						width: 88px;
+						height: 77px;
+						background-position: center;
+						background-size: contain;
+						background-repeat: no-repeat;
+						margin-bottom: 15px;
+
+						&.better-care {
+							background-image: url("../images/icons/icon6.svg");
+						}
+						&.lower-costs {
+							background-image: url("../images/icons/icon18.svg");
+						}
+						&.improve-reporting {
+							background-image: url("../images/icons/icon19.svg");
+						}
+						&.more-business {
+							background-image: url("../images/icons/icon20.svg");
 						}
 					}
 				}
 			}
 		}
 
-		.carousel-dots {
-			width: 200px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin-bottom: 70px;
+		.solutions-carousel {
+			.organizations {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
 
-			.dot {
-				width: 14px;
-				height: 14px;
-				border-radius: 50%;
-				background-color: transparent;
-				border: 2px solid $color-blue-sky;
-				margin-right: 8px;
+				h4 {
+					margin-bottom: 12px;
+				}
 
-				&.active {
-					background-color: $color-blue-sky;
+				h2 {
+					margin-bottom: 28px;
+				}
+
+				.carousel-menu {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-bottom: 70px;
+					button {
+						width: 192px;
+						height: 50px;
+						background-color: $color-white;
+						font-size: 13.7px;
+						font-family: "Muli", sans-serif;
+						font-weight: 600;
+						letter-spacing: normal;
+						color: $color-blue-dark;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						padding: 5px 0px;
+						outline: none;
+						cursor: pointer;
+						border-right: solid 1px #9797972b;
+						transition: 200ms ease-out background-color, 200ms ease-out color;
+						box-shadow: 5px 9px 7px 0 rgba(0, 0, 0, 0.03);
+
+						@media #{$mq-small} {
+							width: 142px;
+						}
+
+						&:first-child {
+							border-top-left-radius: 7.2px;
+							border-bottom-left-radius: 7.2px;
+						}
+
+						&:last-child {
+							border-top-right-radius: 7.2px;
+							border-bottom-right-radius: 7.2px;
+							border-right: solid 0px #9797972b;
+						}
+
+						&.active {
+							background-color: $color-blue-sky;
+							color: $color-white;
+						}
+					}
+				}
+
+				.carousel {
+					display: grid;
+					grid-template-rows: 1fr;
+					grid-template-columns: 1fr 900px 1fr;
+					grid-template-rows: 292px;
+					grid-gap: 70px;
+					align-items: center;
+					margin-bottom: 70px;
+					width: 100%;
+
+					@media #{$mq-small} {
+						grid-template-columns: 1fr;
+						grid-template-rows: 466px;
+					}
+
+					.carousel-left,
+					.carousel-right {
+						cursor: pointer;
+						@media #{$mq-small} {
+							display: none;
+						}
+						&::before {
+							color: $color-blue-sky;
+							font-size: 20px;
+						}
+					}
+
+					.carousel-items {
+						position: relative;
+						width: 100%;
+						height: 100%;
+						display: block;
+
+						@media #{$mq-small} {
+							padding-bottom: 200px;
+						}
+
+						.item {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							position: absolute;
+							width: 100%;
+							opacity: 0;
+							top: 0;
+							left: 0;
+							transition: 200ms ease-out opacity;
+
+							@media #{$mq-small} {
+								flex-direction: column;
+							}
+
+							&.active {
+								opacity: 1;
+							}
+
+							.image {
+								@include image("home/ems.svg", 516px, 292px);
+								margin-right: 30px;
+
+								@media #{$mq-small} {
+									width: 416px;
+									height: 192px;
+									margin-right: 0px;
+									margin-bottom: 30px;
+								}
+							}
+
+							.info {
+								width: 400px;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								flex-direction: column;
+
+								.title {
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									width: 100%;
+									margin-bottom: 14px;
+
+									.line {
+										flex: 1;
+										height: 2px;
+										background-color: $color-blue-sky;
+									}
+
+									h3 {
+										flex: 7;
+										font-family: "Muli", sans-serif;
+										font-size: 29.5px;
+										font-weight: 800;
+										font-style: normal;
+										font-stretch: normal;
+										line-height: 1.29;
+										letter-spacing: -0.49px;
+										text-align: center;
+										color: $color-blue-dark;
+										margin: 0px 20px;
+									}
+								}
+
+								p {
+									@include paragraph2($color-blue-dark);
+									font-size: 15.1px;
+									margin-bottom: 28px;
+								}
+
+								a {
+									width: 164.2px;
+								}
+							}
+						}
+					}
+				}
+
+				.carousel-dots {
+					width: 200px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-bottom: 70px;
+
+					.dot {
+						width: 14px;
+						height: 14px;
+						border-radius: 50%;
+						background-color: transparent;
+						border: 2px solid $color-blue-sky;
+						margin-right: 8px;
+
+						&.active {
+							background-color: $color-blue-sky;
+						}
+					}
 				}
 			}
 		}
 	}
 
 	.why-fieldmed {
+		display: flex;
+		justify-content: center;
 		padding-top: 100px;
+		.layout {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
 
-		.title {
-			margin-bottom: 60px;
+			.title {
+				margin-bottom: 60px;
+				max-width: 495px;
 
-			h3 {
-				margin-bottom: 12px;
-			}
-
-			h2 {
-				margin-bottom: 28px;
-			}
-
-			p {
-			}
-		}
-
-		.reasons {
-			.reason {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-
-				&:nth-child(even) {
-					flex-direction: row-reverse;
+				h3 {
+					margin-bottom: 12px;
 				}
 
-				.info {
-					flex: 0 394px;
-					h3 {
-						font-size: 28.1px;
-						text-align: left;
-						letter-spacing: -0.72px;
-						line-height: 1.13;
-					}
-
-					p {
-						text-align: left;
-					}
-
-					.line {
-						height: 2px;
-						width: 80px;
-						display: block;
-						background-color: $color-blue-sky;
-						margin: 15px 0px;
+				h2 {
+					margin-bottom: 28px;
+					@media #{$mq-small} {
+						margin-bottom: 10px;
 					}
 				}
 
-				.image {
-					flex: 0 355px;
-					@include image("home/reason1.svg", 355px, 312px);
-					&.x1 {
-						background-image: url("../images/home/reason1.svg");
+				p {
+				}
+			}
+
+			.reasons {
+				.reason {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					@media #{$mq-small} {
+						flex-direction: column;
+						margin-bottom: 60px;
 					}
 
-					&.x2 {
-						background-image: url("../images/home/reason2.svg");
+					&:nth-child(even) {
+						flex-direction: row-reverse;
+						@media #{$mq-small} {
+							flex-direction: column;
+						}
 					}
 
-					&.x3 {
-						background-image: url("../images/home/reason3.svg");
+					.info {
+						flex: 0 394px;
+						@media #{$mq-small} {
+							flex: 1;
+						}
+						h3 {
+							font-size: 28.1px;
+							text-align: left;
+							letter-spacing: -0.72px;
+							line-height: 1.13;
+						}
+
+						p {
+							text-align: left;
+						}
+
+						.line {
+							height: 2px;
+							width: 80px;
+							display: block;
+							background-color: $color-blue-sky;
+							margin: 15px 0px;
+						}
 					}
 
-					&.x4 {
-						background-image: url("../images/home/reason4.svg");
+					.image {
+						flex: 0 355px;
+						@include image("home/reason1.svg", 355px, 312px);
+
+						@media #{$mq-small} {
+							flex-direction: column;
+							flex: 0 272px;
+							width: 305px;
+							height: 272px;
+							margin-bottom: 40px;
+						}
+						&.x1 {
+							background-image: url("../images/home/reason1.svg");
+						}
+
+						&.x2 {
+							background-image: url("../images/home/reason2.svg");
+						}
+
+						&.x3 {
+							background-image: url("../images/home/reason3.svg");
+						}
+
+						&.x4 {
+							background-image: url("../images/home/reason4.svg");
+						}
 					}
 				}
 			}
@@ -377,6 +505,11 @@
 footer {
 	.testimonials-container {
 		padding-top: 112px;
+		@media #{$mq-small} {
+			padding: 112px 20px;
+			width: 100%;
+		}
+
 		.title {
 			h3 {
 				margin-bottom: 12px;
@@ -400,6 +533,10 @@ footer {
 			flex-direction: column;
 			height: 400px;
 
+			@media #{$mq-small} {
+				height: 345px;
+			}
+
 			.wrapper {
 				display: grid;
 				grid-template-rows: 455px;
@@ -408,17 +545,27 @@ footer {
 				grid-gap: 70px;
 				margin-bottom: 50px;
 
+				@media #{$mq-small} {
+					grid-template-columns: 1fr;
+				}
+
 				.image-flower {
 					position: absolute;
 					@include image("flower2.svg", 114px, 240px);
 					bottom: 0;
 					right: 37px;
 					z-index: 2;
+					@media #{$mq-small} {
+						display: none;
+					}
 				}
 
 				.testimonial-left,
 				.testimonial-right {
 					cursor: pointer;
+					@media #{$mq-small} {
+						display: none;
+					}
 					&::before {
 						color: $color-blue-sky;
 						font-size: 20px;
@@ -432,6 +579,11 @@ footer {
 					align-self: baseline;
 					grid-gap: 30px;
 					position: relative;
+
+					@media #{$mq-small} {
+						grid-template-columns: 1fr;
+						grid-template-rows: 453.6px 453.6px;
+					}
 
 					.testimonial {
 						padding: 50px;
@@ -533,6 +685,11 @@ footer {
 		padding-bottom: 130px;
 		display: flex;
 		justify-content: center;
+
+		@media #{$mq-small} {
+			padding-top: 600px;
+			padding-bottom: 20px;
+		}
 
 		h2 {
 			color: $color-white;

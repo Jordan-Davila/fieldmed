@@ -1,21 +1,18 @@
 <?php require 'library/layouts/_header.php'; ?>
-<header class="pages_w_breadcrum">
-	<?php require 'library/components/_menu.php'; ?>
-	<section class="landing">
-		<div class="top">
-			<div class="layout">
-				<h4>FIELDMED For EMS</h4>
-				<h1 style="font-size: 38.2px">Upgrade your service offering, land more<br>contracts, <span class="blue">improve profitability and<br>reduce costs to you and your clients.</span></h1>
-				<p class="p16">You can offer all these benefits  to potential clients for your EMS company</p>
-				<div class="image-landing ems"></div>
-			</div>
+<header class="solutions-pages">
+	<section class="top-section align-left">
+		<div class="container layout">
+			<h4>FIELDMED For EMS</h4>
+			<h1 style="font-size: 38.2px">Upgrade your service offering, land more contracts, <span class="blue">improve profitability and reduce costs to you and your clients.</span></h1>
+			<p class="p16">You can offer all these benefits  to potential clients for your EMS company</p>
+			<div class="image-landing ems"></div>
 		</div>
-		<div class="bottom">
-			<div class="layout">
-				<h3>Implementing an effective CHP/MIH program <span class="blue">will<br>grow your business and enable you to respon to<br>the increasing choices of healthcare delivery.</span></h3>
-				<p class="p16">With FieldMed on your side, you can offer all these benefits (and more) to<br>potential clients for your EMS company—including out-of-network local<br>regions not covered by city programs or providers.</p>
-				<a href="#" class="button-pink">Enroll your Facility <i class="icon-arrow-right"></i></a>
-			</div>
+	</section>
+	<section class="bottom-section align-left">
+		<div class="container layout">
+			<h3>Implementing an effective CHP/MIH program <span class="blue">will grow your business and enable you to respon to the increasing choices of healthcare delivery.</span></h3>
+			<p class="p16">With FieldMed on your side, you can offer all these benefits (and more) to potential clients for your EMS company—including out-of-network local regions not covered by city programs or providers.</p>
+			<a href="#" class="button-pink">Enroll your Facility <i class="icon-arrow-right"></i></a>
 		</div>
 	</section>
 	<section class="breadcrums">
@@ -28,10 +25,10 @@
 		</div>
 	</section>
 </header>
-<main class="pages_w_breadcrum">
-	<section class="benefit white">
+<main class="solutions-pages">
+	<section class="benefit white-bg">
 		<div class="layout left">
-			<div class="image right" style="background-image: url('images/forpages/ems/feature1.png')"></div>
+			<div class="image right" style="background-image: url('images/solutions-pages/ems/feature1.png')"></div>
 			<div class="container">
 				<h4>FIELDMED FOR EMS</h4>
 				<h2>Streamline Your EMS Process at Every Level</h2>
@@ -66,9 +63,9 @@
 		</div>
 	</section>
 
-	<section class="benefit gray">
+	<section class="benefit gray-bg">
 		<div class="layout right">
-			<div class="image left" style="background-image: url('images/forpages/ems/feature2.png'); top: 50px;"></div>
+			<div class="image left" style="background-image: url('images/solutions-pages/ems/feature2.png'); top: 50px;"></div>
 			<div class="container">
 				<h4>FIELDMED FOR EMS</h4>
 				<h2>Power Your Community Health Program with a Dedicated Application</h2>
@@ -103,10 +100,10 @@
 		</div>
 	</section>
 
-	<section class="benefit white">
+	<section class="benefit white-bg">
 		
 		<div class="layout left">
-			<div class="image right" style="background-image: url('images/forpages/ems/feature3.png')"></div>
+			<div class="image right" style="background-image: url('images/solutions-pages/ems/feature3.png')"></div>
 			<div class="container">
 				<h4>FIELDMED FOR EMS</h4>
 				<h2>Measurable Financial Impact and Improved Resource Allocation</h2>
@@ -140,10 +137,10 @@
 			</div>
 		</div>
 	</section>
-</main>
-<main class="pages_w_breadcrum">
+
 	<?php require 'library/components/_whyfieldmed.php'; ?>
-	<section class="signup-bottom">
+	
+	<section class="signup-city">
 		<div class="image-city"></div>
 		<div class="image-ground"></div>
 		<section class="wrapper">
@@ -159,7 +156,7 @@
 			<div class="image-right"></div>
 		</section>
 	</section>
-</main> 
+</main>
 <footer>
 	<?php require 'library/components/_external-links.php'; ?>	
 </footer>

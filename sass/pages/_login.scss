@@ -1,0 +1,52 @@
+.login-page {
+	.login-box {
+		overflow: unset;
+		margin-top: 75px;
+		position: relative;
+
+		.image-woman-computer {
+			@include image("login/woman-computer.svg", 277px, 237px);
+			position: absolute;
+			bottom: -30px;
+			left: -30px;
+
+			@media #{$mq-small} {
+				bottom: -80px;
+			}
+		}
+
+		.login-form,
+		.register-form {
+			h2 {
+				text-align: center;
+			}
+
+			p {
+				margin-bottom: 20px;
+
+				a {
+					color: $color-pink;
+					letter-spacing: normal;
+					text-decoration: underline;
+				}
+			}
+
+			button {
+				width: 130px;
+				margin: 0 auto;
+				margin-bottom: 20px;
+			}
+		}
+
+		.login-form {
+			background-color: $color-white;
+			border-top-left-radius: 14.4px;
+			border-bottom-left-radius: 14.4px;
+		}
+
+		.register-form {
+			border-top-right-radius: 14.4px;
+			border-bottom-right-radius: 14.4px;
+		}
+	}
+}

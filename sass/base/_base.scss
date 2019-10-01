@@ -1,13 +1,54 @@
-.logo {
-	@include image("logo.svg", 125px, 34px, contain);
+body {
+	overflow-x: hidden;
+	background-image: $gradient-blue;
 }
 
 main {
-	&.gray {
-		background-color: $color-gray-light;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $color-white;
+
+	&.gradient-blue-bg {
+		background-image: $gradient-blue;
 	}
 
-	&.blue {
-		background-image: linear-gradient(179deg, #183a78, #0a1b43);
+	section {
+		width: 100%;
+		&.gray-bg {
+			background-color: $color-gray-light;
+		}
+
+		&.blue-bg {
+			background-image: linear-gradient(179deg, #183a78, #0a1b43);
+		}
+
+		&.transparent-bg {
+			background-image: transparent;
+		}
 	}
+}
+
+.layout {
+	width: 900px;
+
+	@media #{$mq-medium} {
+		width: 850px;
+	}
+
+	@media #{$mq-small} {
+		width: 100%;
+		padding: 0px 30px;
+	}
+}
+
+.logo {
+	@include image("logo.svg", 125px, 34px, contain);
+	grid-area: logo;
+}
+
+.line {
+	width: 100%;
+	height: 2px;
+	background-color: $color-blue-sky;
 }
